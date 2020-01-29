@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="428" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="241" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+      <class name="SmokeTestPackage.Component2">
+        <test-method status="FAIL" signature="Component2TC1()[pri:0, instance:SmokeTestPackage.Component2@de3a06f]" name="Component2TC1" duration-ms="151" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\SeleniumGrid\chromedriver.exe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\SeleniumGrid\chromedriver.exe
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:177)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:335)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:100)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+at SmokeTestPackage.Component2.Component2TC1(Component2.java:28)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Component2TC1 -->
+      </class> <!-- SmokeTestPackage.Component2 -->
+      <class name="SmokeTestPackage.Component1">
+        <test-method status="PASS" signature="Component1TC2()[pri:0, instance:SmokeTestPackage.Component1@6c9f5c0d]" name="Component1TC2" duration-ms="26" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Component1TC2 -->
+        <test-method status="PASS" signature="Component1TC3()[pri:0, instance:SmokeTestPackage.Component1@6c9f5c0d]" name="Component1TC3" duration-ms="27" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Component1TC3 -->
+        <test-method status="PASS" signature="Component1TC1()[pri:0, instance:SmokeTestPackage.Component1@6c9f5c0d]" name="Component1TC1" duration-ms="27" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Component1TC1 -->
+      </class> <!-- SmokeTestPackage.Component1 -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="31" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+      <class name="RegressionTestPackage.RegComponent1.RegressionTCs">
+        <test-method status="FAIL" signature="CreateCustomer()[pri:2, instance:RegressionTestPackage.RegComponent1.RegressionTCs@2bbaf4f0]" name="CreateCustomer" duration-ms="10" started-at="2020-01-30T00:34:24 CET" finished-at="2020-01-30T00:34:24 CET">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [annan] but found [kannan]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [annan] but found [kannan]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+at RegressionTestPackage.RegComponent1.RegressionTCs.CreateCustomer(RegressionTCs.java:52)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateCustomer -->
+      </class> <!-- RegressionTestPackage.RegComponent1.RegressionTCs -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Suite -->
+</testng-results>
