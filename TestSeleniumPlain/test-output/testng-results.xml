@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="8806" started-at="2020-01-29T17:54:13 CET" finished-at="2020-01-29T17:54:22 CET">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="8806" started-at="2020-01-29T17:54:13 CET" finished-at="2020-01-29T17:54:22 CET">
+      <class name="WebElemetAndLocators.WebTableExcercise">
+        <test-method status="PASS" signature="WebTableExcercise()[pri:0, instance:WebElemetAndLocators.WebTableExcercise@711f39f9]" name="WebTableExcercise" duration-ms="4708" started-at="2020-01-29T17:54:13 CET" finished-at="2020-01-29T17:54:18 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebTableExcercise -->
+        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:WebElemetAndLocators.WebTableExcercise@711f39f9]" name="WebTableExcercise1" duration-ms="4056" started-at="2020-01-29T17:54:18 CET" finished-at="2020-01-29T17:54:22 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebTableExcercise1 -->
+      </class> <!-- WebElemetAndLocators.WebTableExcercise -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
