@@ -17,7 +17,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="target/classes" path="Users/unkan/Documents/GitHub/zelenium/SeleniumGrid">
+	<classpathentry kind="src" output="target/classes" path="Users/kannanu/zelenium/SeleniumGrid">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
