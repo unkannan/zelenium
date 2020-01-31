@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50152" started-at="2019-11-24T22:45:46Z" finished-at="2019-11-24T22:46:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50152" started-at="2019-11-24T22:45:46Z" finished-at="2019-11-24T22:46:36Z">
+      <class name="com.org.tests.NuvasiveLoginPageTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="5450" started-at="2019-11-24T22:45:46Z" finished-at="2019-11-24T22:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_01_LoginPageHeaderAvailableCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_01_LoginPageHeaderAvailableCheck" duration-ms="263" started-at="2019-11-24T22:45:51Z" finished-at="2019-11-24T22:45:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01_LoginPageHeaderAvailableCheck -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="1003" started-at="2019-11-24T22:45:51Z" finished-at="2019-11-24T22:45:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_LoginPageHeaderAvailableCheck status=SUCCESS method=NuvasiveLoginPageTests.tc_01_LoginPageHeaderAvailableCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="3818" started-at="2019-11-24T22:45:52Z" finished-at="2019-11-24T22:45:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_02_LoginPageLinkAvailabilityCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_02_LoginPageLinkAvailabilityCheck" duration-ms="263" started-at="2019-11-24T22:45:56Z" finished-at="2019-11-24T22:45:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_02_LoginPageLinkAvailabilityCheck -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="1041" started-at="2019-11-24T22:45:57Z" finished-at="2019-11-24T22:45:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_02_LoginPageLinkAvailabilityCheck status=SUCCESS method=NuvasiveLoginPageTests.tc_02_LoginPageLinkAvailabilityCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="4870" started-at="2019-11-24T22:45:58Z" finished-at="2019-11-24T22:46:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_03_LoginUsernamePasswordObjectAvailabilityCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_03_LoginUsernamePasswordObjectAvailabilityCheck" duration-ms="178" started-at="2019-11-24T22:46:02Z" finished-at="2019-11-24T22:46:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_03_LoginUsernamePasswordObjectAvailabilityCheck -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="921" started-at="2019-11-24T22:46:03Z" finished-at="2019-11-24T22:46:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_03_LoginUsernamePasswordObjectAvailabilityCheck status=SUCCESS method=NuvasiveLoginPageTests.tc_03_LoginUsernamePasswordObjectAvailabilityCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="4150" started-at="2019-11-24T22:46:04Z" finished-at="2019-11-24T22:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_04_LoginSubmitButtonAvailabilityCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_04_LoginSubmitButtonAvailabilityCheck" duration-ms="224" started-at="2019-11-24T22:46:08Z" finished-at="2019-11-24T22:46:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_04_LoginSubmitButtonAvailabilityCheck -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="911" started-at="2019-11-24T22:46:08Z" finished-at="2019-11-24T22:46:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_04_LoginSubmitButtonAvailabilityCheck status=SUCCESS method=NuvasiveLoginPageTests.tc_04_LoginSubmitButtonAvailabilityCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="3801" started-at="2019-11-24T22:46:09Z" finished-at="2019-11-24T22:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_05_ClickLoginLinkFunctionality()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_05_ClickLoginLinkFunctionality" duration-ms="785" started-at="2019-11-24T22:46:13Z" finished-at="2019-11-24T22:46:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_05_ClickLoginLinkFunctionality -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="941" started-at="2019-11-24T22:46:13Z" finished-at="2019-11-24T22:46:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_05_ClickLoginLinkFunctionality status=SUCCESS method=NuvasiveLoginPageTests.tc_05_ClickLoginLinkFunctionality()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="3937" started-at="2019-11-24T22:46:14Z" finished-at="2019-11-24T22:46:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_06_LoginProvisionWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_06_LoginProvisionWithValidCredentials" duration-ms="628" started-at="2019-11-24T22:46:18Z" data-provider="LoginInput" finished-at="2019-11-24T22:46:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_06_LoginProvisionWithValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="936" started-at="2019-11-24T22:46:19Z" finished-at="2019-11-24T22:46:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_06_LoginProvisionWithValidCredentials status=SUCCESS method=NuvasiveLoginPageTests.tc_06_LoginProvisionWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="3646" started-at="2019-11-24T22:46:20Z" finished-at="2019-11-24T22:46:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_06_LoginProvisionWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_06_LoginProvisionWithValidCredentials" duration-ms="822" started-at="2019-11-24T22:46:24Z" data-provider="LoginInput" finished-at="2019-11-24T22:46:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_06_LoginProvisionWithValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="931" started-at="2019-11-24T22:46:24Z" finished-at="2019-11-24T22:46:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_06_LoginProvisionWithValidCredentials status=SUCCESS method=NuvasiveLoginPageTests.tc_06_LoginProvisionWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="3757" started-at="2019-11-24T22:46:25Z" finished-at="2019-11-24T22:46:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_06_LoginProvisionWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_06_LoginProvisionWithValidCredentials" duration-ms="616" started-at="2019-11-24T22:46:29Z" data-provider="LoginInput" finished-at="2019-11-24T22:46:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Password3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_06_LoginProvisionWithValidCredentials -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="904" started-at="2019-11-24T22:46:30Z" finished-at="2019-11-24T22:46:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_06_LoginProvisionWithValidCredentials status=SUCCESS method=NuvasiveLoginPageTests.tc_06_LoginProvisionWithValidCredentials(java.lang.String, java.lang.String)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="setUp" is-config="true" duration-ms="3785" started-at="2019-11-24T22:46:31Z" finished-at="2019-11-24T22:46:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_07_UserNamePasswordFieldTypeCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="tc_07_UserNamePasswordFieldTypeCheck" duration-ms="558" started-at="2019-11-24T22:46:34Z" finished-at="2019-11-24T22:46:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_07_UserNamePasswordFieldTypeCheck -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23]" name="teardown" is-config="true" duration-ms="922" started-at="2019-11-24T22:46:35Z" finished-at="2019-11-24T22:46:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_07_UserNamePasswordFieldTypeCheck status=SUCCESS method=NuvasiveLoginPageTests.tc_07_UserNamePasswordFieldTypeCheck()[pri:0, instance:com.org.tests.NuvasiveLoginPageTests@3327bd23] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.org.tests.NuvasiveLoginPageTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
