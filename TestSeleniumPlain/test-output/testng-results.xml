@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12451" started-at="2020-02-01T00:41:45 CET" finished-at="2020-02-01T00:41:57 CET">
+  <suite name="Default suite" duration-ms="11956" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12451" started-at="2020-02-01T00:41:45 CET" finished-at="2020-02-01T00:41:57 CET">
-      <class name="WebElemetAndLocators.WebTableExcercise">
-        <test-method status="PASS" signature="WebTableExcercise()[pri:0, instance:WebElemetAndLocators.WebTableExcercise@1c3a4799]" name="WebTableExcercise" duration-ms="7475" started-at="2020-02-01T00:41:45 CET" finished-at="2020-02-01T00:41:52 CET">
+    <test name="Default test" duration-ms="11956" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
+      <class name="WebElemetAndLocators.Alerts">
+        <test-method status="PASS" signature="AlertsExamples()[pri:0, instance:WebElemetAndLocators.Alerts@1c3a4799]" name="AlertsExamples" duration-ms="11868" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WebTableExcercise -->
-        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:WebElemetAndLocators.WebTableExcercise@1c3a4799]" name="WebTableExcercise1" duration-ms="4893" started-at="2020-02-01T00:41:52 CET" finished-at="2020-02-01T00:41:57 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebTableExcercise1 -->
-      </class> <!-- WebElemetAndLocators.WebTableExcercise -->
+        </test-method> <!-- AlertsExamples -->
+      </class> <!-- WebElemetAndLocators.Alerts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
