@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class AppTest {
-	
 	@BeforeClass
 	public void RunBeforeClass(){
 		System.out.println("This would run before all tcs");
@@ -18,12 +17,10 @@ public class AppTest {
 		System.out.println("Open Browser");
 	}
 	
-	
 	@Test
 	public void TC1() {
 		System.out.println("This is a first testcase");
 	}
-	
 
 	@Test
 	public void TC2() {
