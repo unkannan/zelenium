@@ -20,7 +20,7 @@
   </properties>
 
   <dependencies>
-   <dependency>
+    <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.0.0</version>
@@ -61,16 +61,16 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+			<suiteXmlFiles>
+ <!-- Need to pass testng.xml files as argument from command line -->
+	<suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+</suiteXmlFiles>
+		</configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
-          <configuration>
-						<suiteXmlFiles>
-                     <suiteXmlFile>${suiteXmlFile.xml}</suiteXmlFile>
-                  </suiteXmlFiles>
-
-					</configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
