@@ -30,7 +30,7 @@ public class AppTest
 	public void TestInitialize() {
 		//System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");
 		//WebDriver driver = new ChromeDriver();
-		driverManager =DriverManagerFactory.getManager(DriverType.CHROME);
+		driverManager =DriverManagerFactory.getManager(DriverType.FIREFOX);
 		driver=driverManager.getDriver();
 	}
     @Test
