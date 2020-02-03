@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19650" started-at="2020-01-31T17:39:44 CET" finished-at="2020-01-31T17:40:04 CET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19650" started-at="2020-01-31T17:39:44 CET" finished-at="2020-01-31T17:40:04 CET">
+      <class name="ExecutingTestngFromCmdLine.UsingCommandLineArgs.AppTest">
+        <test-method status="PASS" signature="DropDownWithoutSelectClass_WithBootStrapProgramTest()[pri:0, instance:ExecutingTestngFromCmdLine.UsingCommandLineArgs.AppTest@3dd4520b]" name="DropDownWithoutSelectClass_WithBootStrapProgramTest" duration-ms="8187" started-at="2020-01-31T17:39:44 CET" finished-at="2020-01-31T17:39:52 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DropDownWithoutSelectClass_WithBootStrapProgramTest -->
+        <test-method status="PASS" signature="GooglePage()[pri:0, instance:ExecutingTestngFromCmdLine.UsingCommandLineArgs.AppTest@3dd4520b]" name="GooglePage" duration-ms="6985" started-at="2020-01-31T17:39:52 CET" finished-at="2020-01-31T17:39:59 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GooglePage -->
+        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:ExecutingTestngFromCmdLine.UsingCommandLineArgs.AppTest@3dd4520b]" name="WebTableExcercise1" duration-ms="4444" started-at="2020-01-31T17:39:59 CET" finished-at="2020-01-31T17:40:04 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebTableExcercise1 -->
+      </class> <!-- ExecutingTestngFromCmdLine.UsingCommandLineArgs.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

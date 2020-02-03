@@ -20,11 +20,18 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-    </dependency>
+   <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.0.0</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.0.0-alpha-1</version>
+</dependency>
   </dependencies>
 
   <build>
@@ -58,6 +65,12 @@
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
           <version>3.0.2</version>
+          <configuration>
+						<suiteXmlFiles>
+                     <suiteXmlFile>${suiteXmlFile.xml}</suiteXmlFile>
+                  </suiteXmlFiles>
+
+					</configuration>
         </plugin>
         <plugin>
           <artifactId>maven-install-plugin</artifactId>
