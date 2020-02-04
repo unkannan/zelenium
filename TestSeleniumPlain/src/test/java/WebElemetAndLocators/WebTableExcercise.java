@@ -32,7 +32,7 @@ public class WebTableExcercise {
 				for(int i=0;i<count;i++) {
 					String svalue=list.get(i).toString();
 				}
-					
+				driver.close();	
 		}
 		
 		@Test
