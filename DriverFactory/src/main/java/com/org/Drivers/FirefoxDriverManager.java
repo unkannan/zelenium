@@ -21,7 +21,7 @@ import org.openqa.selenium.remote.server.FirefoxDriverProvider;
 								.usingDriverExecutable(new File("drivers/geckodriver.exe"))
 								.usingAnyFreePort()
 								.build();
-		System.setProperty(GeckoDriverService.GECKO_DRIVER_EXE_PROPERTY, "drivers/geckodriver.exe");
+		//Builder().usingAnyFreePort().build()
 		fs.start();
 								}catch(Exception e) {
 								e.printStackTrace();
@@ -42,9 +42,8 @@ import org.openqa.selenium.remote.server.FirefoxDriverProvider;
 		DesiredCapabilities cap=DesiredCapabilities.firefox();
 		FirefoxOptions options = new FirefoxOptions();
 		options.addArguments("test-type");
-		options.addCapabilities(cap);
-		//cap.setCapability(FirefoxOptions.CAPABILITY, options);
-		 driver = new FirefoxDriver(options);
+		cap.setCapability(FirefoxOptions.CAPABILITY, options);
+		 driver = new FirefoxDriver(fs,cap);
 		
 	}
 
