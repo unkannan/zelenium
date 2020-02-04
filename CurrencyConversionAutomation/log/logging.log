@@ -909,3 +909,5 @@
 2020-01-31 15:41:34 INFO  CurrencyConverterPage:65 - # Source From Drop Down Selected INR
 2020-01-31 15:41:41 INFO  CurrencyConverterPage:74 - # Clicked on button: convert
 2020-01-31 15:41:41 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to Euro
+2020-02-05 00:47:11 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-05 00:47:11 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
