@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11956" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
+  <suite name="Suite" duration-ms="8806" started-at="2020-01-29T17:54:13 CET" finished-at="2020-01-29T17:54:22 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11956" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
-      <class name="WebElemetAndLocators.Alerts">
-        <test-method status="PASS" signature="AlertsExamples()[pri:0, instance:WebElemetAndLocators.Alerts@1c3a4799]" name="AlertsExamples" duration-ms="11868" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
+    <test name="Test" duration-ms="8806" started-at="2020-01-29T17:54:13 CET" finished-at="2020-01-29T17:54:22 CET">
+      <class name="WebElemetAndLocators.WebTableExcercise">
+        <test-method status="PASS" signature="WebTableExcercise()[pri:0, instance:WebElemetAndLocators.WebTableExcercise@711f39f9]" name="WebTableExcercise" duration-ms="4708" started-at="2020-01-29T17:54:13 CET" finished-at="2020-01-29T17:54:18 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AlertsExamples -->
-      </class> <!-- WebElemetAndLocators.Alerts -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- WebTableExcercise -->
+        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:WebElemetAndLocators.WebTableExcercise@711f39f9]" name="WebTableExcercise1" duration-ms="4056" started-at="2020-01-29T17:54:18 CET" finished-at="2020-01-29T17:54:22 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebTableExcercise1 -->
+      </class> <!-- WebElemetAndLocators.WebTableExcercise -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
