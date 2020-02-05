@@ -230,3 +230,24 @@
 2020-01-31 15:44:53 INFO  NuvasiveLoginPage:108 - # Login Page Credentials provisions
 2020-01-31 15:44:53 INFO  NuvasiveLoginPage:118 - # Login Page Username Type Check
 2020-01-31 15:44:53 INFO  NuvasiveLoginPage:121 - # Login Page Password Type Check
+2020-02-05 00:45:13 INFO  NuvasiveLoginPage:47 - # Login Page Welcome
+2020-02-05 00:45:13 INFO  NuvasiveLoginPage:57 - # Login Page To Our Site
+2020-02-05 00:45:19 INFO  NuvasiveLoginPage:64 - # Login Page Login
+2020-02-05 00:45:19 INFO  NuvasiveLoginPage:72 - # Login Page Character Count
+2020-02-05 00:45:25 INFO  NuvasiveLoginPage:79 - # Login Page UserName Field Availability Check
+2020-02-05 00:45:25 INFO  NuvasiveLoginPage:83 - # Login Page Password Field Availability Check
+2020-02-05 00:45:32 INFO  NuvasiveLoginPage:89 - # Login Page Submit Button Availability Check
+2020-02-05 00:45:32 INFO  NuvasiveLoginPage:96 - # Login Page Submit Button is Clickable Check
+2020-02-05 00:45:39 INFO  NuvasiveLoginPage:101 - # Login Page Login Link click
+2020-02-05 00:45:40 INFO  NuvasiveLoginPage:47 - # Login Page Welcome
+2020-02-05 00:45:47 INFO  NuvasiveLoginPage:108 - # Login Page Credentials provisions
+2020-02-05 00:45:47 INFO  NuvasiveLoginPage:113 - # Login Page Submit Button click
+2020-02-05 00:45:53 INFO  NuvasiveLoginPage:108 - # Login Page Credentials provisions
+2020-02-05 00:45:53 INFO  NuvasiveLoginPage:113 - # Login Page Submit Button click
+2020-02-05 00:46:00 INFO  NuvasiveLoginPage:108 - # Login Page Credentials provisions
+2020-02-05 00:46:00 INFO  NuvasiveLoginPage:113 - # Login Page Submit Button click
+2020-02-05 00:46:07 INFO  NuvasiveLoginPage:108 - # Login Page Credentials provisions
+2020-02-05 00:46:07 INFO  NuvasiveLoginPage:113 - # Login Page Submit Button click
+2020-02-05 00:46:13 INFO  NuvasiveLoginPage:108 - # Login Page Credentials provisions
+2020-02-05 00:46:13 INFO  NuvasiveLoginPage:118 - # Login Page Username Type Check
+2020-02-05 00:46:13 INFO  NuvasiveLoginPage:121 - # Login Page Password Type Check
