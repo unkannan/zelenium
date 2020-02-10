@@ -16,7 +16,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 		if(fs==null) {
 							try {				
 		fs=new GeckoDriverService.Builder()
-								.usingDriverExecutable(new File("drivers/geckodriver.exe"))
+								.usingDriverExecutable(new File("src/main/java/resources/drivers/geckodriver.exe"))
 								.usingAnyFreePort()
 								.build();
 		System.setProperty(GeckoDriverService.GECKO_DRIVER_EXE_PROPERTY, "drivers/geckodriver.exe");
