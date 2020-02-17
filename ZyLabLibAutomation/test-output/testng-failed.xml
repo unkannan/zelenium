@@ -5,7 +5,7 @@
     <classes>
       <class name="com.org.tests.ZyLabLibraryTests">
         <methods>
-          <include name="YearofPublishingEnterAlphaNumeric"/>
+          <include name="CancelButtonForTetingYearofPublishing"/>
           <include name="setUp"/>
           <include name="teardown"/>
         </methods>

@@ -355,8 +355,20 @@ public void NonmandatoryCheckAuthorField() {
 		}
 
 public void ModifyAllbookDetails() {
+	modifyTitle();
+	modifyAuthor();
+	modifyYearofPublishing();
+}
+public void modifyTitle() {
 	assertAndTypeID(TitleTextValueID, ZyLabAppMsg.TitleChange);
+}
+public void modifyAuthor() {
 	assertAndTypeID(AuthorTextValueID, ZyLabAppMsg.AuthorChange);
+}
+public void modifyPublisher() {
+	assertAndTypeID(PublisherTextValueID, ZyLabAppMsg.PublisherChange);
+}
+public void modifyYearofPublishing() {
 	assertAndTypeID(YearOfPublishingTextValueID, ZyLabAppMsg.YearOfPublishingChange);
 }
 
@@ -372,10 +384,6 @@ public void ValidateModifiedBookDetails() {
     actualValue = assertAndGetAttributeValueID(YearOfPublishingTextValueID);
 	logger.info("# Title Details changed:" + actualValue);
 	assertEquals(actualValue, ZyLabAppMsg.YearOfPublishingChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.YearOfPublishingChange);
-}
-
-public void PublisherTextModify() {
-	assertAndTypeID(PublisherTextValueID, ZyLabAppMsg.PublisherChange);
 }
 
 public void ValidateModifiedpublisherDetails() {

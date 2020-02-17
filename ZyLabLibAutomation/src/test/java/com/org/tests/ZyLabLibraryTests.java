@@ -129,7 +129,7 @@ public void ModifyBookDetails() {
 public void ModifyPublisherBookDetails() {
 	preSteps();
 	lib_page.BookSelectGeekLove();
-	lib_page.PublisherTextModify();
+	lib_page.modifyPublisher();
 	lib_page.clickSave();
 	lib_page.BookSelectdesertSolitaire();
 	lib_page.BookSelectGeekLove();
@@ -144,14 +144,23 @@ public void LargeCharsEntryBookDetailsCheck() {
 	lib_page.clickSave();
 }
 
-@Test
+//@Test
 public void CancelButtonFunctionalityCheck() {
 	preSteps();
 	lib_page.BookSelectGeekLove();
-	lib_page.ModifyAllbookDetails();
+	lib_page.modifyTitle();
+	lib_page.modifyAuthor();
+	lib_page.modifyPublisher();
 	lib_page.clickCancel();
-	lib_page.AlertShownYearRequired();
-	
+	lib_page.VerifyBookDetailsTextCheck();
+}
+@Test
+public void CancelButtonForTetingYearofPublishing() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	lib_page.modifyYearofPublishing();
+	lib_page.clickCancel();
+	lib_page.VerifyYearOfPublishingText();
 }
 
 //@Test
