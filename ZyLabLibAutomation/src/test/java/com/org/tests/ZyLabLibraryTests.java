@@ -82,11 +82,21 @@ public void BookDetailsLabelsDisplayCheck() {
 	lib_page.BookSelectGeekLove();
 	lib_page.VerifyBookDetailsLabelCheck();
 }
-@Test//Title,Author,publisher,year of publishing is shown
-public void BookDetailsTextBoxDetailDisplay() {
+
+//@Test//Title,Author,publisher,year of publishing is shown
+public void BookDetailsTextValuesCheck() throws InterruptedException {
 	preSteps();
 	lib_page.BookSelectGeekLove();
 	lib_page.VerifyBookDetailsTextCheck();
+	//lib_page.mandatoryCheck();
+}
+
+@Test
+public void ButtonsAvailabilityCheck() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	//lib_page.ButtonAvailableCheck();
+	lib_page.ButtonInitialDisableCheck();
 }
 
 	private void preSteps() {

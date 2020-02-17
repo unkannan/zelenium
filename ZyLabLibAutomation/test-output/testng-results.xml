@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7873" started-at="2020-02-16T00:56:28Z" finished-at="2020-02-16T00:56:36Z">
+  <suite name="Default suite" duration-ms="10343" started-at="2020-02-17T00:02:40Z" finished-at="2020-02-17T00:02:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7873" started-at="2020-02-16T00:56:28Z" finished-at="2020-02-16T00:56:36Z">
+    <test name="Default test" duration-ms="10343" started-at="2020-02-17T00:02:40Z" finished-at="2020-02-17T00:02:50Z">
       <class name="com.org.tests.ZyLabLibraryTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="setUp" is-config="true" duration-ms="6499" started-at="2020-02-16T00:56:28Z" finished-at="2020-02-16T00:56:34Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="setUp" is-config="true" duration-ms="8443" started-at="2020-02-17T00:02:40Z" finished-at="2020-02-17T00:02:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="BookDetailsTextBoxDetailDisplay()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="BookDetailsTextBoxDetailDisplay" duration-ms="415" started-at="2020-02-16T00:56:34Z" finished-at="2020-02-16T00:56:35Z">
+        <test-method status="PASS" signature="ButtonsAvailabilityCheck()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="ButtonsAvailabilityCheck" duration-ms="720" started-at="2020-02-17T00:02:48Z" finished-at="2020-02-17T00:02:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BookDetailsTextBoxDetailDisplay -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="teardown" is-config="true" duration-ms="928" started-at="2020-02-16T00:56:35Z" finished-at="2020-02-16T00:56:36Z">
+        </test-method> <!-- ButtonsAvailabilityCheck -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="teardown" is-config="true" duration-ms="1126" started-at="2020-02-17T00:02:49Z" finished-at="2020-02-17T00:02:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=BookDetailsTextBoxDetailDisplay status=SUCCESS method=ZyLabLibraryTests.BookDetailsTextBoxDetailDisplay()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92] output={null}]]]>
+                <![CDATA[[TestResult name=ButtonsAvailabilityCheck status=SUCCESS method=ZyLabLibraryTests.ButtonsAvailabilityCheck()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92] output={null}]]]>
               </value>
             </param>
           </params>

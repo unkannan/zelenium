@@ -954,3 +954,44 @@
 2020-02-16 00:35:20 INFO  LibraryPage:128 - # Books List for Invalid Search0
 2020-02-16 00:36:38 INFO  LibraryPage:129 - # Books List for Invalid Search 0
 2020-02-16 00:37:17 INFO  LibraryPage:129 - # Books List for Invalid Search 1
+2020-02-16 21:10:01 INFO  LibraryPage:151 - # Book Details Title geek love
+2020-02-16 21:10:41 INFO  LibraryPage:112 - # Books List has the Book Namedesert solitaire
+2020-02-16 21:12:11 INFO  LibraryPage:151 - # Book Details Title geek love
+2020-02-16 21:12:19 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:13:29 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:15:05 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:16:13 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:19:01 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:19:48 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:21:32 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:23:09 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:23:14 INFO  LibraryPage:123 - # Books List has the Book Name geek love
+2020-02-16 21:23:57 INFO  LibraryPage:112 - # Books List has the Book Name desert solitaire
+2020-02-16 21:24:03 INFO  LibraryPage:123 - # Books List has the Book Name geek love
+2020-02-16 23:31:25 INFO  LibraryPage:163 - # Book Details Title geek love
+2020-02-16 23:31:25 INFO  LibraryPage:172 - # Book Details Title Title
+2020-02-16 23:43:20 INFO  LibraryPage:163 - # Book Details Title geek love
+2020-02-16 23:43:20 INFO  LibraryPage:172 - # Book Details Title Title
+2020-02-16 23:46:51 INFO  LibraryPage:164 - # Book Details Title geek love
+2020-02-16 23:46:51 INFO  LibraryPage:173 - # Book Details Title Title
+2020-02-16 23:46:51 INFO  LibraryPage:182 - # Book Details Title Author
+2020-02-16 23:46:51 INFO  LibraryPage:191 - # Book Details Title Publisher
+2020-02-16 23:46:51 INFO  LibraryPage:200 - # Book Details Title Year of publishing
+2020-02-17 00:09:33 INFO  LibraryPage:209 - # Clicked on Link: //mat-list-item[3]/div[1]/div[2]/a[1]
+2020-02-17 00:09:33 INFO  LibraryPage:233 - # Book Details Title geek love
+2020-02-17 00:19:47 INFO  LibraryPage:212 - # Clicked on Link: Geek Love List Book Link
+2020-02-17 00:19:48 INFO  LibraryPage:239 - # Book Details Title geek love
+2020-02-17 00:19:48 INFO  LibraryPage:246 - # Book Details Title 2
+2020-02-17 00:19:48 INFO  LibraryPage:253 - # Book Details Title Constable & Co Ltd
+2020-02-17 00:19:48 INFO  LibraryPage:260 - # Book Details Title 1942
+2020-02-17 00:37:19 INFO  LibraryPage:211 - # Clicked on Link: Geek Love in Book List
+2020-02-17 00:37:19 INFO  LibraryPage:267 - # Book Details Title SAVE
+2020-02-17 00:39:20 INFO  LibraryPage:211 - # Clicked on Link: Geek Love in Book List
+2020-02-17 00:39:53 INFO  LibraryPage:267 - # Save Button Name Display SAVE
+2020-02-17 00:40:55 INFO  LibraryPage:211 - # Clicked on Link: Geek Love in Book List
+2020-02-17 00:40:55 INFO  LibraryPage:267 - # Save Button Name Display SAVE
+2020-02-17 00:40:55 INFO  LibraryPage:274 - # Book Details Title CANCEL
+2020-02-17 01:01:36 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List
+2020-02-17 01:01:36 INFO  LibraryPage:281 - # Save Button Name Display SAVE
+2020-02-17 01:01:36 INFO  LibraryPage:288 - # Book Details Title CANCEL
+2020-02-17 01:02:49 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List

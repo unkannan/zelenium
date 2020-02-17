@@ -139,6 +139,12 @@ public abstract class UIOperation {
             return false;
         }
     }
+    
+    protected String assertAndGetAttributeValueID(String ID) {
+    	assertElementPresentById(ID);
+        return driver.findElement(By.id(ID)).getAttribute("value");
+    }
+    
     /**
      * This function is to assert and get value by attribute.
      
@@ -242,4 +248,10 @@ public abstract class UIOperation {
         return select.getFirstSelectedOption().getAttribute(attribute);
     }
 
+    protected boolean isElementEnable(String xpath) {
+    	waitForElement(xpath);
+        if(driver.findElement(By.xpath(xpath)).isEnabled())
+        	return true;
+        	return false;
+    }
 }

@@ -25,9 +25,28 @@ public class LibraryPage extends UIOperation {
     private String NoBookSelectedTextXpath="//div[@class='no-book-selected ng-star-inserted']";
     private String FilterSearchTextXpath="//div[@class='mat-form-field-infix']/span//span";
     private String BooksListXpath="//mat-list-item";
-    private String GeekLoveBookXpath="//mat-list-item[3]/div[1]/div[2]/a[1]";
-    private String GeekLoveBookDeleteLinkXpath="//mat-list-item[3]//div[1]//mat-icon[2]";
+    
+    public String desertSolitaireBookListXpath="//mat-list-item[2]/div[1]/div[2]/a[1]";
+    private String desertSolitaireDeleteLinkXpath="//mat-list-item[2]//div[1]//mat-icon[2]";
+    
+    private String GeekLoveBookListXpath="//mat-list-item[3]/div[1]/div[2]/a[1]";
+    private String GeeKLoveBookTitleHeaderXpath="//mat-card-title[@class='mat-card-title']";
+    
+    private String BookTitleLabelXpath="//label[@id='mat-form-field-label-3']/span";
+    private String BookAuthorLabelXpath="//label[@id='mat-form-field-label-5']/span";
+    private String BookPublisherLabelXpath="//label[@id='mat-form-field-label-7']/span";
+    private String BookYearOfPublishingLabelXpath="//label[@id='mat-form-field-label-9']/span";
+    
+    private String TitleTextValueID="mat-input-1";
+    private String AuthorTextValueID="mat-input-2";
+    private String PublisherTextValueID="mat-input-3";
+    private String YearOfPublishingTextValueID="mat-input-4";
     private String FilterSearchTextBoxID="mat-input-0";
+    
+    private String SaveButtonSpanXpath="//button[@class='mat-button mat-primary']/span";
+    private String CancelButtonSpanXpath="//button[@class='mat-button']/span";
+    private String SaveButtonXpath="//button[@class='mat-button mat-primary']";
+    private String CancelButtonXpath="//button[@class='mat-button']";
     WebDriver driver;
 
     public LibraryPage(WebDriver driver) {
@@ -102,15 +121,21 @@ public class LibraryPage extends UIOperation {
     	}
     }
     public void DeleteBookCheck() {
-    	String actualText = assertAndGetText(GeekLoveBookXpath);
-        logger.info("# Books List has the Book Name" + actualText);
-        assertEquals(actualText, ZyLabAppMsg.GeekLoveBookNameLabel,
-            "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookNameLabel+"'.");
-        assertAndClick(GeekLoveBookDeleteLinkXpath);
-        RefreshPage();
-        actualText = assertAndGetText(GeekLoveBookXpath);
-        assertNotEquals(actualText, ZyLabAppMsg.GeekLoveBookNameLabel,
-                "Actual heading '" + actualText + "' Should not be same as expected heading '" + ZyLabAppMsg.GeekLoveBookNameLabel+"'.");
+    	String actualText = assertAndGetText(desertSolitaireBookListXpath);
+        logger.info("# Books List has the Book Name " + actualText);
+        assertEquals(actualText, ZyLabAppMsg.DesertSolitaireBookNameLabel,
+            "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel+"'.");
+        assertAndClick(desertSolitaireDeleteLinkXpath);
+        try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        actualText = assertAndGetText(desertSolitaireBookListXpath);
+        logger.info("# Books List has the Book Name " + actualText);
+        assertNotEquals(actualText, ZyLabAppMsg.DesertSolitaireBookNameLabel,
+                "Actual heading '" + actualText + "' Should not be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel+"'.");
         
     }
     public void SearchBooksUsingFilters() {
@@ -134,33 +159,149 @@ public class LibraryPage extends UIOperation {
     }
     
     public void VerifyBookDetailsLabelCheck() {
-    	VerifyBookNameDisplayDetailsCheck();
-    	verifyBooksTitleLabel();
-    	verifyBooksAuthorLabel();
-    	verifyBooksPublisherLabel();
-    	verifyBooksYearofPublishingLabel();
+    	VerifyBookNameHeaderDisplay();
+    	VerifyBooksTitleLabel();
+    	VerifyBooksAuthorLabel();
+    	VerifyBooksPublisherLabel();
+    	VerifyBooksYearofPublishingLabel();
     }
-    public void VerifyBookNameDisplayDetailsCheck() {
-System.out.println(driver.findElement(By.xpath("//mat-card-title[@class='mat-card-title']")).getText());
-    	
+    public void VerifyBookNameHeaderDisplay() {
+    	  waitForElement(GeeKLoveBookTitleHeaderXpath);
+          String actualHeading = assertAndGetText(GeeKLoveBookTitleHeaderXpath);
+          logger.info("# Book Details Title " + actualHeading);
+          assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookNameLabel,
+              "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookNameLabel+"'.");
     }
-    public void verifyBooksTitleLabel() {
-    	System.out.println(driver.findElement(By.xpath("//label[@id='mat-form-field-label-3']/span")).getText());
+    public void VerifyBooksTitleLabel() {
+    	 waitForElement(BookTitleLabelXpath);
+         String actualHeading = assertAndGetText(BookTitleLabelXpath);
+         logger.info("# Book Details Title " + actualHeading);
+         assertEquals(actualHeading, ZyLabAppMsg.BookDetailsTitleLabel,
+             "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsTitleLabel+"'.");
+   	
+    	//System.out.println(driver.findElement(By.xpath("//label[@id='mat-form-field-label-3']/span")).getText());
     }
-    public void verifyBooksAuthorLabel() {
-    	System.out.println(driver.findElement(By.xpath("//label[@id='mat-form-field-label-5']/span")).getText());
+    public void VerifyBooksAuthorLabel() {
+    	 waitForElement(BookAuthorLabelXpath);
+         String actualHeading = assertAndGetText(BookAuthorLabelXpath);
+         logger.info("# Book Details Title " + actualHeading);
+         assertEquals(actualHeading, ZyLabAppMsg.BookDetailsAuthorLabel,
+             "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsAuthorLabel+"'.");
+   	
+         //System.out.println(driver.findElement(By.xpath("//label[@id='mat-form-field-label-5']/span")).getText());
     }
-    public void verifyBooksPublisherLabel() {
-    	System.out.println(driver.findElement(By.xpath("//label[@id='mat-form-field-label-7']/span")).getText());
+    public void VerifyBooksPublisherLabel() {
+    	waitForElement(BookPublisherLabelXpath);
+        String actualHeading = assertAndGetText(BookPublisherLabelXpath);
+        logger.info("# Book Details Title " + actualHeading);
+        assertEquals(actualHeading, ZyLabAppMsg.BookDetailsPublisherLabel,
+            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsPublisherLabel+"'.");
+  	
+    //	System.out.println(driver.findElement(By.xpath("//label[@id='mat-form-field-label-7']/span")).getText());
     }
-    public void verifyBooksYearofPublishingLabel() {
-    	System.out.println(driver.findElement(By.xpath("//label[@id='mat-form-field-label-9']/span")).getText());
+    public void VerifyBooksYearofPublishingLabel() {
+    	waitForElement(BookYearOfPublishingLabelXpath);
+        String actualHeading = assertAndGetText(BookYearOfPublishingLabelXpath);
+        logger.info("# Book Details Title " + actualHeading);
+        assertEquals(actualHeading, ZyLabAppMsg.BookDetailsYearOfPublishingLabel,
+            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsYearOfPublishingLabel+"'.");
     }
-public void BookSelectGeekLove() {
-	driver.findElement(By.xpath(GeekLoveBookXpath)).click();
+
+
+ public void BookSelectGeekLove() {
+	 assertAndClick(GeekLoveBookListXpath);
+	 logger.info("# Clicked on Link: " + "Geek Love in Book List");
 }
 public void VerifyBookDetailsTextCheck() {
-System.out.println(driver.findElement(By.id("mat-input-1")).getText());
-System.out.println(driver.findElement(By.xpath("//input[@id='mat-input-1']")).getText());
+	VerifyTitleText();
+	VerifyAuthorText();
+	VerifyPublisherText();
+	VerifyYearOfPublishingText();
+
+/*//mor than 100 chars
+driver.findElement(By.id("mat-input-1")).sendKeys(" geek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeeklljljljll");
+driver.findElement(By.id("mat-input-2")).sendKeys(" geek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeeklljljljll");
+driver.findElement(By.id("mat-input-3")).sendKeys(" geek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeeklljljljll");
+//Can enter future dates in yeah of publishing
+driver.findElement(By.id("mat-input-4")).sendKeys("2035");
+driver.findElement(By.id("mat-input-1")).click();*/
 }
+public void VerifyTitleText() {
+	waitForElementID(TitleTextValueID);
+    String actualHeading = assertAndGetAttributeValueID(TitleTextValueID);
+    logger.info("# Book Details Title " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookNameLabel,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookNameLabel+"'.");
+}
+public void VerifyAuthorText() {
+	waitForElementID(AuthorTextValueID);
+    String actualHeading = assertAndGetAttributeValueID(AuthorTextValueID);
+    logger.info("# Book Details Title " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookAuthorText,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookAuthorText+"'.");
+}
+public void VerifyPublisherText() {
+	waitForElementID(PublisherTextValueID);
+    String actualHeading = assertAndGetAttributeValueID(PublisherTextValueID);
+    logger.info("# Book Details Title " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookPublisherText,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookPublisherText+"'.");
+}
+public void VerifyYearOfPublishingText() {
+	waitForElementID(YearOfPublishingTextValueID);
+    String actualHeading = assertAndGetAttributeValueID(YearOfPublishingTextValueID);
+    logger.info("# Book Details Title " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookYearOfPublishingText,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookYearOfPublishingText+"'.");
+}
+
+public void ButtonAvailableCheck() {
+	SaveButtonAvailabilityCheck();
+	CancelButtonAvailabilityCheck();
+}
+public void ButtonInitialDisableCheck() {
+	SaveButtonInitialDisableCheck();
+	CancelButtonInitialDisableCheck();
+}
+private void CancelButtonInitialDisableCheck() {
+	logger.info("# Cancel Button Enable Check ");
+	assertFalse(isElementEnable(CancelButtonXpath));
+	logger.info("# Cancel Button Enable : Disabled" );
+}
+
+private void SaveButtonInitialDisableCheck() {
+	logger.info("# Save Button Enable Check ");
+	assertFalse(isElementEnable(SaveButtonXpath));
+	logger.info("# Save Button Enable : Disabled");
+}
+
+public void SaveButtonAvailabilityCheck() {
+	waitForElement(SaveButtonSpanXpath);
+    String actualHeading = assertAndGetText(SaveButtonSpanXpath);
+    logger.info("# Save Button Name Display " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.Save,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.Save);
+}
+public void CancelButtonAvailabilityCheck() {
+	waitForElement(CancelButtonSpanXpath);
+    String actualHeading = assertAndGetText(CancelButtonSpanXpath);
+    logger.info("# Cancel Button Name Display " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.Cancel,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.Cancel);
+}
+//THe fields mandatory check
+public void mandatoryCheck() {
+	driver.findElement(By.id("mat-input-1")).clear();
+	driver.findElement(By.id("mat-input-1")).sendKeys("");
+	//driver.findElement(By.id("mat-input-2")).clear();
+	//driver.findElement(By.id("mat-input-3")).clear();
+	//driver.findElement(By.id("mat-input-4")).clear();
+	
+	System.out.println(driver.findElement(By.xpath("//mat-error[@id='mat-error-0']")).getText());
+	System.out.println(driver.findElement(By.xpath("//mat-error[@id='mat-error-1']")).getText());
+	System.out.println(driver.findElement(By.xpath("//mat-error[@id='mat-error-1']")).getText());
+	
+	
+}
+
 }

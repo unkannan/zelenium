@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="teardown"/>
-          <include name="BookDetailsTextBoxDetailDisplay"/>
+          <include name="ButtonsAvailabilityCheck"/>
         </methods>
       </class> <!-- com.org.tests.ZyLabLibraryTests -->
     </classes>
