@@ -12,6 +12,7 @@ import com.org.enums.ZyLabAppMsg;
 import com.org.utility.UIOperation;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
  
@@ -32,6 +33,8 @@ public class LibraryPage extends UIOperation {
     private String GeekLoveBookListXpath="//mat-list-item[3]/div[1]/div[2]/a[1]";
     private String GeeKLoveBookTitleHeaderXpath="//mat-card-title[@class='mat-card-title']";
     
+    public String lolitaBookListXpath="//mat-list-item[4]/div[1]/div[2]/a[1]";
+    
     private String BookTitleLabelXpath="//label[@id='mat-form-field-label-3']/span";
     private String BookAuthorLabelXpath="//label[@id='mat-form-field-label-5']/span";
     private String BookPublisherLabelXpath="//label[@id='mat-form-field-label-7']/span";
@@ -47,6 +50,12 @@ public class LibraryPage extends UIOperation {
     private String CancelButtonSpanXpath="//button[@class='mat-button']/span";
     private String SaveButtonXpath="//button[@class='mat-button mat-primary']";
     private String CancelButtonXpath="//button[@class='mat-button']";
+    
+    private String TitleRequiredXpath="//mat-error[text()=' Title is ']";//"//mat-error[@id='mat-error-0']";
+    private String PublisherRequiredXpath="//mat-error[text()=' Publisher is ']";//"//mat-error[@id='mat-error-1']";
+    private String YearOfPublishingRequiredXpath="//mat-error[text()=' Year is ']";
+    private String KeysControlA="Keys.CONTROL,\"a\"";
+    private String KeysControlDelete="Keys.DELETE";
     WebDriver driver;
 
     public LibraryPage(WebDriver driver) {
@@ -212,6 +221,15 @@ public class LibraryPage extends UIOperation {
 	 assertAndClick(GeekLoveBookListXpath);
 	 logger.info("# Clicked on Link: " + "Geek Love in Book List");
 }
+
+ public void BookSelectLolita() {
+	 assertAndClick(lolitaBookListXpath);
+	 logger.info("# Clicked on Link: " + "Geek Love in Book List");
+ }
+ public void BookSelectdesertSolitaire() {
+	 assertAndClick(desertSolitaireBookListXpath);
+	 logger.info("# Book Selected: " + "desert Solitaire in Book List");
+}
 public void VerifyBookDetailsTextCheck() {
 	VerifyTitleText();
 	VerifyAuthorText();
@@ -264,9 +282,9 @@ public void ButtonInitialDisableCheck() {
 	CancelButtonInitialDisableCheck();
 }
 private void CancelButtonInitialDisableCheck() {
-	logger.info("# Cancel Button Enable Check ");
+	logger.info("# Cancel Button default behavior Check whether Enable or Disable: ");
 	assertFalse(isElementEnable(CancelButtonXpath));
-	logger.info("# Cancel Button Enable : Disabled" );
+	logger.info("# Cancel Button Behavior Check Shows : Disabled" );
 }
 
 private void SaveButtonInitialDisableCheck() {
@@ -289,19 +307,97 @@ public void CancelButtonAvailabilityCheck() {
     assertEquals(actualHeading, ZyLabAppMsg.Cancel,
         "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.Cancel);
 }
+public void clickSave() {
+	assertAndClick(SaveButtonXpath);
+}
+public void clickCancel() {
+	assertAndClick(CancelButtonXpath);
+}
+
 //THe fields mandatory check
 public void mandatoryCheck() {
-	driver.findElement(By.id("mat-input-1")).clear();
-	driver.findElement(By.id("mat-input-1")).sendKeys("");
-	//driver.findElement(By.id("mat-input-2")).clear();
-	//driver.findElement(By.id("mat-input-3")).clear();
-	//driver.findElement(By.id("mat-input-4")).clear();
+	DeleteTextInBookDetails();
+	MandatoryAlertsDisplayCheck();
+}
+
+public void DeleteTextInBookDetails() {
+	assertEnterControlADeleteKeys(TitleTextValueID);
+	assertEnterControlADeleteKeys(PublisherTextValueID);
+	assertEnterControlADeleteKeys(YearOfPublishingTextValueID);
+}
+public void MandatoryAlertsDisplayCheck() {	
+waitForElement(TitleRequiredXpath);
+    String actualHeading = assertAndGetText(TitleRequiredXpath);
+    logger.info("# Cancel Button Name Display " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.TitleRequired,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.TitleRequired);
+    
+    waitForElement(PublisherRequiredXpath);
+      actualHeading = assertAndGetText(PublisherRequiredXpath);
+    logger.info("# Cancel Button Name Display " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.PublisherRequired,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.PublisherRequired);
+    
+    waitForElement(YearOfPublishingRequiredXpath);
+      actualHeading = assertAndGetText(YearOfPublishingRequiredXpath);
+    logger.info("# Cancel Button Name Display " + actualHeading);
+    assertEquals(actualHeading, ZyLabAppMsg.yearRequired,
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.yearRequired);
+}
+ 
+public void NonmandatoryCheckAuthorField() {
+	assertEnterControlADeleteKeys(AuthorTextValueID);
+	 assertAndClick(SaveButtonXpath);
+	 String actualHeading = assertAndGetAttributeValueID(AuthorTextValueID);
+	    logger.info("# Author Details :" + actualHeading);
+	    assertEquals(actualHeading, ZyLabAppMsg.None,
+	        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.None+"'.");
+		}
+
+public void ModifyAllbookDetails() {
+	assertAndTypeID(TitleTextValueID, ZyLabAppMsg.TitleChange);
+	assertAndTypeID(AuthorTextValueID, ZyLabAppMsg.AuthorChange);
+	assertAndTypeID(YearOfPublishingTextValueID, ZyLabAppMsg.YearOfPublishingChange);
+}
+
+public void ValidateModifiedBookDetails() {
+	String actualValue = assertAndGetAttributeValueID(TitleTextValueID);
+	logger.info("# Title Details changed:" + actualValue);
+	assertEquals(actualValue, ZyLabAppMsg.TitleChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.TitleChange);
 	
-	System.out.println(driver.findElement(By.xpath("//mat-error[@id='mat-error-0']")).getText());
-	System.out.println(driver.findElement(By.xpath("//mat-error[@id='mat-error-1']")).getText());
-	System.out.println(driver.findElement(By.xpath("//mat-error[@id='mat-error-1']")).getText());
-	
-	
+	actualValue = assertAndGetAttributeValueID(AuthorTextValueID);
+	logger.info("# Title Details changed:" + actualValue);
+	assertEquals(actualValue, ZyLabAppMsg.AuthorChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.AuthorChange);
+	  
+    actualValue = assertAndGetAttributeValueID(YearOfPublishingTextValueID);
+	logger.info("# Title Details changed:" + actualValue);
+	assertEquals(actualValue, ZyLabAppMsg.YearOfPublishingChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.YearOfPublishingChange);
+}
+
+public void PublisherTextModify() {
+	assertAndTypeID(PublisherTextValueID, ZyLabAppMsg.PublisherChange);
+}
+
+public void ValidateModifiedpublisherDetails() {
+	String actualValue = assertAndGetAttributeValueID(PublisherTextValueID);
+	logger.info("# Title Details changed:" + actualValue);
+	assertEquals(actualValue, ZyLabAppMsg.PublisherChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.PublisherChange);
+}
+
+public void LargeCharactersEnterInBookDetaisl() {
+	assertAndTypeID(TitleTextValueID, ZyLabAppMsg.LargeCharsText);
+	assertAndTypeID(AuthorTextValueID, ZyLabAppMsg.LargeCharsText);
+	assertAndTypeID(PublisherTextValueID, ZyLabAppMsg.LargeCharsText);
+}
+public void EnterAlphaNumbericCharacInYearofPublishing() {
+	assertAndTypeID(YearOfPublishingTextValueID, ZyLabAppMsg.AlphaNumbericText);
+}
+public void AlertShownYearRequired() {
+	 waitForElement(YearOfPublishingRequiredXpath);
+     String AlertMessage = assertAndGetText(YearOfPublishingRequiredXpath);
+   logger.info("# Cancel Button Name Display " + AlertMessage);
+   assertEquals(AlertMessage, ZyLabAppMsg.yearRequired,
+       "Actual heading '" + AlertMessage + "' should be same as expected heading '" + ZyLabAppMsg.yearRequired);
 }
 
 }

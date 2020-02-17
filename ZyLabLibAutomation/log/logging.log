@@ -995,3 +995,174 @@
 2020-02-17 01:01:36 INFO  LibraryPage:281 - # Save Button Name Display SAVE
 2020-02-17 01:01:36 INFO  LibraryPage:288 - # Book Details Title CANCEL
 2020-02-17 01:02:49 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List
+2020-02-17 09:24:41 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List
+2020-02-17 09:24:41 INFO  LibraryPage:273 - # Save Button Enable Check 
+2020-02-17 09:24:41 INFO  LibraryPage:275 - # Save Button Enable : Disabled
+2020-02-17 09:24:41 INFO  LibraryPage:267 - # Cancel Button Enable Check 
+2020-02-17 09:24:41 INFO  LibraryPage:269 - # Cancel Button Enable : Disabled
+2020-02-17 09:27:17 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List
+2020-02-17 09:27:17 INFO  LibraryPage:273 - # Save Button Enable Check 
+2020-02-17 09:27:17 INFO  LibraryPage:275 - # Save Button Enable : Disabled
+2020-02-17 09:27:17 INFO  LibraryPage:267 - # Cancel Button Enable Check 
+2020-02-17 09:27:17 INFO  LibraryPage:269 - # Cancel Button Enable : Disabled
+2020-02-17 09:27:56 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List
+2020-02-17 09:27:56 INFO  LibraryPage:273 - # Save Button Enable Check 
+2020-02-17 09:27:56 INFO  LibraryPage:275 - # Save Button Enable : Disabled
+2020-02-17 09:27:56 INFO  LibraryPage:267 - # Cancel Button Enable Check 
+2020-02-17 09:27:56 INFO  LibraryPage:269 - # Cancel Button Enable : Disabled
+2020-02-17 09:28:10 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List
+2020-02-17 09:28:10 INFO  LibraryPage:273 - # Save Button Enable Check 
+2020-02-17 09:28:10 INFO  LibraryPage:275 - # Save Button Enable : Disabled
+2020-02-17 09:28:10 INFO  LibraryPage:267 - # Cancel Button Enable Check 
+2020-02-17 09:28:10 INFO  LibraryPage:269 - # Cancel Button Enable : Disabled
+2020-02-17 10:50:41 INFO  LibraryPage:213 - # Clicked on Link: Geek Love in Book List
+2020-02-17 10:54:30 INFO  LibraryPage:214 - # Clicked on Link: Geek Love in Book List
+2020-02-17 10:58:18 INFO  LibraryPage:214 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:00:08 INFO  LibraryPage:214 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:05:57 INFO  LibraryPage:214 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:07:00 INFO  LibraryPage:214 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:09:00 INFO  LibraryPage:214 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:11:01 INFO  LibraryPage:214 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:11:01 INFO  LibraryPage:305 - # Cancel Button Name Display Title is required
+2020-02-17 11:30:58 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:32:58 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:40:47 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:40:48 INFO  LibraryPage:311 - # Cancel Button Name Display 
+2020-02-17 11:41:44 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:41:44 INFO  LibraryPage:311 - # Cancel Button Name Display 
+2020-02-17 11:42:30 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:42:30 INFO  LibraryPage:311 - # Cancel Button Name Display Title is required
+2020-02-17 11:42:31 INFO  LibraryPage:320 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:42:31 INFO  LibraryPage:329 - # Cancel Button Name Display Year is required
+2020-02-17 11:42:56 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:42:56 INFO  LibraryPage:311 - # Cancel Button Name Display 
+2020-02-17 11:43:29 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:43:29 INFO  LibraryPage:311 - # Cancel Button Name Display Title is required
+2020-02-17 11:43:29 INFO  LibraryPage:320 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:43:29 INFO  LibraryPage:329 - # Cancel Button Name Display Year is required
+2020-02-17 11:43:52 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:43:52 INFO  LibraryPage:311 - # Cancel Button Name Display Title is required
+2020-02-17 11:43:52 INFO  LibraryPage:320 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:43:52 INFO  LibraryPage:329 - # Cancel Button Name Display Year is required
+2020-02-17 11:44:22 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:44:22 INFO  LibraryPage:311 - # Cancel Button Name Display 
+2020-02-17 11:44:56 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:44:57 INFO  LibraryPage:311 - # Cancel Button Name Display 
+2020-02-17 11:50:58 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:50:58 INFO  LibraryPage:311 - # Cancel Button Name Display Title is required
+2020-02-17 11:50:58 INFO  LibraryPage:320 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:50:58 INFO  LibraryPage:329 - # Cancel Button Name Display Year is required
+2020-02-17 11:51:22 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:51:23 INFO  LibraryPage:311 - # Cancel Button Name Display 
+2020-02-17 11:53:10 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:53:10 INFO  LibraryPage:311 - # Cancel Button Name Display 
+2020-02-17 11:54:54 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:54:54 INFO  LibraryPage:313 - # Cancel Button Name Display Title is required
+2020-02-17 11:54:54 INFO  LibraryPage:319 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:54:54 INFO  LibraryPage:325 - # Cancel Button Name Display Year is required
+2020-02-17 11:55:18 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:55:19 INFO  LibraryPage:313 - # Cancel Button Name Display Title is required
+2020-02-17 11:55:19 INFO  LibraryPage:319 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:55:19 INFO  LibraryPage:325 - # Cancel Button Name Display Year is required
+2020-02-17 11:55:42 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:55:42 INFO  LibraryPage:313 - # Cancel Button Name Display Title is required
+2020-02-17 11:55:42 INFO  LibraryPage:319 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:55:42 INFO  LibraryPage:325 - # Cancel Button Name Display Year is required
+2020-02-17 11:58:27 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 11:58:28 INFO  LibraryPage:313 - # Cancel Button Name Display Title is required
+2020-02-17 11:58:28 INFO  LibraryPage:319 - # Cancel Button Name Display Publisher is required
+2020-02-17 11:58:28 INFO  LibraryPage:325 - # Cancel Button Name Display Year is required
+2020-02-17 15:12:20 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:12:20 INFO  LibraryPage:313 - # Cancel Button Name Display Title is required
+2020-02-17 15:12:21 INFO  LibraryPage:319 - # Cancel Button Name Display Publisher is required
+2020-02-17 15:12:21 INFO  LibraryPage:325 - # Cancel Button Name Display Year is required
+2020-02-17 15:12:38 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:12:39 INFO  LibraryPage:334 - # Author Details :
+2020-02-17 15:22:09 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:30:49 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:30:50 INFO  LibraryPage:354 - # Title Details changed:TitleChange
+2020-02-17 15:30:50 INFO  LibraryPage:358 - # Title Details changed:AuthorChange
+2020-02-17 15:30:50 INFO  LibraryPage:362 - # Title Details changed:PublisherChange
+2020-02-17 15:30:50 INFO  LibraryPage:366 - # Title Details changed:2020
+2020-02-17 15:31:22 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:31:22 INFO  LibraryPage:354 - # Title Details changed:TitleChange
+2020-02-17 15:31:22 INFO  LibraryPage:358 - # Title Details changed:AuthorChange
+2020-02-17 15:31:22 INFO  LibraryPage:362 - # Title Details changed:PublisherChange
+2020-02-17 15:31:22 INFO  LibraryPage:366 - # Title Details changed:2020
+2020-02-17 15:32:46 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:32:47 INFO  LibraryPage:354 - # Title Details changed:TitleChange
+2020-02-17 15:32:47 INFO  LibraryPage:358 - # Title Details changed:AuthorChange
+2020-02-17 15:32:47 INFO  LibraryPage:362 - # Title Details changed:PublisherChange
+2020-02-17 15:32:47 INFO  LibraryPage:366 - # Title Details changed:2020
+2020-02-17 15:39:00 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:39:01 INFO  LibraryPage:225 - # Book Selected: desert Solitaire in Book List
+2020-02-17 15:39:01 INFO  LibraryPage:360 - # Title Details changed:desert solitaire
+2020-02-17 15:42:29 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:42:30 INFO  LibraryPage:358 - # Title Details changed:TitleChange
+2020-02-17 15:42:30 INFO  LibraryPage:362 - # Title Details changed:AuthorChange
+2020-02-17 15:42:30 INFO  LibraryPage:366 - # Title Details changed:PublisherChange
+2020-02-17 15:42:30 INFO  LibraryPage:370 - # Title Details changed:2020
+2020-02-17 15:43:14 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:43:15 INFO  LibraryPage:225 - # Book Selected: desert Solitaire in Book List
+2020-02-17 15:43:15 INFO  LibraryPage:358 - # Title Details changed:desert solitaire
+2020-02-17 15:43:31 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:43:32 INFO  LibraryPage:225 - # Book Selected: desert Solitaire in Book List
+2020-02-17 15:43:32 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:43:32 INFO  LibraryPage:358 - # Title Details changed:TitleChange
+2020-02-17 15:43:32 INFO  LibraryPage:362 - # Title Details changed:AuthorChange
+2020-02-17 15:43:32 INFO  LibraryPage:366 - # Title Details changed:Constable & Co Ltd
+2020-02-17 15:46:53 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:46:54 INFO  LibraryPage:225 - # Book Selected: desert Solitaire in Book List
+2020-02-17 15:46:54 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:46:54 INFO  LibraryPage:357 - # Title Details changed:TitleChange
+2020-02-17 15:46:54 INFO  LibraryPage:361 - # Title Details changed:AuthorChange
+2020-02-17 15:46:54 INFO  LibraryPage:365 - # Title Details changed:2020
+2020-02-17 15:46:58 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:46:59 INFO  LibraryPage:225 - # Book Selected: desert Solitaire in Book List
+2020-02-17 15:46:59 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 15:46:59 INFO  LibraryPage:375 - # Title Details changed:Constable & Co Ltd
+2020-02-17 16:00:33 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:01:11 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:05:20 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:06:56 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:10:01 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:10:01 INFO  LibraryPage:390 - # Cancel Button Name Display Year is required
+2020-02-17 16:11:49 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:11:49 INFO  LibraryPage:323 - # Cancel Button Name Display Year is required
+2020-02-17 16:11:53 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:11:54 INFO  LibraryPage:390 - # Cancel Button Name Display Year is required
+2020-02-17 16:13:56 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:15:45 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:17:07 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:18:41 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:18:42 INFO  LibraryPage:390 - # Cancel Button Name Display Year is required
+2020-02-17 16:19:54 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:21:28 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:22:06 INFO  LibraryPage:220 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:25:20 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:25:47 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:28:33 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:30:30 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:32:11 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:34:48 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:38:03 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:39:06 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:39:40 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 16:45:45 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:27:24 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:30:40 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:32:15 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:32:17 INFO  LibraryPage:329 - # Cancel Button Name Display Title is required
+2020-02-17 17:32:17 INFO  LibraryPage:335 - # Cancel Button Name Display Publisher is required
+2020-02-17 17:32:17 INFO  LibraryPage:341 - # Cancel Button Name Display Year is required
+2020-02-17 17:32:49 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:32:50 INFO  LibraryPage:329 - # Cancel Button Name Display Title is required
+2020-02-17 17:32:50 INFO  LibraryPage:335 - # Cancel Button Name Display Publisher is required
+2020-02-17 17:32:50 INFO  LibraryPage:341 - # Cancel Button Name Display Year is required
+2020-02-17 17:32:55 INFO  LibraryPage:222 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:37:04 INFO  LibraryPage:227 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:37:04 INFO  LibraryPage:329 - # Cancel Button Name Display Title is required
+2020-02-17 17:37:04 INFO  LibraryPage:335 - # Cancel Button Name Display Publisher is required
+2020-02-17 17:37:04 INFO  LibraryPage:341 - # Cancel Button Name Display Year is required
+2020-02-17 17:37:09 INFO  LibraryPage:222 - # Clicked on Link: Geek Love in Book List
+2020-02-17 17:37:09 INFO  LibraryPage:396 - # Cancel Button Name Display Year is required

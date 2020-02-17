@@ -20,4 +20,21 @@ public class ZyLabAppMsg {
 		public static String GeekLoveBookYearOfPublishingText="1942";
 		public static String Save="SAVE";
 		public static String Cancel="CANCEL";
+		
+		//MandatoryCheck Alerts
+		public static String TitleRequired="Title is required";
+		public static String PublisherRequired="Publisher is required";
+		public static String yearRequired="Year is required";
+		
+		public static String None="";
+		
+		//Book Detials modified Text
+		public static String TitleChange="TitleChange";
+		public static String AuthorChange="AuthorChange";
+		public static String PublisherChange="PublisherChange";
+		public static String YearOfPublishingChange="2020";
+		
+		//large 100 charac enter
+		public static String LargeCharsText="100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText";
+		public static String AlphaNumbericText="1234AlphaNumeric";
 }

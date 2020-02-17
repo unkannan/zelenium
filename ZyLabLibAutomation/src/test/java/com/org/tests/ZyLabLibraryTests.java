@@ -37,12 +37,12 @@ public void WhenNoBooksIsSelected() {
 	lib_page.NoBooksSelectedTextCheck();
 	}
 
-/*
+
 //@Test//Need to correct this one
 public void MenuLinkBooksClick() {
 	preSteps();
 	lib_page.ClickLinkBooksInMenu();
-}*/
+}
 
 //@Test
 public void FilterTextBoxCheck() {
@@ -91,15 +91,79 @@ public void BookDetailsTextValuesCheck() throws InterruptedException {
 	//lib_page.mandatoryCheck();
 }
 
-@Test
+//@Test
 public void ButtonsAvailabilityCheck() {
 	preSteps();
 	lib_page.BookSelectGeekLove();
-	//lib_page.ButtonAvailableCheck();
+	lib_page.ButtonAvailableCheck();
 	lib_page.ButtonInitialDisableCheck();
 }
 
-	private void preSteps() {
+//@Test
+public void BookDetailsMandatoryCheck() {
+	preSteps();
+	lib_page.BookSelectLolita();
+	lib_page.mandatoryCheck();
+}
+
+//@Test
+public void BookDetailsNonMandatoryFieldCheck() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	lib_page.NonmandatoryCheckAuthorField();
+}
+
+//@Test
+public void ModifyBookDetails() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	lib_page.ModifyAllbookDetails();
+	lib_page.clickSave();
+	lib_page.BookSelectdesertSolitaire();
+	lib_page.BookSelectGeekLove();
+	lib_page.ValidateModifiedBookDetails();
+}
+//@Test
+
+//@Test
+public void ModifyPublisherBookDetails() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	lib_page.PublisherTextModify();
+	lib_page.clickSave();
+	lib_page.BookSelectdesertSolitaire();
+	lib_page.BookSelectGeekLove();
+	lib_page.ValidateModifiedpublisherDetails();
+}
+
+//@Test
+public void LargeCharsEntryBookDetailsCheck() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	lib_page.LargeCharactersEnterInBookDetaisl();
+	lib_page.clickSave();
+}
+
+@Test
+public void CancelButtonFunctionalityCheck() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	lib_page.ModifyAllbookDetails();
+	lib_page.clickCancel();
+	lib_page.AlertShownYearRequired();
+	
+}
+
+//@Test
+public void YearofPublishingEnterAlphaNumeric() {
+	preSteps();
+	lib_page.BookSelectGeekLove();
+	lib_page.EnterAlphaNumbericCharacInYearofPublishing();
+	lib_page.clickSave();
+	lib_page.AlertShownYearRequired();
+	
+}
+private void preSteps() {
 		lib_page = new LibraryPage(driver);
 	}
 

@@ -5,9 +5,9 @@
     <classes>
       <class name="com.org.tests.ZyLabLibraryTests">
         <methods>
+          <include name="YearofPublishingEnterAlphaNumeric"/>
           <include name="setUp"/>
           <include name="teardown"/>
-          <include name="ButtonsAvailabilityCheck"/>
         </methods>
       </class> <!-- com.org.tests.ZyLabLibraryTests -->
     </classes>

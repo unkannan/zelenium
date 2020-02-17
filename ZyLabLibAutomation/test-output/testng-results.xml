@@ -1,25 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10343" started-at="2020-02-17T00:02:40Z" finished-at="2020-02-17T00:02:50Z">
+  <suite name="Default suite" duration-ms="10606" started-at="2020-02-17T16:36:58Z" finished-at="2020-02-17T16:37:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10343" started-at="2020-02-17T00:02:40Z" finished-at="2020-02-17T00:02:50Z">
+    <test name="Default test" duration-ms="10606" started-at="2020-02-17T16:36:58Z" finished-at="2020-02-17T16:37:09Z">
       <class name="com.org.tests.ZyLabLibraryTests">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="setUp" is-config="true" duration-ms="8443" started-at="2020-02-17T00:02:40Z" finished-at="2020-02-17T00:02:48Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7]" name="setUp" is-config="true" duration-ms="4845" started-at="2020-02-17T16:36:58Z" finished-at="2020-02-17T16:37:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ButtonsAvailabilityCheck()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="ButtonsAvailabilityCheck" duration-ms="720" started-at="2020-02-17T00:02:48Z" finished-at="2020-02-17T00:02:49Z">
+        <test-method status="PASS" signature="BookDetailsMandatoryCheck()[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7]" name="BookDetailsMandatoryCheck" duration-ms="994" started-at="2020-02-17T16:37:03Z" finished-at="2020-02-17T16:37:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ButtonsAvailabilityCheck -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92]" name="teardown" is-config="true" duration-ms="1126" started-at="2020-02-17T00:02:49Z" finished-at="2020-02-17T00:02:50Z">
+        </test-method> <!-- BookDetailsMandatoryCheck -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7]" name="teardown" is-config="true" duration-ms="2" started-at="2020-02-17T16:37:04Z" finished-at="2020-02-17T16:37:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ButtonsAvailabilityCheck status=SUCCESS method=ZyLabLibraryTests.ButtonsAvailabilityCheck()[pri:0, instance:com.org.tests.ZyLabLibraryTests@21213b92] output={null}]]]>
+                <![CDATA[[TestResult name=BookDetailsMandatoryCheck status=SUCCESS method=ZyLabLibraryTests.BookDetailsMandatoryCheck()[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7]" name="setUp" is-config="true" duration-ms="3951" started-at="2020-02-17T16:37:04Z" finished-at="2020-02-17T16:37:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="YearofPublishingEnterAlphaNumeric()[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7]" name="YearofPublishingEnterAlphaNumeric" duration-ms="797" started-at="2020-02-17T16:37:08Z" finished-at="2020-02-17T16:37:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- YearofPublishingEnterAlphaNumeric -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7]" name="teardown" is-config="true" duration-ms="0" started-at="2020-02-17T16:37:09Z" finished-at="2020-02-17T16:37:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=YearofPublishingEnterAlphaNumeric status=SUCCESS method=ZyLabLibraryTests.YearofPublishingEnterAlphaNumeric()[pri:0, instance:com.org.tests.ZyLabLibraryTests@66480dd7] output={null}]]]>
               </value>
             </param>
           </params>

@@ -63,15 +63,23 @@ public abstract class UIOperation {
     }
 
     protected void assertAndTypeID(String ID, String txt) {
+    	assertElementPresentById(ID);
         driver.findElement(By.id(ID)).clear();
         driver.findElement(By.id(ID)).sendKeys(txt);
     }
-    /**
-     * This functions is to assert and type in element by id
-     */
-    protected void assertEnterText(String id, String txt) {
+     
+    
+    protected void assertEnterControlADeleteKeys(String id) {
         assertElementPresentById(id);
-        driver.findElement(By.id(id)).sendKeys(txt);
+        int len=driver.findElement(By.id(id)).getAttribute("value").length();
+        
+        for(int i=0;i<len;i++) {
+        	driver.findElement(By.id(id)).sendKeys(Keys.BACK_SPACE);
+        }
+        
+        driver.findElement(By.id(id)).sendKeys("");
+        driver.findElement(By.id(id)).sendKeys(Keys.CONTROL,"a",Keys.DELETE);
+        driver.findElement(By.id(id)).sendKeys(Keys.CONTROL,Keys.DELETE);
     }
 
     /**
@@ -80,6 +88,8 @@ public abstract class UIOperation {
     private void assertElementPresentById(String id) {
         assertTrue(isElementPresentById(id), "Element " + id + " not found.");
     }
+    
+    
 
     /**
      * This function is to verify weather element is present or not.
