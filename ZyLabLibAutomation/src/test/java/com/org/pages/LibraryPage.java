@@ -64,41 +64,41 @@ public class LibraryPage extends UIOperation {
     }
 
     /**
-     * This function is to assert Converter Main page heading.
+     * This function is to assert Library Main page heading.
      */
     public void LibraryPageHeaderCheck() {
         waitForElement(LibraryPagexpathHeading);
         String actualHeading = assertAndGetText(LibraryPagexpathHeading);
         System.out.println(actualHeading);
-        logger.info("# Library Page Header " + actualHeading);
+        logger.info("# Library Page Header :" + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.HEADING,
-            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.HEADING+ "'.");
+            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.HEADING);
     }
     /**
-     * This function is to assert Converter Main page heading.
+     * This function is to checks Menu links of Books
      */
     public void LibraryPageMenuLinkBooksCheck() {
         waitForElement(MenuBooksXpath);
         String actualHeading = assertAndGetText(MenuBooksXpath);
         System.out.println(actualHeading);
-        logger.info("# Library Page Menu " + actualHeading);
+        logger.info("# Library Page Menu Books Check: " + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.MenuBooksText,
-            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.MenuBooksText+ "'.");
+            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.MenuBooksText);
     }
     /**
-     * This function is to assert Converter Main page heading.
+     * This function is to checks Menu links Authors
      */
     public void LibraryPageMenuLinkAuthorsCheck() {
         waitForElement(MenuAuthorsXpath);
         String actualHeading = assertAndGetText(MenuAuthorsXpath);
         System.out.println(actualHeading);
-        logger.info("# Library Page Menu " + actualHeading);
+        logger.info("# Library Page Menu Authors Check: " + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.MenuAuthorsText,
-            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.MenuAuthorsText+"'.");
+            "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.MenuAuthorsText);
     }
 
     /**
-     * This function is to assert Converter Main page heading.
+     * This function is to assert No Books Selected text.
      */
     public void NoBooksSelectedTextCheck() {
         waitForElement(NoBookSelectedTextXpath);
@@ -108,46 +108,61 @@ public class LibraryPage extends UIOperation {
         assertEquals(actualText, ZyLabAppMsg.NoBookSelectedText,
             "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.NoBookSelectedText+"'.");
     }
-    
+     /*
     public void ClickLinkBooksInMenu() {
     	assertAndClick(MenuBooksXpath);
         logger.info("# Clicked on Link: " + MenuBooksXpath);
-    }
+    }*/
     
+    /**
+     * This function is to check the filter text box availability.
+     */
     public void FilterTextBoxAvailabilityCheck() {
     	//assertAndGetText(FilterSearchTextXpath);
     	waitForElement(FilterSearchTextXpath);
         String actualText = assertAndGetText(FilterSearchTextXpath);
-        logger.info("# Filter Search Text Box Contains text as " + actualText);
+        logger.info("# Filter Search Text Box Contains text as : " + actualText);
         assertEquals(actualText, ZyLabAppMsg.FilterSearchText,
             "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.FilterSearchText+"'.");
     }
+    /**
+     * This function displays all books.
+     */
     public void DisplayAllBooks() {
     	List list=driver.findElements(By.xpath(BooksListXpath));
     	for(int i=1;i<=list.size();i++) {
     		String actualText = assertAndGetText("//mat-list-item["+i+"]/div[1]/div[2]/a[1]");
-            logger.info("# Books Listed " + actualText);
+            logger.info("# Books List : " + actualText);
     	}
     }
+    /**
+     * This function Delete the selected books.
+     */
     public void DeleteBookCheck() {
-    	String actualText = assertAndGetText(desertSolitaireBookListXpath);
-        logger.info("# Books List has the Book Name " + actualText);
-        assertEquals(actualText, ZyLabAppMsg.DesertSolitaireBookNameLabel,
-            "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel+"'.");
+    	//String actualText = assertAndGetText(desertSolitaireBookListXpath);
+        //logger.info("# Books List has the Book Name " + actualText);
+        //assertEquals(actualText, ZyLabAppMsg.DesertSolitaireBookNameLabel,
+          //  "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel+"'.");
         assertAndClick(desertSolitaireDeleteLinkXpath);
+        logger.info("# Clicked the delete link for desert Solitaire Book ");
         try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        actualText = assertAndGetText(desertSolitaireBookListXpath);
+        String actualText = assertAndGetText(desertSolitaireBookListXpath);
         logger.info("# Books List has the Book Name " + actualText);
         assertNotEquals(actualText, ZyLabAppMsg.DesertSolitaireBookNameLabel,
-                "Actual heading '" + actualText + "' Should not be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel+"'.");
+                "Actual heading '" + actualText + "' Should not be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel);
         
     }
+    
+    /**
+     * This function searches the books with Filters.
+     */
     public void SearchBooksUsingFilters() {
+    	logger.info("# Searching book with Name in Filter Text box ");
     	assertAndTypeID(FilterSearchTextBoxID,ZyLabAppMsg.lolitaBoookNameLabel);
     	List list=driver.findElements(By.xpath(BooksListXpath));
     	for(int i=1;i<=list.size();i++) {
@@ -157,7 +172,12 @@ public class LibraryPage extends UIOperation {
     		            "Actual text '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.lolitaBoookNameLabel+"'.");
     	}
     }
+    
+    /**
+     * This function searches with invalid text with Filters.
+     */
     public void SearchBooksWithInvalidText() {
+    	logger.info("# Searching book with Invalid book Name in Filter Text box ");
     	assertAndTypeID(FilterSearchTextBoxID,ZyLabAppMsg.InvalidBookNotAvlblInList);
     	List list=driver.findElements(By.xpath(BooksListXpath));
     	 logger.info("# Books found in the List for Invalid Search " + list.size());
@@ -166,7 +186,9 @@ public class LibraryPage extends UIOperation {
     	else
     		assertTrue(true);
     }
-    
+    /**
+     * This function does Book Details Label checks for title, author etc
+     */
     public void VerifyBookDetailsLabelCheck() {
     	VerifyBookNameHeaderDisplay();
     	VerifyBooksTitleLabel();

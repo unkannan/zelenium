@@ -40,7 +40,7 @@ import com.org.enums.AppValidationConstantMessages;
             if (ITestResult.FAILURE == result.getStatus()) {
                 ScreenshotUtil.captureScreenshot(driver, result.getMethod().getMethodName());
             }
-           //driver.quit();
+           driver.quit();
         }
     }
  
