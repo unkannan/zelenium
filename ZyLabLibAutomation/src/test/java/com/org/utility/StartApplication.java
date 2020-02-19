@@ -61,8 +61,8 @@ import com.org.pages.LibraryPage;
         if (BROWSER.equalsIgnoreCase("iexplorer")) {
         	System.setProperty("webdriver.ie.driver","drivers/IEDriverServer.exe");
             return new InternetExplorerDriver();
-        }
-        return  null;
+        }*/
+    	if(browser.equalsIgnoreCase("firefox"))
     		return new FirefoxDriver();
     	if(browser.equalsIgnoreCase("chrome"))
     		return new ChromeDriver();
