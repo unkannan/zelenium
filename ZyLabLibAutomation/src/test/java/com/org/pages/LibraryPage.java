@@ -69,7 +69,6 @@ public class LibraryPage extends UIOperation {
     public void LibraryPageHeaderCheck() {
         waitForElement(LibraryPagexpathHeading);
         String actualHeading = assertAndGetText(LibraryPagexpathHeading);
-        System.out.println(actualHeading);
         logger.info("# Library Page Header :" + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.HEADING,
             "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.HEADING);
@@ -80,7 +79,6 @@ public class LibraryPage extends UIOperation {
     public void LibraryPageMenuLinkBooksCheck() {
         waitForElement(MenuBooksXpath);
         String actualHeading = assertAndGetText(MenuBooksXpath);
-        System.out.println(actualHeading);
         logger.info("# Library Page Menu Books Check: " + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.MenuBooksText,
             "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.MenuBooksText);
@@ -91,7 +89,6 @@ public class LibraryPage extends UIOperation {
     public void LibraryPageMenuLinkAuthorsCheck() {
         waitForElement(MenuAuthorsXpath);
         String actualHeading = assertAndGetText(MenuAuthorsXpath);
-        System.out.println(actualHeading);
         logger.info("# Library Page Menu Authors Check: " + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.MenuAuthorsText,
             "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.MenuAuthorsText);
@@ -103,10 +100,9 @@ public class LibraryPage extends UIOperation {
     public void NoBooksSelectedTextCheck() {
         waitForElement(NoBookSelectedTextXpath);
         String actualText = assertAndGetText(NoBookSelectedTextXpath);
-        System.out.println(actualText);
-        logger.info("# Library Page Menu " + actualText);
+        logger.info("# Default Page shows when No books are selected by user: " + actualText);
         assertEquals(actualText, ZyLabAppMsg.NoBookSelectedText,
-            "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.NoBookSelectedText+"'.");
+            "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.NoBookSelectedText);
     }
      /*
     public void ClickLinkBooksInMenu() {
@@ -121,7 +117,7 @@ public class LibraryPage extends UIOperation {
     	//assertAndGetText(FilterSearchTextXpath);
     	waitForElement(FilterSearchTextXpath);
         String actualText = assertAndGetText(FilterSearchTextXpath);
-        logger.info("# Filter Search Text Box Contains text as : " + actualText);
+        logger.info("# Default Filter Search Text Box Contains text as : " + actualText);
         assertEquals(actualText, ZyLabAppMsg.FilterSearchText,
             "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.FilterSearchText+"'.");
     }
@@ -129,6 +125,7 @@ public class LibraryPage extends UIOperation {
      * This function displays all books.
      */
     public void DisplayAllBooks() {
+    	logger.info("# Displaying Books List : ");
     	List list=driver.findElements(By.xpath(BooksListXpath));
     	for(int i=1;i<=list.size();i++) {
     		String actualText = assertAndGetText("//mat-list-item["+i+"]/div[1]/div[2]/a[1]");
@@ -139,30 +136,25 @@ public class LibraryPage extends UIOperation {
      * This function Delete the selected books.
      */
     public void DeleteBookCheck() {
-    	//String actualText = assertAndGetText(desertSolitaireBookListXpath);
-        //logger.info("# Books List has the Book Name " + actualText);
-        //assertEquals(actualText, ZyLabAppMsg.DesertSolitaireBookNameLabel,
-          //  "Actual heading '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel+"'.");
         assertAndClick(desertSolitaireDeleteLinkXpath);
         logger.info("# Clicked the delete link for desert Solitaire Book ");
         try {
 			Thread.sleep(5000);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
         String actualText = assertAndGetText(desertSolitaireBookListXpath);
         logger.info("# Books List has the Book Name " + actualText);
         assertNotEquals(actualText, ZyLabAppMsg.DesertSolitaireBookNameLabel,
                 "Actual heading '" + actualText + "' Should not be same as expected heading '" + ZyLabAppMsg.DesertSolitaireBookNameLabel);
-        
+        logger.info("# Books Deleted : desert Solitaire");
     }
     
     /**
      * This function searches the books with Filters.
      */
     public void SearchBooksUsingFilters() {
-    	logger.info("# Searching book with Name in Filter Text box ");
+    	logger.info("# Searching book in Filter Text box :"+ZyLabAppMsg.lolitaBoookNameLabel);
     	assertAndTypeID(FilterSearchTextBoxID,ZyLabAppMsg.lolitaBoookNameLabel);
     	List list=driver.findElements(By.xpath(BooksListXpath));
     	for(int i=1;i<=list.size();i++) {
@@ -170,6 +162,7 @@ public class LibraryPage extends UIOperation {
     		 logger.info("# Books Listed " + actualText);
     		 assertEquals(actualText, ZyLabAppMsg.lolitaBoookNameLabel,
     		            "Actual text '" + actualText + "' should be same as expected heading '" + ZyLabAppMsg.lolitaBoookNameLabel+"'.");
+    		 logger.info("# Search Results : Success");
     	}
     }
     
@@ -199,14 +192,14 @@ public class LibraryPage extends UIOperation {
     public void VerifyBookNameHeaderDisplay() {
     	  waitForElement(GeeKLoveBookTitleHeaderXpath);
           String actualHeading = assertAndGetText(GeeKLoveBookTitleHeaderXpath);
-          logger.info("# Book Details Title " + actualHeading);
+          logger.info("# Book Details Title Display : " + actualHeading);
           assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookNameLabel,
               "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookNameLabel+"'.");
     }
     public void VerifyBooksTitleLabel() {
     	 waitForElement(BookTitleLabelXpath);
          String actualHeading = assertAndGetText(BookTitleLabelXpath);
-         logger.info("# Book Details Title " + actualHeading);
+         logger.info("# Book Details Title Label Check :" + actualHeading);
          assertEquals(actualHeading, ZyLabAppMsg.BookDetailsTitleLabel,
              "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsTitleLabel+"'.");
    	
@@ -215,7 +208,7 @@ public class LibraryPage extends UIOperation {
     public void VerifyBooksAuthorLabel() {
     	 waitForElement(BookAuthorLabelXpath);
          String actualHeading = assertAndGetText(BookAuthorLabelXpath);
-         logger.info("# Book Details Title " + actualHeading);
+         logger.info("# Book Details Author label Check :" + actualHeading);
          assertEquals(actualHeading, ZyLabAppMsg.BookDetailsAuthorLabel,
              "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsAuthorLabel+"'.");
    	
@@ -224,7 +217,7 @@ public class LibraryPage extends UIOperation {
     public void VerifyBooksPublisherLabel() {
     	waitForElement(BookPublisherLabelXpath);
         String actualHeading = assertAndGetText(BookPublisherLabelXpath);
-        logger.info("# Book Details Title " + actualHeading);
+        logger.info("# Book Details Publisher label Check : " + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.BookDetailsPublisherLabel,
             "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsPublisherLabel+"'.");
   	
@@ -233,7 +226,7 @@ public class LibraryPage extends UIOperation {
     public void VerifyBooksYearofPublishingLabel() {
     	waitForElement(BookYearOfPublishingLabelXpath);
         String actualHeading = assertAndGetText(BookYearOfPublishingLabelXpath);
-        logger.info("# Book Details Title " + actualHeading);
+        logger.info("# Book Details Year of Publishing label Check : " + actualHeading);
         assertEquals(actualHeading, ZyLabAppMsg.BookDetailsYearOfPublishingLabel,
             "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.BookDetailsYearOfPublishingLabel+"'.");
     }
@@ -241,56 +234,48 @@ public class LibraryPage extends UIOperation {
 
  public void BookSelectGeekLove() {
 	 assertAndClick(GeekLoveBookListXpath);
-	 logger.info("# Clicked on Link: " + "Geek Love in Book List");
+	 logger.info("# Clicked on Link : " + "Geek Love in Book List");
 }
 
  public void BookSelectLolita() {
 	 assertAndClick(lolitaBookListXpath);
-	 logger.info("# Clicked on Link: " + "Geek Love in Book List");
+	 logger.info("# Clicked on Link : " + "lolita Love in Book List");
  }
  public void BookSelectdesertSolitaire() {
 	 assertAndClick(desertSolitaireBookListXpath);
-	 logger.info("# Book Selected: " + "desert Solitaire in Book List");
+	 logger.info("# Book Selected : " + "desert Solitaire in Book List");
 }
 public void VerifyBookDetailsTextCheck() {
 	VerifyTitleText();
 	VerifyAuthorText();
 	VerifyPublisherText();
 	VerifyYearOfPublishingText();
-
-/*//mor than 100 chars
-driver.findElement(By.id("mat-input-1")).sendKeys(" geek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeeklljljljll");
-driver.findElement(By.id("mat-input-2")).sendKeys(" geek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeeklljljljll");
-driver.findElement(By.id("mat-input-3")).sendKeys(" geek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeek lovegeeklljljljll");
-//Can enter future dates in yeah of publishing
-driver.findElement(By.id("mat-input-4")).sendKeys("2035");
-driver.findElement(By.id("mat-input-1")).click();*/
 }
 public void VerifyTitleText() {
 	waitForElementID(TitleTextValueID);
     String actualHeading = assertAndGetAttributeValueID(TitleTextValueID);
-    logger.info("# Book Details Title " + actualHeading);
+    logger.info("# Book Details Title : " + actualHeading);
     assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookNameLabel,
-        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookNameLabel+"'.");
+        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookNameLabel);
 }
 public void VerifyAuthorText() {
 	waitForElementID(AuthorTextValueID);
     String actualHeading = assertAndGetAttributeValueID(AuthorTextValueID);
-    logger.info("# Book Details Title " + actualHeading);
+    logger.info("# Book Details Author : " + actualHeading);
     assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookAuthorText,
         "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookAuthorText+"'.");
 }
 public void VerifyPublisherText() {
 	waitForElementID(PublisherTextValueID);
     String actualHeading = assertAndGetAttributeValueID(PublisherTextValueID);
-    logger.info("# Book Details Title " + actualHeading);
+    logger.info("# Book Details Publisher :" + actualHeading);
     assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookPublisherText,
         "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookPublisherText+"'.");
 }
 public void VerifyYearOfPublishingText() {
 	waitForElementID(YearOfPublishingTextValueID);
     String actualHeading = assertAndGetAttributeValueID(YearOfPublishingTextValueID);
-    logger.info("# Book Details Title " + actualHeading);
+    logger.info("# Book Details Year Of Publishing : " + actualHeading);
     assertEquals(actualHeading, ZyLabAppMsg.GeekLoveBookYearOfPublishingText,
         "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.GeekLoveBookYearOfPublishingText+"'.");
 }
@@ -312,7 +297,7 @@ private void CancelButtonInitialDisableCheck() {
 private void SaveButtonInitialDisableCheck() {
 	logger.info("# Save Button Enable Check ");
 	assertFalse(isElementEnable(SaveButtonXpath));
-	logger.info("# Save Button Enable : Disabled");
+	logger.info("# Save Button Behavior Check Shows : Disabled");
 }
 
 public void SaveButtonAvailabilityCheck() {
@@ -331,9 +316,11 @@ public void CancelButtonAvailabilityCheck() {
 }
 public void clickSave() {
 	assertAndClick(SaveButtonXpath);
+	logger.info("# User clicks Save button : success");
 }
 public void clickCancel() {
 	assertAndClick(CancelButtonXpath);
+	logger.info("# User clicks Cancel button : success");
 }
 
 //THe fields mandatory check
@@ -350,19 +337,19 @@ public void DeleteTextInBookDetails() {
 public void MandatoryAlertsDisplayCheck() {	
 waitForElement(TitleRequiredXpath);
     String actualHeading = assertAndGetText(TitleRequiredXpath);
-    logger.info("# Cancel Button Name Display " + actualHeading);
+    logger.info("# Alert Message For Title Mandatory check : " + actualHeading);
     assertEquals(actualHeading, ZyLabAppMsg.TitleRequired,
         "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.TitleRequired);
     
     waitForElement(PublisherRequiredXpath);
       actualHeading = assertAndGetText(PublisherRequiredXpath);
-    logger.info("# Cancel Button Name Display " + actualHeading);
+    logger.info("# Alert Message For Title Mandatory check : " + actualHeading);
     assertEquals(actualHeading, ZyLabAppMsg.PublisherRequired,
         "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.PublisherRequired);
     
     waitForElement(YearOfPublishingRequiredXpath);
       actualHeading = assertAndGetText(YearOfPublishingRequiredXpath);
-    logger.info("# Cancel Button Name Display " + actualHeading);
+    logger.info("# Alert Message For Title Mandatory check : " + actualHeading);
     assertEquals(actualHeading, ZyLabAppMsg.yearRequired,
         "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.yearRequired);
 }
@@ -371,7 +358,7 @@ public void NonmandatoryCheckAuthorField() {
 	assertEnterControlADeleteKeys(AuthorTextValueID);
 	 assertAndClick(SaveButtonXpath);
 	 String actualHeading = assertAndGetAttributeValueID(AuthorTextValueID);
-	    logger.info("# Author Details :" + actualHeading);
+	    logger.info("# Author Details : " + actualHeading);
 	    assertEquals(actualHeading, ZyLabAppMsg.None,
 	        "Actual heading '" + actualHeading + "' should be same as expected heading '" + ZyLabAppMsg.None+"'.");
 		}
@@ -383,15 +370,19 @@ public void ModifyAllbookDetails() {
 }
 public void modifyTitle() {
 	assertAndTypeID(TitleTextValueID, ZyLabAppMsg.TitleChange);
+	logger.info("# user modifies Title value :" + ZyLabAppMsg.TitleChange);
 }
 public void modifyAuthor() {
 	assertAndTypeID(AuthorTextValueID, ZyLabAppMsg.AuthorChange);
+	logger.info("# user modifies Author value :" + ZyLabAppMsg.AuthorChange);
 }
 public void modifyPublisher() {
 	assertAndTypeID(PublisherTextValueID, ZyLabAppMsg.PublisherChange);
+	logger.info("# user modifies Publisher value :" + ZyLabAppMsg.PublisherChange);
 }
 public void modifyYearofPublishing() {
 	assertAndTypeID(YearOfPublishingTextValueID, ZyLabAppMsg.YearOfPublishingChange);
+	logger.info("# user modifies year of Publishing value :" + ZyLabAppMsg.YearOfPublishingChange);
 }
 
 public void ValidateModifiedBookDetails() {
@@ -400,34 +391,60 @@ public void ValidateModifiedBookDetails() {
 	assertEquals(actualValue, ZyLabAppMsg.TitleChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.TitleChange);
 	
 	actualValue = assertAndGetAttributeValueID(AuthorTextValueID);
-	logger.info("# Title Details changed:" + actualValue);
+	logger.info("# AuthorText Details changed:" + actualValue);
 	assertEquals(actualValue, ZyLabAppMsg.AuthorChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.AuthorChange);
 	  
     actualValue = assertAndGetAttributeValueID(YearOfPublishingTextValueID);
-	logger.info("# Title Details changed:" + actualValue);
+	logger.info("# YearOfPublishing Details changed:" + actualValue);
 	assertEquals(actualValue, ZyLabAppMsg.YearOfPublishingChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.YearOfPublishingChange);
 }
 
 public void ValidateModifiedpublisherDetails() {
 	String actualValue = assertAndGetAttributeValueID(PublisherTextValueID);
-	logger.info("# Title Details changed:" + actualValue);
+	logger.info("# publisher details values changed :" + actualValue);
 	assertEquals(actualValue, ZyLabAppMsg.PublisherChange, "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.PublisherChange);
 }
 
 public void LargeCharactersEnterInBookDetaisl() {
 	assertAndTypeID(TitleTextValueID, ZyLabAppMsg.LargeCharsText);
+	logger.info("# user enters larger chars in TitleTextField :" + ZyLabAppMsg.LargeCharsText);
 	assertAndTypeID(AuthorTextValueID, ZyLabAppMsg.LargeCharsText);
+	logger.info("# user enters larger chars in AuthorTextValueID :" + ZyLabAppMsg.LargeCharsText);
 	assertAndTypeID(PublisherTextValueID, ZyLabAppMsg.LargeCharsText);
+	logger.info("# user enters larger chars in PublisherTextValueID :" + ZyLabAppMsg.LargeCharsText);
 }
 public void EnterAlphaNumbericCharacInYearofPublishing() {
 	assertAndTypeID(YearOfPublishingTextValueID, ZyLabAppMsg.AlphaNumbericText);
+	logger.info("# user enter alphanumberic text in year of publishing text field :" + ZyLabAppMsg.AlphaNumbericText);
 }
 public void AlertShownYearRequired() {
 	 waitForElement(YearOfPublishingRequiredXpath);
      String AlertMessage = assertAndGetText(YearOfPublishingRequiredXpath);
-   logger.info("# Cancel Button Name Display " + AlertMessage);
+   logger.info("# Alert Message shown :" + AlertMessage);
    assertEquals(AlertMessage, ZyLabAppMsg.yearRequired,
        "Actual heading '" + AlertMessage + "' should be same as expected heading '" + ZyLabAppMsg.yearRequired);
 }
 
+public void EnterYearMoreThan4DigitsInYearofPublishing() {
+	assertAndTypeID(YearOfPublishingTextValueID, ZyLabAppMsg.LargeCharsNumeric);
+	logger.info("# User Enters More than 4 digits in Year of Publishing text :"+ZyLabAppMsg.LargeCharsNumeric);
+	clickSave();
+	BookSelectLolita();
+	BookSelectGeekLove();
+	String actualValue = assertAndGetAttributeValueID(YearOfPublishingTextValueID);
+	logger.info("# year of Publishing Value shown as :" + actualValue);
+	   assertEquals(actualValue, ZyLabAppMsg.LargeCharsNumeric,
+	       "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.LargeCharsNumeric);
+}
+public void EnterYearFutureDate() {
+	assertAndTypeID(YearOfPublishingTextValueID, ZyLabAppMsg.FutureDate);
+	logger.info("# User Enters Future date in Year of Publishing text :"+ZyLabAppMsg.FutureDate);
+	clickSave();
+	BookSelectLolita();
+	BookSelectGeekLove();
+	String actualValue = assertAndGetAttributeValueID(YearOfPublishingTextValueID);
+	logger.info("# year of Publishing Value shown as :" + actualValue);
+	   assertEquals(actualValue, ZyLabAppMsg.FutureDate,
+	       "Actual heading '" + actualValue + "' should be same as expected heading '" + ZyLabAppMsg.FutureDate);
+}
 }

@@ -8,6 +8,12 @@
   <name>ZyLabLibAutomation</name>
   <url>http://maven.apache.org</url>
   
+  	<properties>
+		<webdriver.chrome>${project.basedir}/drivers/chromedriver.exe</webdriver.chrome>
+		<webdriver.gecko.driver>${project.basedir}/drivers/geckodriver.exe</webdriver.gecko.driver>
+		<browser>firefox</browser>
+	</properties>
+  
   <dependencies>
    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
@@ -56,6 +62,14 @@
 				<plugin>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.22.1</version>
+					<configuration>
+						<systemPropertyVariables>
+							<webdriver.chrome.driver>${webdriver.chrome}</webdriver.chrome.driver>
+							<webdriver.gecko.driver>${webdriver.gecko.driver}</webdriver.gecko.driver>
+							<browser>${browser}</browser>
+						</systemPropertyVariables>
+
+					</configuration>
 				</plugin>
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>

@@ -5,9 +5,10 @@
     <classes>
       <class name="com.org.tests.ZyLabLibraryTests">
         <methods>
-          <include name="CancelButtonForTetingYearofPublishing"/>
           <include name="setUp"/>
+          <include name="TC19_CancelButtonForTestingYearofPublishing"/>
           <include name="teardown"/>
+          <include name="TC15_ModifyPublisherBookDetails"/>
         </methods>
       </class> <!-- com.org.tests.ZyLabLibraryTests -->
     </classes>

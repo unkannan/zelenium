@@ -37,4 +37,6 @@ public class ZyLabAppMsg {
 		//large 100 charac enter
 		public static String LargeCharsText="100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText100CharsText";
 		public static String AlphaNumbericText="1234AlphaNumeric";
+		public static String LargeCharsNumeric="1230122211";
+		public static String FutureDate="2030";
 }

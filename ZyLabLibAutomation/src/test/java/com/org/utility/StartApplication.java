@@ -13,6 +13,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.org.enums.AppValidationConstantMessages;
+import com.org.pages.LibraryPage;
 
  public class StartApplication {
 
@@ -22,7 +23,7 @@ import com.org.enums.AppValidationConstantMessages;
     private static Properties prop = ConfigFileReader.ReadProperties();
     public final static String URL = prop.getProperty("url");
     public final static String BROWSER = prop.getProperty("browser");
-
+    public LibraryPage lib_page;
 	 
 
     @BeforeMethod(alwaysRun = true)
@@ -32,6 +33,7 @@ import com.org.enums.AppValidationConstantMessages;
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(AppValidationConstantMessages.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
         driver.get(URL);
+        lib_page = new LibraryPage(driver);
     }
 
     @AfterMethod(alwaysRun = true)
@@ -47,7 +49,8 @@ import com.org.enums.AppValidationConstantMessages;
 
     private WebDriver getDriver() {
       //  String browser;
-        if (BROWSER.equalsIgnoreCase("firefox")) {
+    	String browser = System.getProperty("browser");
+        /*if (BROWSER.equalsIgnoreCase("firefox")) {
         	System.setProperty("webdriver.gecko.driver","drivers/geckodriver.exe");
         	  return new FirefoxDriver();
         }
@@ -60,6 +63,10 @@ import com.org.enums.AppValidationConstantMessages;
             return new InternetExplorerDriver();
         }
         return  null;
+    		return new FirefoxDriver();
+    	if(browser.equalsIgnoreCase("chrome"))
+    		return new ChromeDriver();
+    	return new ChromeDriver();
     }
 
 }
