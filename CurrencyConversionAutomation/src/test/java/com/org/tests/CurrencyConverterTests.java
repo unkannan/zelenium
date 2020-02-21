@@ -1,12 +1,19 @@
 
 package com.org.tests;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.org.enums.AppValidationConstantMessages;
 import com.org.pages.CurrencyConverterPage;
 import com.org.pages.CurrencyConverterResultsPage;
 import com.org.utility.StartApplication;
@@ -25,11 +32,11 @@ public class CurrencyConverterTests extends StartApplication {
 	public void tc_01_currencyConversionValidation(String sourceCountryCurrency, String targetCountryCurrency,String ConvertedToCurrencyResults) {
 		preSteps();
 		
-		WebElement ele=driver.findElement(By.id("twcc__accept-button"));
-		if(ele.isDisplayed())
-			ele.click();
 		currencyConverterPg.CurrencyConverterMainPageHeaderCheck();
+		
+		
 			currencyConverterPg.selectSourceCurrency(sourceCountryCurrency);
+			
 				currencyConverterPg.selectTargetCurrency(targetCountryCurrency);
 					currencyConverterPg.clickOnButton(CurrencyConverterPage.ConvertButton);
 						

@@ -911,3 +911,64 @@
 2020-01-31 15:41:41 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to Euro
 2020-02-05 00:47:11 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
 2020-02-05 00:47:11 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:26:13 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:26:24 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:41:42 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:41:44 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:44:24 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:44:24 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:44:24 INFO  CurrencyConverterPage:65 - # Source From Drop Down Selected INR
+2020-02-20 16:44:25 INFO  CurrencyConverterPage:74 - # Clicked on button: convert
+2020-02-20 16:44:25 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to Euro
+2020-02-20 16:44:57 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:45:03 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:45:54 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:45:55 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:52:54 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:52:54 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:54:57 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:54:57 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:56:11 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:56:11 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:58:23 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:58:24 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 16:59:38 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 16:59:39 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:08:35 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:08:35 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:18:30 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:18:30 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:21:06 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:21:07 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:22:31 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:22:31 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:23:19 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:23:19 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:24:27 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:24:27 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:24:27 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:25:30 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:25:30 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:25:30 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:29:24 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:29:25 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:29:40 INFO  CurrencyConverterPage:74 - # Clicked on button: convert
+2020-02-20 17:29:41 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to Euro
+2020-02-20 17:31:08 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:31:08 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:33:32 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:33:32 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:37:37 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:37:37 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:38:36 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:38:37 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:41:06 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:41:07 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:41:07 INFO  CurrencyConverterPage:65 - # Source From Drop Down Selected INR
+2020-02-20 17:41:08 INFO  CurrencyConverterPage:74 - # Clicked on button: convert
+2020-02-20 17:41:08 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to Indian Rupee
+2020-02-20 17:41:47 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter
+2020-02-20 17:41:47 INFO  CurrencyConverterPage:56 - # Source From Drop Down Selected EUR
+2020-02-20 17:41:47 INFO  CurrencyConverterPage:65 - # Source From Drop Down Selected INR
+2020-02-20 17:41:48 INFO  CurrencyConverterPage:74 - # Clicked on button: convert
+2020-02-20 17:41:48 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to Indian Rupee

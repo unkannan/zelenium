@@ -21,9 +21,7 @@ public class CurrencyConverterPage extends UIOperation {
     private String idTargetCurrencySelectDropDown = "targetCurrency";
   
     private String xpathSearchBox = "//input[@placeholder='Search...']";
-   // private String xpathSearchBox = "//input[@type='text...']";
-    //private String xpathTargetSearchBox="/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/input[1]";
-    private String xpathTargetSearchBox="//input[@placeholder='Search...']";
+    private String xpathTargetSearchBox="/html/body/main/section/div[2]/div/div/form/div/div[2]/div/div/div[3]/div/div/div/input";//"//input[@placeholder='Search...']";
 
     WebDriver driver;
 
@@ -51,7 +49,7 @@ public class CurrencyConverterPage extends UIOperation {
      * This function is to select currencies for source country
      */
     public void selectSourceCurrency(String selectSourceCurrency) {
-    	waitForElementID(idSourceCurrencySelectDropDown);
+    	//waitForElementID(idSourceCurrencySelectDropDown);
     		setDropDownValue(idSourceCurrencySelectDropDown,xpathSearchBox,selectSourceCurrency);
     			logger.info("# Source From Drop Down Selected " + selectSourceCurrency);
     }

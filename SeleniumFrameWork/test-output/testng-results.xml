@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="13769" started-at="2020-02-09T22:56:28 CET" finished-at="2020-02-09T22:56:42 CET">
+  <suite name="Default suite" duration-ms="10545" started-at="2020-02-20T17:49:18 CET" finished-at="2020-02-20T17:49:28 CET">
     <groups>
+      <group name="CurrencyConverter">
+        <method signature="CurrencyConverterTests.tc_01_currencyConversionValidation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.test.CurrencyConverterTests@646be2c3]" name="tc_01_currencyConversionValidation" class="com.org.test.CurrencyConverterTests"/>
+      </group> <!-- CurrencyConverter -->
     </groups>
-    <test name="Test" duration-ms="13769" started-at="2020-02-09T22:56:28 CET" finished-at="2020-02-09T22:56:42 CET">
-      <class name="com.org.test.WebTableExcercise">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.test.WebTableExcercise@57f23557]" name="setUp" is-config="true" duration-ms="7636" started-at="2020-02-09T22:56:28 CET" finished-at="2020-02-09T22:56:36 CET">
+    <test name="Default test" duration-ms="10545" started-at="2020-02-20T17:49:18 CET" finished-at="2020-02-20T17:49:28 CET">
+      <class name="com.org.test.CurrencyConverterTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.test.CurrencyConverterTests@646be2c3]" name="setUp" is-config="true" duration-ms="7265" started-at="2020-02-20T17:49:18 CET" finished-at="2020-02-20T17:49:25 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="WebTableExcercise()[pri:0, instance:com.org.test.WebTableExcercise@57f23557]" name="WebTableExcercise" duration-ms="1528" started-at="2020-02-09T22:56:36 CET" finished-at="2020-02-09T22:56:37 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WebTableExcercise -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.test.WebTableExcercise@57f23557]" name="setUp" is-config="true" duration-ms="4527" started-at="2020-02-09T22:56:37 CET" finished-at="2020-02-09T22:56:42 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="WebTableExcercise1()[pri:0, instance:com.org.test.WebTableExcercise@57f23557]" name="WebTableExcercise1" duration-ms="11" started-at="2020-02-09T22:56:42 CET" finished-at="2020-02-09T22:56:42 CET">
-          <exception class="java.lang.IllegalStateException">
+        <test-method status="FAIL" signature="tc_01_currencyConversionValidation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.test.CurrencyConverterTests@646be2c3]" name="tc_01_currencyConversionValidation" duration-ms="2211" started-at="2020-02-20T17:49:25 CET" data-provider="CurrencyInput" finished-at="2020-02-20T17:49:27 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[EUR]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[USD]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1.11210 USD]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\unkan\Documents\GitHub\zelenium\SeleniumFrameWork\drivers\chromedriver79.exe]]>
+              <![CDATA[Actual heading '1 Euro to US Dollar' should be same as expected heading 'EUR to USD'. expected [EUR to USD] but found [1 Euro to US Dollar]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\unkan\Documents\GitHub\zelenium\SeleniumFrameWork\drivers\chromedriver79.exe
-at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
-at com.org.test.WebTableExcercise.WebTableExcercise1(WebTableExcercise.java:45)
+              <![CDATA[java.lang.AssertionError: Actual heading '1 Euro to US Dollar' should be same as expected heading 'EUR to USD'. expected [EUR to USD] but found [1 Euro to US Dollar]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at com.org.pages.CurrencyConverterResultsPage.CurrencyConverterResultsPageHeaderCheck(CurrencyConverterResultsPage.java:37)
+at com.org.test.CurrencyConverterTests.tc_01_currencyConversionValidation(CurrencyConverterTests.java:31)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,11 +74,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WebTableExcercise1 -->
-      </class> <!-- com.org.test.WebTableExcercise -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tc_01_currencyConversionValidation -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.test.CurrencyConverterTests@646be2c3]" name="teardown" is-config="true" duration-ms="1029" started-at="2020-02-20T17:49:27 CET" finished-at="2020-02-20T17:49:28 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_currencyConversionValidation status=FAILURE method=CurrencyConverterTests.tc_01_currencyConversionValidation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.org.test.CurrencyConverterTests@646be2c3] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.org.test.CurrencyConverterTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

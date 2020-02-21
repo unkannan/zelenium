@@ -9,6 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import com.org.DriverFactory.DriverManager;
 import com.org.DriverFactory.DriverManagerFactory;
+import com.org.enums.AppValidationConstantMessages;
 import com.org.enums.DriverType;
 
 public class StartApplication {
@@ -23,7 +24,7 @@ public class StartApplication {
     	driver=driverManager.getDriver();
         System.out.println("Setup");
        driver.manage().window().maximize();
-    //    driver.manage().timeouts().implicitlyWait(AppValidationConstantMessages.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
+       driver.manage().timeouts().implicitlyWait(AppValidationConstantMessages.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
         driver.get(prop.getProperty("url"));
     }
 

@@ -12,7 +12,7 @@ public class ConfigFileReader {
      
     public static Properties ReadProperties() {
         try {
-            InputStream input = new FileInputStream("src/main/java/resources/configuration.properties");
+            InputStream input = new FileInputStream("src/test/resources/configuration.properties");
             prop = new Properties();
             prop.load(input);
         } catch (IOException ex) {

@@ -17,6 +17,7 @@ public class Guru99MainPage{
    }
 
    public void WebTableElementsCheck() {
+	   driver.get("http://demo.guru99.com/test/write-xpath-table.html");
 	   List<WebElement> WebTableElement=driver.findElements(By.xpath("//html//body//center//table//tbody/tr/td"));
 		
 		for(WebElement e : WebTableElement) {
