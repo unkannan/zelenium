@@ -1,0 +1,12 @@
+SET HOUR=%time:~0,2%
+SET HOUR=%HOUR: =0%
+SET MIN=%time:~3,2%
+SET SEC=%time:~6,2%
+SET KEY=%MIN%
+
+
+java -Dspring.config.location=test-env.properties -jar target\adr-messaging-tests-0.6.0-SNAPSHOT.jar /templates/r3/doc-attachment/VolR3DocAttachmentTemplate.xml jms/phv/inbox B%KEY%  300
+java -Dspring.config.location=test-env.properties -jar target\adr-messaging-tests-0.6.0-SNAPSHOT.jar /templates/r3/xl-attachment/VolR3excelAttachmentTemplate.xml jms/phv/inbox B%KEY%  300
+java -Dspring.config.location=test-env.properties -jar target\adr-messaging-tests-0.6.0-SNAPSHOT.jar /templates/r2/r2new/R2newTemplate.xml jms/phv/inbox B%KEY%  1000
+java -Dspring.config.location=test-env.properties -jar target\adr-messaging-tests-0.6.0-SNAPSHOT.jar /templates/r3/one-safetyReport/R3Safety.xml jms/phv/inbox B%KEY%  500
+java -Dspring.config.location=test-env.properties -jar target\adr-messaging-tests-0.6.0-SNAPSHOT.jar /templates/vet/deg/DEG_Safeteyreport_Template.xml jms/phv/inbox B%KEY%  100

@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="18770" started-at="2020-02-05T00:41:03 CET" finished-at="2020-02-05T00:41:22 CET">
+  <suite name="Default suite" duration-ms="22724" started-at="2020-02-27T13:45:43 CET" finished-at="2020-02-27T13:46:05 CET">
     <groups>
     </groups>
-    <test name="Test" duration-ms="18770" started-at="2020-02-05T00:41:03 CET" finished-at="2020-02-05T00:41:22 CET">
-      <class name="SeleniumParallelTesting.SeleniumParallelTesting.AppTest">
-        <test-method status="PASS" signature="GooglePage()[pri:0, instance:SeleniumParallelTesting.SeleniumParallelTesting.AppTest@6e0e048a]" name="GooglePage" duration-ms="15205" started-at="2020-02-05T00:41:03 CET" finished-at="2020-02-05T00:41:18 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GooglePage -->
-        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:SeleniumParallelTesting.SeleniumParallelTesting.AppTest@6e0e048a]" name="WebTableExcercise1" duration-ms="14123" started-at="2020-02-05T00:41:03 CET" finished-at="2020-02-05T00:41:17 CET">
+    <test name="Default test" duration-ms="22724" started-at="2020-02-27T13:45:43 CET" finished-at="2020-02-27T13:46:05 CET">
+      <class name="SeleniumParallelTesting.SeleniumParallelTesting.EVWeb">
+        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:SeleniumParallelTesting.SeleniumParallelTesting.EVWeb@3dd4520b]" name="WebTableExcercise1" duration-ms="22693" started-at="2020-02-27T13:45:43 CET" finished-at="2020-02-27T13:46:05 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WebTableExcercise1 -->
-        <test-method status="PASS" signature="DropDownWithoutSelectClass_WithBootStrapProgramTest()[pri:0, instance:SeleniumParallelTesting.SeleniumParallelTesting.AppTest@6e0e048a]" name="DropDownWithoutSelectClass_WithBootStrapProgramTest" duration-ms="18692" started-at="2020-02-05T00:41:03 CET" finished-at="2020-02-05T00:41:22 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DropDownWithoutSelectClass_WithBootStrapProgramTest -->
-      </class> <!-- SeleniumParallelTesting.SeleniumParallelTesting.AppTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- SeleniumParallelTesting.SeleniumParallelTesting.EVWeb -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,17 @@
+com\gurukula\pages\TechBeamersPage.class
+com\gurukula\utility\ReadPropertiesFile.class
+com\gurukula\utility\ScreenshotUtil.class
+com\gurukula\pages\RegistrationPage.class
+com\gurukula\pages\LoginPage.class
+com\gurukula\utility\Services.class
+com\gurukula\common\AccountEnum.class
+com\gurukula\tests\BranchTest.class
+com\gurukula\utility\Init.class
+com\gurukula\tests\WebTableExcercise.class
+com\gurukula\common\MenuEnum.class
+com\gurukula\tests\LoginTest.class
+com\gurukula\common\ActionsEnum.class
+com\gurukula\common\Constants.class
+com\gurukula\pages\BranchPage.class
+com\gurukula\common\WelcomeEnum.class
+com\gurukula\common\EntitiesEnum.class

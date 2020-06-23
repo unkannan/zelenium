@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<MCCI_IN200100UV01>
+		<low nullFlavor="NI" />
+		<high nullFlavor="NI" />
+		<name nullFlavor="NI" />
+		<id nullFlavor="NI"/>
+		<streetAddressLine nullFlavor="NI"/>
+										<city nullFlavor="NI"/>
+										<country nullFlavor="NI"/>
+										<postalCode nullFlavor="NI"/>
+										<effectiveTime  nullFlavor="NI"/>	
+										<availabilityTime nullFlavor="NI"/>	
+										<value nullFlavor="NI"/>
+		<code nullFlavor="NI"/>	
+<methodCode	nullFlavor="NI"/>
+											<period nullFlavor="NI"/>
+<translation nullFlavor="NI"/>
+<numerator nullFlavor="NI"/>
+<text nullFlavor="NI"/>
+<creationTime nullFlavor="NI"/>
+<versionCode nullFlavor="NI"/>
+<profileId nullFlavor="NI"/>
+<family nullFlavor="NI"/>
+</MCCI_IN200100UV01>

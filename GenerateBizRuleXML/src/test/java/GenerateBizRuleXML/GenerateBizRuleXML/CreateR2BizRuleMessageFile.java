@@ -1,5 +1,6 @@
 package GenerateBizRuleXML.GenerateBizRuleXML;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -15,10 +16,10 @@ import GenericLibraryFunctions.*;
 import ModifyXMLString.ModifyXMLStringWithRules; 
 
 public class CreateR2BizRuleMessageFile{
-	static String ExcelFilePath = "C:\\Data\\data.xlsx";
-	static String DataSheet="DataSheet";
+	static String ExcelFilePath = "./DataInput/GenerateR2BizRuleFileExcl.xlsx";
+	static String DataSheet="R2BizRuleSheet";
 	static String BizRuleFiles="c:\\Data\\HumanBizRuleFiles";//"c:\\Data\\VETBizRuleFiles";
-	String FileName="c:\\Data\\R2_BizRule_Template.xml";
+	String xmlTemplate=System.getProperty("user.dir")+"\\DataInput\\R2_BizRule_Template.xml";
 	
 	ConvertXMLToString convertxmltoString;
 	DeleteFilesFromFolder deletefiles;
@@ -28,6 +29,7 @@ public class CreateR2BizRuleMessageFile{
 	
 	@Test
 	public void CreateBizRuleMessageFiles() throws EncryptedDocumentException, InvalidFormatException, IOException {
+		File xmlTemplateFile=new File(xmlTemplate);
 		String CreateFileFlag=null;
 		String xmlTagColumn=null;
 		convertxmltoString=new ConvertXMLToString();
@@ -53,7 +55,7 @@ public class CreateR2BizRuleMessageFile{
 				}catch(Exception e){
 					CreateFileFlag="N";}
 					    	 	
-					if(CreateFileFlag.equals("Y")) {
+					if(CreateFileFlag.equalsIgnoreCase("Y")) {
 					//Reading the excel for the Tags and values which need to be modified
 					try{
 						xmlTagColumn=sheet.getRow(j).getCell(11).toString();
@@ -62,11 +64,9 @@ public class CreateR2BizRuleMessageFile{
 					    	 		 
 					if(xmlTagColumn!=""){
 					String XLFileName=sheet.getRow(j).getCell(13).toString();//filename and batch number
-					System.out.println(FileName+" IS IN PROGRESS");	
-					
+					System.out.println(XLFileName+" IS IN PROGRESS");	
 									//Reading the template and storing in a string
-									String BizRuleXMLFileContent = convertxmltoString.ReadXMLTemplate(FileName);		
-									//String newXmlFileContent=modifyXML(xmlTagColumn1,Value,fileName);
+									String BizRuleXMLFileContent = convertxmltoString.ReadXMLTemplate(xmlTemplateFile.toString());		
 					
 					//Modify the xml tag values and storing in a string to create the file - This is the main core/crux
 					BizRuleXMLFileContent=ApplyRuleLogic.CreateNewBizRuleFileXMLContent(BizRuleXMLFileContent,xmlTagColumn);	

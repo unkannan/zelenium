@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="WebElemetAndLocators.SwitchToFrame">
+      <class name="TestSeleniumPlain.TestSeleniumPlain.EVWeb">
         <methods>
-          <include name="SwitchToOneFrame"/>
+          <include name="WebTableExcercise1"/>
         </methods>
-      </class> <!-- WebElemetAndLocators.SwitchToFrame -->
+      </class> <!-- TestSeleniumPlain.TestSeleniumPlain.EVWeb -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

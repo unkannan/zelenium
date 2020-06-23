@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ichicsrack SYSTEM "http://eudravigilance.ema.europa.eu/dtd/ichicsrack11xml.dtd">
+<ichicsrack lang="en">
+	<ichicsrmessageheader>
+		<messagetype>ichicsrack</messagetype>
+		<messageformatversion>1.1</messageformatversion>
+		<messageformatrelease>1.0</messageformatrelease>
+		<messagenumb>Ack_test</messagenumb>
+		<messagesenderidentifier>NCAATWT</messagesenderidentifier>
+		<messagereceiveridentifier>EVHUMAN</messagereceiveridentifier>
+		<messagedateformat>204</messagedateformat>
+		<messagedate>20171005141031</messagedate>
+	</ichicsrmessageheader>
+	<acknowledgment>
+		<messageacknowledgment>
+			<icsrmessagenumb>@@BATCH_NUMBER@@</icsrmessagenumb>
+			<localmessagenumb>EU-EC-1000000000001</localmessagenumb>
+			<icsrmessagesenderidentifier>NCAATWT</icsrmessagesenderidentifier>
+			<icsrmessagereceiveridentifier>EVHUMAN</icsrmessagereceiveridentifier>
+			<icsrmessagedateformat>204</icsrmessagedateformat>
+			<icsrmessagedate>20171005140804</icsrmessagedate>
+			<transmissionacknowledgmentcode>01</transmissionacknowledgmentcode>
+		</messageacknowledgment>
+		<reportacknowledgment>
+			<safetyreportversion>1</safetyreportversion>
+			<safetyreportid>@@SAFETY_REPORT_IDENTIFIER_001@@</safetyreportid>
+			<localreportnumb>EU-EC-20000000002</localreportnumb>
+			<authoritynumb>@@SAFETY_REPORT_IDENTIFIER_001@@</authoritynumb>
+			<receiptdateformat>102</receiptdateformat>
+			<receiptdate>20140503</receiptdate>
+			<reportacknowledgmentcode>01</reportacknowledgmentcode>
+			<errormessagecomment>safety report loaded;
+Validated against 2.71 business rules;
+Comments:
+Parsing process: Correct Report;</errormessagecomment>
+		</reportacknowledgment>
+	</acknowledgment>
+</ichicsrack>

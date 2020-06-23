@@ -17,9 +17,7 @@ import org.testng.annotations.Test;
  */
 public class AppTest 
 {
-    /**
-     * Rigorous Test :-)
-     */
+     
     @Test
 	public void WebTableExcercise1() {
 	System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");

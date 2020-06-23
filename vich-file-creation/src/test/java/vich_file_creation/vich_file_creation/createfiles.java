@@ -4,49 +4,108 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.xpath.XPathExpressionException;
-
-import org.apache.poi.EncryptedDocumentException;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.ss.usermodel.WorkbookFactory;
-import org.json.simple.parser.ParseException;
-import org.xml.sax.SAXException;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.junit.Test;
 
 public class createfiles {
-	//static String ExcelFilePath = "Files/MandatoryRuleFile.xlsx";
-	static String ExcelFilePath = "C:\\Users\\unkan\\OneDrive\\VICH\\MandatoryRuleFile.xlsx";
-	static String validtemplatefile = "Files/VICH_TestFile.xml";
+	static String ExcelFilePath = "C:\\Users\\kannanu\\OneDrive\\VICH\\MandatoryRuleFile.xlsx";
+	static String validtemplatefile = "Files/Templates/VICH_TestFile.xml";
+	static String VICH_TestFile_AllFields = "Files/Templates/VICH_TestFile_AllFields";
+	static String NullFlavorsTemplate = "Files/Templates/NullFlavorsTemplate.xml";
 
-	public static void main(String args[]) throws EncryptedDocumentException, InvalidFormatException, IOException,
-			XPathExpressionException, ParserConfigurationException, SAXException, TransformerException, ParseException {
+	@Test
+	public void generatelenchecktestdatafiles() throws IOException {
 		// ExcelReadin
 		InputStream inp = new FileInputStream(ExcelFilePath);
-		Workbook wb = WorkbookFactory.create(inp);
+		Workbook wb = new XSSFWorkbook(inp);
+		int LengthChecks = 2;
+		Sheet sheet = wb.getSheetAt(LengthChecks);
 		XpathSupport createFile = new XpathSupport();
-		final int xmlField = 3;
+		final int xmlField = 6;
 		final int flagcheck = 0;
-		final int filename = 4;
-		Sheet sheet = wb.getSheetAt(0);
+		final int filename = 7;
 
-		try {
-			for (int j = 1; j < 6 - 1; j++) {
-
-				if (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("Y")
-						|| sheet.getRow(j).getCell(flagcheck).toString() != null) {
-					String jasonString = sheet.getRow(j).getCell(xmlField).toString();
-					String newfilename = sheet.getRow(j).getCell(filename).toString();
+		for (int j = 1; j < 400 - 1; j++) {
+			try {
+				if (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("y")) {
+					String jasonString = sheet.getRow(j).getCell(xmlField).getStringCellValue();
+					String newfilename = sheet.getRow(j).getCell(filename).getStringCellValue();
+					System.out.println(sheet.getRow(j).getCell(1));
 					try {
-					createFile.createfilefromtemplate1(validtemplatefile, jasonString, "Files/" + newfilename + ".xml");
-					}catch(Exception e) {System.out.println("Error in creating file");e.printStackTrace();}
+						// createFile.CreateFileFromVICHTemplate(validtemplatefile, NullFlavorsTemplate,
+						// jasonString,"Files/"+sheet.getSheetName()+"/" + newfilename + ".xml");
+						createFile.CreateFileFromVICHTemplate(VICH_TestFile_AllFields, NullFlavorsTemplate, jasonString,
+								"Files/" + sheet.getSheetName() + "/" + newfilename + ".xml");
+					} catch (Exception e) {
+						System.out.println("Error in creating file > " + newfilename + ".xml");
+						e.printStackTrace();
+					}
 				}
+			} catch (Exception e) {
 			}
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("Excel rows completed");
 		}
 	}
+
+	@Test
+	public void generatemandatorychecktestdatafiles() throws IOException {
+		// ExcelReadin
+		InputStream inp = new FileInputStream(ExcelFilePath);
+		Workbook wb = new XSSFWorkbook(inp);
+		int MandatoryChecks = 1;
+		Sheet sheet = wb.getSheetAt(MandatoryChecks);
+		XpathSupport createFile = new XpathSupport();
+		final int xmlField = 6;
+		final int flagcheck = 0;
+		final int filename = 7;
+
+		for (int j = 1; j < 400 - 1; j++) {
+			try {
+				if (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("y")) {
+					String jasonString = sheet.getRow(j).getCell(xmlField).getStringCellValue();
+					String newfilename = sheet.getRow(j).getCell(filename).getStringCellValue();
+					System.out.println(sheet.getRow(j).getCell(1));
+					try {
+						createFile.CreateFileFromVICHTemplate(validtemplatefile, NullFlavorsTemplate, jasonString,
+								"Files/" + sheet.getSheetName() + "/" + newfilename + ".xml");
+					} catch (Exception e) {
+						System.out.println("Error in creating file > " + newfilename + ".xml");
+						e.printStackTrace();
+					}
+				}
+			} catch (Exception e) {
+			}
+		}
+	}
+	/*
+	 * public static void main(String args[]) throws EncryptedDocumentException,
+	 * InvalidFormatException, IOException, XPathExpressionException,
+	 * ParserConfigurationException, SAXException, TransformerException,
+	 * ParseException {
+	 * 
+	 * 
+	 * // ExcelReadin InputStream inp = new FileInputStream(ExcelFilePath); Workbook
+	 * wb = new XSSFWorkbook(inp); Sheet sheet = wb.getSheetAt(2); int
+	 * MandatoryChecks=1,LengthChecks=2; XpathSupport createFile = new
+	 * XpathSupport(); final int xmlField = 6; final int flagcheck = 0; final int
+	 * filename = 7;
+	 * 
+	 * 
+	 * for (int j = 1; j < 400 - 1; j++) { try { if
+	 * (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("y")) {
+	 * //String jasonString = sheet.getRow(j).getCell(xmlField).toString(); String
+	 * jasonString = sheet.getRow(j).getCell(xmlField).getStringCellValue(); String
+	 * newfilename = sheet.getRow(j).getCell(filename).getStringCellValue();
+	 * System.out.println(sheet.getRow(j).getCell(1)); try {
+	 * //createFile.CreateFileFromVICHTemplate(validtemplatefile,
+	 * NullFlavorsTemplate, jasonString,"Files/"+sheet.getSheetName()+"/" +
+	 * newfilename + ".xml");
+	 * createFile.CreateFileFromVICHTemplate(VICH_TestFile_AllFields,
+	 * NullFlavorsTemplate, jasonString,"Files/"+sheet.getSheetName()+"/" +
+	 * newfilename + ".xml"); } catch (Exception e) {
+	 * System.out.println("Error in creating file > " + newfilename + ".xml");
+	 * e.printStackTrace(); } } } catch (Exception e) { } } }
+	 * 
+	 */
 }

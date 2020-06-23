@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MCCI_IN200100UV01 xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 http://eudravigilance.ema.europa.eu/XSD/multicacheschemas/MCCI_IN200100UV01.xsd" ITSVersion="XML_1.0">
+   <id root="2.16.840.1.113883.3.989.2.1.3.22" extension="GB-BELL SONS COMPANY (DRUGGISTS) LIMITED-2020SCBH004328 20200304153005" />
+   <creationTime value="20200306144508" />
+   <responseModeCode code="D" />
+   <interactionId root="2.16.840.1.113883.1.6" extension="MCCI_IN200100UV01" />
+   <name code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.1" codeSystemVersion="2.0" displayName="ICHICSR" />
+   <PORR_IN049016UV>
+      <id root="2.16.840.1.113883.3.989.2.1.3.1" extension="GB-BELL SONS ' COMPANY (DRUGGISTS) LIMITED-2020SCBH004328" />
+      <creationTime value="20200306144508" />
+      <interactionId root="2.16.840.1.113883.1.6" extension="PORR_IN049016UV" />
+      <processingCode code="P" />
+      <processingModeCode code="T" />
+      <acceptAckCode code="AL" />
+      <receiver typeCode="RCV">
+         <device classCode="DEV" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.3.989.2.1.3.12" extension="EVHUMAN" />
+         </device>
+      </receiver>
+      <sender typeCode="SND">
+         <device classCode="DEV" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.3.989.2.1.3.11" extension="MAHTEST01GW" />
+         </device>
+      </sender>
+      <controlActProcess classCode="CACT" moodCode="EVN">
+         <code code="PORR_TE049016UV" codeSystem="2.16.840.1.113883.1.18" />
+         <effectiveTime value="20200306144508" />
+         <subject typeCode="SUBJ">
+            <investigationEvent classCode="INVSTG" moodCode="EVN">
+               <id root="2.16.840.1.113883.3.989.2.1.3.1" extension="GB-BELL SONS ' COMPANY (DRUGGISTS) LIMITED-2020SCBH004328" />
+               <id root="2.16.840.1.113883.3.989.2.1.3.2" extension="GB-BELL SONS ' COMPANY (DRUGGISTS) LIMITED-2020SCBH004328" />
+               <code code="PAT_ADV_EVNT" codeSystem="2.16.840.1.113883.5.4" />
+               <text>An initial literature report was received on 24-Feb-2020, from an author by Bells Healthcare.
+
+This is case of 64-year-old-adult female patient who took accidental overdose (PT: Accidental overdose) of company suspect paracetamol (unknown dose, route and frequency) for unknown indication and experienced renal failure (PT: Renal failure), pulmonary failure (PT: Respiratory failure), sepsis (PT: Sepsis). Other co-suspect drugs were not reported.
+
+The other relevant medical history and concomitant drugs were not reported.
+
+On an unknown date, the patient received accidental overdose of paracetamol (dose, frequency and route of administration unknown) for an unknown indication. After an unspecified duration, the patient was admitted due to renal failure, pulmonary failure and sepsis. At the time of scanning the patient was sedated and intubated. The patient was scanned in a semi-recumbent position in bed, with eyelids held open by one of the scan operators. Additional technical challenges were the poor quality of the ocular surface due to poor lid closure and inadequate lubrication resulting in corneal epitheliopathy (exposure keratopathy) and patient movement resulting in an alignment artefact in the reconstructed Optical coherence tomography angiography (OCTA) rendition of the capillary plexi.
+
+Action taken with company suspect drug was unknown.
+
+The outcome of the events was unknown.
+
+The events were assessed as serious (Life Threatening and Hospitalization).
+
+Author's comment:
+
+Authors reported that, the patient had secondary renal failure, pulmonary failure and sepsis after receiving accidental overdose of paracetamol.
+
+Citation:
+
+Liu X, Kale AU, Capewell N, Talbot N, Ahmed S, Keane PA, et al. Optical coherence tomography (OCT) in unconscious and systemically unwell patients using a mobile OCT device: A pilot study. BMJ Open. 2019; 9:11; e030882.
+On an unknown date: Optical coherence tomography shows, poor ocular surface and an alignment artefact arising from patient movement.</text>
+               <statusCode code="active" />
+               <effectiveTime>
+                  <low value="20200224" />
+               </effectiveTime>
+               <availabilityTime value="20200224" />
+               <reference typeCode="REFR">
+                  <document classCode="DOC" moodCode="EVN">
+                     <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.27" codeSystemVersion="2.0" displayName="literatureReference" />
+                     <bibliographicDesignationText>Liu X, Kale AU, Capewell N, Talbot N, Ahmed S, Keane PA, et al.. Optical coherence tomography (OCT) in unconscious and systemically unwell patients using a mobile OCT device: A pilot study.. BMJ Open. 2019;9:11:e030882.</bibliographicDesignationText>
+                  </document>
+               </reference>
+               <reference typeCode="REFR">
+                  <document classCode="DOC" moodCode="EVN">
+                     <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.27" codeSystemVersion="2.0" displayName="documentsHeldBySender" />
+                     <title>E-mail,Source document</title>
+                  </document>
+               </reference>
+               <component typeCode="COMP">
+                  <observationEvent classCode="OBS" moodCode="EVN">
+                     <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="additionalDocumentsAvailable" />
+                     <value value="true" xsi:type="BL" />
+                  </observationEvent>
+               </component>
+               <component typeCode="COMP">
+                  <observationEvent classCode="OBS" moodCode="EVN">
+                     <code code="23" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="localCriteriaForExpedited" />
+                     <value value="true" xsi:type="BL" />
+                  </observationEvent>
+               </component>
+               <component typeCode="COMP">
+                  <adverseEventAssessment classCode="INVSTG" moodCode="EVN">
+                     <subject1 typeCode="SBJ">
+                        <primaryRole classCode="INVSBJ">
+                           <player1 classCode="PSN" determinerCode="INSTANCE">
+                              <name>PRIVACY</name>
+                           </player1>
+                           <subjectOf2 typeCode="SBJ">
+                              <organizer classCode="CATEGORY" moodCode="EVN">
+                                 <code code="4" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="drugInformation" />
+                                 <component typeCode="COMP">
+                                    <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                       <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                                       <consumable typeCode="CSM">
+                                          <instanceOfKind classCode="INST">
+                                             <kindOfProduct classCode="MMAT" determinerCode="KIND">
+                                                <name>Paracetamol</name>
+                                                <ingredient classCode="ACTI">
+                                                   <ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                                      <name>PARACETAMOL</name>
+                                                   </ingredientSubstance>
+                                                </ingredient>
+                                             </kindOfProduct>
+                                             <subjectOf typeCode="SBJ">
+                                                <productEvent classCode="ACT" moodCode="EVN">
+                                                   <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.18" codeSystemVersion="2.0" displayName="retailSupply" />
+                                                   <performer typeCode="PRF">
+                                                      <assignedEntity classCode="ASSIGNED">
+                                                         <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                            <addr>
+                                                               <country>GB</country>
+                                                            </addr>
+                                                         </representedOrganization>
+                                                      </assignedEntity>
+                                                   </performer>
+                                                </productEvent>
+                                             </subjectOf>
+                                          </instanceOfKind>
+                                       </consumable>
+                                       <outboundRelationship2 typeCode="COMP">
+                                          <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                             <text>UNK</text>
+                                             <routeCode code="065" codeSystem="2.16.840.1.113883.3.989.2.1.1.14" codeSystemVersion="2.1" displayName="Unknown" />
+                                             <consumable typeCode="CSM">
+                                                <instanceOfKind classCode="INST">
+                                                   <productInstanceInstance classCode="MMAT" determinerCode="INSTANCE">
+                                                      <lotNumberText nullFlavor="UNK" />
+                                                   </productInstanceInstance>
+                                                </instanceOfKind>
+                                             </consumable>
+                                          </substanceAdministration>
+                                       </outboundRelationship2>
+                                       <inboundRelationship typeCode="CAUS">
+                                          <act classCode="ACT" moodCode="EVN">
+                                             <code code="0" codeSystem="2.16.840.1.113883.3.989.2.1.1.15" codeSystemVersion="2.0" displayName="Unknown" xsi:type="CE" />
+                                          </act>
+                                       </inboundRelationship>
+                                       <inboundRelationship typeCode="RSON">
+                                          <observation classCode="OBS" moodCode="EVN">
+                                             <code code="19" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="indication" />
+                                             <value code="10057097" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="22.1" displayName="Drug use for unknown indication" xsi:type="CE">
+                                                <originalText>Drug use for unknown indication</originalText>
+                                             </value>
+                                             <performer typeCode="PRF">
+                                                <assignedEntity classCode="ASSIGNED">
+                                                   <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sourceReporter" />
+                                                </assignedEntity>
+                                             </performer>
+                                          </observation>
+                                       </inboundRelationship>
+                                    </substanceAdministration>
+                                 </component>
+                              </organizer>
+                           </subjectOf2>
+                           <subjectOf2 typeCode="SBJ">
+                              <observation classCode="OBS" moodCode="EVN">
+                                 <id root="2a811b6f-d73f-3c25-95e1-53e7145d19d2" />
+                                 <code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction" />
+                                 <value code="10000381" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="22.1" displayName="Accidental overdose" xsi:type="CE">
+                                    <originalText language="eng">accidental paracetamol overdose</originalText>
+                                 </value>
+                                 <location typeCode="LOC">
+                                    <locatedEntity classCode="LOCE">
+                                       <locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+                                          <code code="GB" codeSystem="1.0.3166.1.2.2" displayName="United Kingdom of Great Britain and Northern Ireland" />
+                                       </locatedPlace>
+                                    </locatedEntity>
+                                 </location>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="37" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="termHighlightedByReporter" />
+                                       <value code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.10" codeSystemVersion="2.0" displayName="Yes, highlighted by the reporter, SERIOUS" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="34" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInDeath" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="21" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="isLifeThreatening" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="33" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="requiresInpatientHospitalization" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="35" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInPersistentOrSignificantDisability" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="12" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="congenitalAnomalyBirthDefect" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="26" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="otherMedicallyImportantCondition" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="27" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="outcome" />
+                                       <value code="0" codeSystem="2.16.840.1.113883.3.989.2.1.1.11" codeSystemVersion="2.0" displayName="unknown" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                              </observation>
+                           </subjectOf2>
+                           <subjectOf2 typeCode="SBJ">
+                              <observation classCode="OBS" moodCode="EVN">
+                                 <id root="4aa3fc84-eaf1-303d-88c1-53d72181c3c8" />
+                                 <code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction" />
+                                 <value code="10038695" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="22.1" displayName="Respiratory failure" xsi:type="CE">
+                                    <originalText language="eng">pulmonary failure</originalText>
+                                 </value>
+                                 <location typeCode="LOC">
+                                    <locatedEntity classCode="LOCE">
+                                       <locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+                                          <code code="GB" codeSystem="1.0.3166.1.2.2" displayName="United Kingdom of Great Britain and Northern Ireland" />
+                                       </locatedPlace>
+                                    </locatedEntity>
+                                 </location>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="37" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="termHighlightedByReporter" />
+                                       <value code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.10" codeSystemVersion="2.0" displayName="Yes, highlighted by the reporter, SERIOUS" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="34" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInDeath" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="21" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="isLifeThreatening" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="33" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="requiresInpatientHospitalization" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="35" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInPersistentOrSignificantDisability" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="12" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="congenitalAnomalyBirthDefect" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="26" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="otherMedicallyImportantCondition" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="27" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="outcome" />
+                                       <value code="0" codeSystem="2.16.840.1.113883.3.989.2.1.1.11" codeSystemVersion="2.0" displayName="unknown" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                              </observation>
+                           </subjectOf2>
+                           <subjectOf2 typeCode="SBJ">
+                              <observation classCode="OBS" moodCode="EVN">
+                                 <id root="24df3ebe-ea15-3015-aaca-f5cafd4f26f2" />
+                                 <code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction" />
+                                 <value code="10040047" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="22.1" displayName="Sepsis" xsi:type="CE">
+                                    <originalText language="eng">sepsis</originalText>
+                                 </value>
+                                 <location typeCode="LOC">
+                                    <locatedEntity classCode="LOCE">
+                                       <locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+                                          <code code="GB" codeSystem="1.0.3166.1.2.2" displayName="United Kingdom of Great Britain and Northern Ireland" />
+                                       </locatedPlace>
+                                    </locatedEntity>
+                                 </location>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="37" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="termHighlightedByReporter" />
+                                       <value code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.10" codeSystemVersion="2.0" displayName="Yes, highlighted by the reporter, SERIOUS" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="34" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInDeath" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="21" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="isLifeThreatening" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="33" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="requiresInpatientHospitalization" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="35" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInPersistentOrSignificantDisability" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="12" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="congenitalAnomalyBirthDefect" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="26" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="otherMedicallyImportantCondition" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="27" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="outcome" />
+                                       <value code="0" codeSystem="2.16.840.1.113883.3.989.2.1.1.11" codeSystemVersion="2.0" displayName="unknown" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                              </observation>
+                           </subjectOf2>
+                           <subjectOf2 typeCode="SBJ">
+                              <observation classCode="OBS" moodCode="EVN">
+                                 <id root="7ab0b4c4-208a-38e3-a848-bfb257194dfa" />
+                                 <code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction" />
+                                 <value code="10038435" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="22.1" displayName="Renal failure" xsi:type="CE">
+                                    <originalText language="eng">renal failure</originalText>
+                                 </value>
+                                 <location typeCode="LOC">
+                                    <locatedEntity classCode="LOCE">
+                                       <locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+                                          <code code="GB" codeSystem="1.0.3166.1.2.2" displayName="United Kingdom of Great Britain and Northern Ireland" />
+                                       </locatedPlace>
+                                    </locatedEntity>
+                                 </location>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="37" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="termHighlightedByReporter" />
+                                       <value code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.10" codeSystemVersion="2.0" displayName="Yes, highlighted by the reporter, SERIOUS" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="34" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInDeath" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="21" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="isLifeThreatening" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="33" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="requiresInpatientHospitalization" />
+                                       <value value="true" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="35" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInPersistentOrSignificantDisability" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="12" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="congenitalAnomalyBirthDefect" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="26" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="otherMedicallyImportantCondition" />
+                                       <value value="false" xsi:type="BL" />
+                                    </observation>
+                                 </outboundRelationship2>
+                                 <outboundRelationship2 typeCode="PERT">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="27" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="outcome" />
+                                       <value code="0" codeSystem="2.16.840.1.113883.3.989.2.1.1.11" codeSystemVersion="2.0" displayName="unknown" xsi:type="CE" />
+                                    </observation>
+                                 </outboundRelationship2>
+                              </observation>
+                           </subjectOf2>
+                           <subjectOf2 typeCode="SBJ">
+                              <organizer classCode="CATEGORY" moodCode="EVN">
+                                 <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="testsAndProceduresRelevantToTheInvestigation" />
+                                 <component typeCode="COMP">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                       <code code="10050062" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="22.1" displayName="Angiography">
+                                          <originalText>Angiography</originalText>
+                                       </code>
+                                       <effectiveTime nullFlavor="UNK" xsi:type="IVL_TS" />
+                                       <value xsi:type="ED">Unknown N/A</value>
+                                       <outboundRelationship2 typeCode="REFR">
+                                          <observation classCode="OBS" moodCode="EVN">
+                                             <code code="25" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="moreInformationAvailable" />
+                                             <value value="false" xsi:type="BL" />
+                                          </observation>
+                                       </outboundRelationship2>
+                                    </observation>
+                                 </component>
+                              </organizer>
+                           </subjectOf2>
+                        </primaryRole>
+                     </subject1>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="20" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="interventionCharacterization" />
+                           <value code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.13" codeSystemVersion="2.0" displayName="Suspect" xsi:type="CE" />
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PHARMACEUTICAL COMPANY</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="2a811b6f-d73f-3c25-95e1-53e7145d19d2" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PRIMARY SOURCE REPORTER</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="2a811b6f-d73f-3c25-95e1-53e7145d19d2" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PHARMACEUTICAL COMPANY</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="7ab0b4c4-208a-38e3-a848-bfb257194dfa" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PRIMARY SOURCE REPORTER</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="7ab0b4c4-208a-38e3-a848-bfb257194dfa" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PHARMACEUTICAL COMPANY</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="4aa3fc84-eaf1-303d-88c1-53d72181c3c8" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PRIMARY SOURCE REPORTER</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="4aa3fc84-eaf1-303d-88c1-53d72181c3c8" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PHARMACEUTICAL COMPANY</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="24df3ebe-ea15-3015-aaca-f5cafd4f26f2" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component typeCode="COMP">
+                        <causalityAssessment classCode="OBS" moodCode="EVN">
+                           <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality" />
+                           <value xsi:type="ST">Possible</value>
+                           <methodCode>
+                              <originalText>Global Introspection</originalText>
+                           </methodCode>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code>
+                                    <originalText>PRIMARY SOURCE REPORTER</originalText>
+                                 </code>
+                              </assignedEntity>
+                           </author>
+                           <subject1 typeCode="SUBJ">
+                              <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                 <id root="24df3ebe-ea15-3015-aaca-f5cafd4f26f2" />
+                              </adverseEffectReference>
+                           </subject1>
+                           <subject2 typeCode="SUBJ">
+                              <productUseReference classCode="SBADM" moodCode="EVN">
+                                 <id root="b86f7a67-1a34-3afc-b4e7-1b404d86c0f5" />
+                              </productUseReference>
+                           </subject2>
+                        </causalityAssessment>
+                     </component>
+                     <component1 typeCode="COMP">
+                        <observationEvent classCode="OBS" moodCode="EVN">
+                           <code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment" />
+                           <value xsi:type="ED">The case was assessed as medically confirmed, serious and unexpected as per paracetamol SmPc. The events accidental overdose (PT: Accidental overdose), pulmonary failure (PT: Respiratory failure), sepsis (PT: Sepsis) and secondary renal failure (PT: Renal failure) were assessed as serious and unexpected as per paracetamol SmPc. Based on the reported information, the role of paracetamol cannot be ruled out in terms of temporal relationship and its known safety profile.</value>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sourceReporter" />
+                              </assignedEntity>
+                           </author>
+                        </observationEvent>
+                     </component1>
+                     <component1 typeCode="COMP">
+                        <observationEvent classCode="OBS" moodCode="EVN">
+                           <code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment" />
+                           <value xsi:type="ED">The case was assessed as medically confirmed, serious and unexpected as per paracetamol SmPc. The events accidental overdose (PT: Accidental overdose), pulmonary failure (PT: Respiratory failure), sepsis (PT: Sepsis) and secondary renal failure (PT: Renal failure) were assessed as serious and unexpected as per paracetamol SmPc. Based on the reported information, the role of paracetamol cannot be ruled out in terms of temporal relationship and its known safety profile.</value>
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sender" />
+                              </assignedEntity>
+                           </author>
+                        </observationEvent>
+                     </component1>
+                     <component1 typeCode="COMP">
+                        <observationEvent classCode="OBS" moodCode="EVN">
+                           <code code="15" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="diagnosis" />
+                           <value code="10000381" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="22.1" displayName="Accidental overdose" xsi:type="CE" />
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sender" />
+                              </assignedEntity>
+                           </author>
+                        </observationEvent>
+                     </component1>
+                  </adverseEventAssessment>
+               </component>
+               <outboundRelationship typeCode="SPRT">
+                  <priorityNumber value="1" />
+                  <relatedInvestigation classCode="INVSTG" moodCode="EVN">
+                     <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.22" codeSystemVersion="2.0" displayName="sourceReport" />
+                     <subjectOf2 typeCode="SUBJ">
+                        <controlActEvent classCode="CACT" moodCode="EVN">
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                    <name>
+                                       <family>PRIVACY</family>
+                                    </name>
+                                    <asQualifiedEntity classCode="QUAL">
+                                       <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.6" codeSystemVersion="2.0" displayName="Other health professional" />
+                                    </asQualifiedEntity>
+                                    <asLocatedEntity classCode="LOCE">
+                                       <location classCode="COUNTRY" determinerCode="INSTANCE">
+                                          <code code="GB" codeSystem="1.0.3166.1.2.2" displayName="United Kingdom of Great Britain and Northern Ireland" />
+                                       </location>
+                                    </asLocatedEntity>
+                                 </assignedPerson>
+                              </assignedEntity>
+                           </author>
+                        </controlActEvent>
+                     </subjectOf2>
+                  </relatedInvestigation>
+               </outboundRelationship>
+               <outboundRelationship typeCode="SPRT">
+                  <relatedInvestigation classCode="INVSTG" moodCode="EVN">
+                     <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.22" codeSystemVersion="2.0" displayName="sourceReport" />
+                     <subjectOf2 typeCode="SUBJ">
+                        <controlActEvent classCode="CACT" moodCode="EVN">
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                    <name>
+                                       <family>PRIVACY</family>
+                                    </name>
+                                    <asQualifiedEntity classCode="QUAL">
+                                       <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.6" codeSystemVersion="2.0" displayName="Other health professional" />
+                                    </asQualifiedEntity>
+                                    <asLocatedEntity classCode="LOCE">
+                                       <location classCode="COUNTRY" determinerCode="INSTANCE">
+                                          <code code="GB" codeSystem="1.0.3166.1.2.2" displayName="United Kingdom of Great Britain and Northern Ireland" />
+                                       </location>
+                                    </asLocatedEntity>
+                                 </assignedPerson>
+                              </assignedEntity>
+                           </author>
+                        </controlActEvent>
+                     </subjectOf2>
+                  </relatedInvestigation>
+               </outboundRelationship>
+               <outboundRelationship typeCode="SPRT">
+                  <relatedInvestigation classCode="INVSTG" moodCode="EVN">
+                     <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.22" codeSystemVersion="2.0" displayName="initialReport" />
+                     <subjectOf2 typeCode="SUBJ">
+                        <controlActEvent classCode="CACT" moodCode="EVN">
+                           <author typeCode="AUT">
+                              <assignedEntity classCode="ASSIGNED">
+                                 <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.3" codeSystemVersion="2.0" displayName="Other" />
+                              </assignedEntity>
+                           </author>
+                        </controlActEvent>
+                     </subjectOf2>
+                  </relatedInvestigation>
+               </outboundRelationship>
+               <subjectOf1 typeCode="SUBJ">
+                  <controlActEvent classCode="CACT" moodCode="EVN">
+                     <author typeCode="AUT">
+                        <assignedEntity classCode="ASSIGNED">
+                           <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.7" codeSystemVersion="2.0" displayName="Pharmaceutical company" />
+                           <addr>
+                              <streetAddressLine>....</streetAddressLine>
+                              <city>....</city>
+                              <state>....</state>
+                              <postalCode>....</postalCode>
+                           </addr>
+                           <telecom value="tel:2224" />
+                           <telecom value="fax:8884" />
+                           <telecom value="mailto:EVHUMANWTU01@EVHUMANWTU01.com" />
+                           <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                              <name>
+                                 <prefix>Mr</prefix>
+                                 <given>Bill</given>
+                                 <family>Gates</family>
+                              </name>
+                              <asLocatedEntity classCode="LOCE">
+                                 <location classCode="COUNTRY" determinerCode="INSTANCE">
+                                    <code code="ES" codeSystem="1.0.3166.1.2.2" displayName="Spain" />
+                                 </location>
+                              </asLocatedEntity>
+                           </assignedPerson>
+                           <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                              <name>IT</name>
+                              <assignedEntity classCode="ASSIGNED">
+                                 <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                    <name>MAHTEST01GW</name>
+                                 </representedOrganization>
+                              </assignedEntity>
+                           </representedOrganization>
+                        </assignedEntity>
+                     </author>
+                  </controlActEvent>
+               </subjectOf1>
+               <subjectOf2 typeCode="SUBJ">
+                  <investigationCharacteristic classCode="OBS" moodCode="EVN">
+                     <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.23" codeSystemVersion="2.0" displayName="ichReportType" />
+                     <value code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.2" codeSystemVersion="2.0" displayName="Spontaneous" xsi:type="CE" />
+                  </investigationCharacteristic>
+               </subjectOf2>
+               <subjectOf2 typeCode="SUBJ">
+                  <investigationCharacteristic classCode="OBS" moodCode="EVN">
+                     <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.23" codeSystemVersion="2.0" displayName="otherCaseIds" />
+                     <value value="false" xsi:type="BL" />
+                  </investigationCharacteristic>
+               </subjectOf2>
+            </investigationEvent>
+         </subject>
+      </controlActProcess>
+   </PORR_IN049016UV>
+   <receiver typeCode="RCV">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.840.1.113883.3.989.2.1.3.14" extension="EVHUMAN" />
+      </device>
+   </receiver>
+   <sender typeCode="SND">
+      <device classCode="DEV" determinerCode="INSTANCE">
+         <id root="2.16.840.1.113883.3.989.2.1.3.13" extension="MAHTEST01GW" />
+      </device>
+   </sender>
+</MCCI_IN200100UV01>

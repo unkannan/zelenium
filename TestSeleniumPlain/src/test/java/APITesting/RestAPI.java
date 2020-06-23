@@ -4,8 +4,6 @@ import org.apache.xmlbeans.XmlObject;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
-import io.restassured.http.Header;
-import io.restassured.http.Headers;
 import io.restassured.http.Method;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
@@ -50,7 +48,7 @@ public class RestAPI {
 	 // specified in the above step.
 	 RequestSpecification httpRequest = RestAssured.given();
 	 httpRequest.header("Content-Type", "application/xml;charset=UTF-8");
-	 XmlObject requestParams=(XmlObject) new XmlPath(text);
+	 		XmlObject requestParams=(XmlObject) new XmlPath(text);
 	 httpRequest.body(requestParams.toString());
 
 	 
