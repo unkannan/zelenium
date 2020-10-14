@@ -17,7 +17,7 @@ import org.json.simple.parser.ParseException;
 import org.xml.sax.SAXException;
 
 public class createfiles {
-	//static String ExcelFilePath = "Files/MandatoryRuleFile.xlsx";
+	// static String ExcelFilePath = "Files/MandatoryRuleFile.xlsx";
 	static String ExcelFilePath = "C:\\Users\\unkan\\OneDrive\\VICH\\MandatoryRuleFile.xlsx";
 	static String validtemplatefile = "Files/VICH_TestFile.xml";
 
@@ -40,8 +40,12 @@ public class createfiles {
 					String jasonString = sheet.getRow(j).getCell(xmlField).toString();
 					String newfilename = sheet.getRow(j).getCell(filename).toString();
 					try {
-					createFile.createfilefromtemplate1(validtemplatefile, jasonString, "Files/" + newfilename + ".xml");
-					}catch(Exception e) {System.out.println("Error in creating file");e.printStackTrace();}
+						createFile.createfilefromtemplate1(validtemplatefile, jasonString,
+								"Files/" + newfilename + ".xml");
+					} catch (Exception e) {
+						System.out.println("Error in creating file");
+						e.printStackTrace();
+					}
 				}
 			}
 		} catch (Exception e) {

@@ -69,103 +69,65 @@ public class XpathSupport {
 	}
 
 	/*
-	 * public static void main(String args[]) throws ParserConfigurationException,
-	 * SAXException, IOException, XPathExpressionException {
-	 * System.out.println("Component1TC3");
+	 * public void createfilefromtemplate(String templatefileXML, String xpath,
+	 * String value, String newfilename) throws ParserConfigurationException,
+	 * SAXException, IOException, XPathExpressionException, TransformerException {
+	 * DocumentBuilderFactory f = DocumentBuilderFactory.newInstance();
+	 * DocumentBuilder b = f.newDocumentBuilder(); Document doc =
+	 * b.parse(templatefileXML); XPath xPath =
+	 * XPathFactory.newInstance().newXPath(); System.out.println(xpath);
 	 * 
-	 * String filePath = "D:\\zelenium\\vichfiles\\MandatoryFields\\MainFile.xml";
+	 * ModifyXMLdataUsingJasonFile(templatefileXML, xpath); Node startDateNode =
+	 * (Node) xPath.compile(xpath).evaluate(doc, XPathConstants.NODE);
+	 * System.out.println(startDateNode.getTextContent());
+	 * startDateNode.setTextContent(value);
 	 * 
-	 * String fileXML=( readAllBytesJava7( filePath ));
+	 * // write the content into xml file TransformerFactory transformerFactory =
+	 * TransformerFactory.newInstance(); Transformer transformer =
+	 * transformerFactory.newTransformer(); DOMSource source = new DOMSource(doc);
+	 * StreamResult result = new StreamResult(new File(newfilename));
+	 * transformer.transform(source, result);
 	 * 
-	 * XpathSupport xpath = new XpathSupport(fileXML); // String msgackPath =
-	 * "/PORR_IN049006UV/controlActProcess/subject/investigationEvent/subjectOf1/controlActEvent/author/assignedEntity/representedOrganization";
-	 * // String msgackPath = "/MCCI_IN200100UV01/creationTime/@value"; String
-	 * msgackPath =
-	 * "/MCCI_IN200100UV01/PORR_IN049006UV/controlActProcess/subject/investigationEvent/subjectOf1/controlActEvent/primaryInformationRecipient/assignedEntity[code/@code=\"T95009\"]/addr/country";
-	 * String k=xpath.string(String.format("%s", msgackPath));
-	 * System.out.println(k.replaceAll("\\s+", " ")); }
+	 * System.out.println("Done"); }
+	 * 
+	 * public void ModifyXMLdataUsingJasonFile(String templatefileXML, String
+	 * jasonxpath) { JSONParser parser = new JSONParser();
+	 * 
+	 * JSONObject parentObject = null; try { parentObject = (JSONObject)
+	 * parser.parse(jasonxpath); } catch (ParseException e) { // TODO Auto-generated
+	 * catch block e.printStackTrace(); } JSONArray parentArray = (JSONArray)
+	 * parentObject.get("xpath");
+	 * 
+	 * int i = 0; System.out.println(parentArray.size()); while (i <
+	 * parentArray.size()) { JSONObject finalObject = (JSONObject)
+	 * parentArray.get(i++); System.out.println(finalObject.get("field")); String
+	 * xpath = finalObject.get("field").toString();
+	 * System.out.println(finalObject.get("value")); } }
+	 * 
+	 * @SuppressWarnings("unchecked") public void getJason(String jsonstr) throws
+	 * ParseException { String jsonstr5 = "{\r\n" + "\"xpath\":[\r\n" +
+	 * "{ \"field\":\"Avengers\",\r\n" + "\"value\":\"2012\"\r\n" + "},\r\n" +
+	 * "{\"field\":\"Avengers2\",\r\n" + "\"value\":\"2014\"\r\n" + "}\r\n" +
+	 * "]\r\n" + "}";
+	 * 
+	 * // String // jsonstr6=
+	 * "{\"xpath\":[{\"field\":\"Avengers\",\"value\":\"2012\"},{\"field\":\"Avengers2\",\"value\":\"2014\"}]}";
+	 * String jsonstr6 =
+	 * "{\"xpath\":[{ \"field\":\"/MCCI_IN200100UV01/PORR_IN049006UV/controlActProcess/subject/investigationEvent/subjectOf1/controlActEvent/primaryInformationRecipient/assignedEntity[code/@code=\\\"T95009\\\"]/addr/country\",\"value\":\"countryNew\"},{\"field\":\"/MCCI_IN200100UV01/PORR_IN049006UV/controlActProcess/subject/investigationEvent/subjectOf1/controlActEvent/primaryInformationRecipient/assignedEntity[code/@code=\\\"T95009\\\"]/addr/city\",\"value\":\"city2014\"}]}"
+	 * ; // jsonstr6=jsonstr6.replace("\"", "\\\""); JSONParser parser = new
+	 * JSONParser(); System.out.println(jsonstr5.trim());
+	 * System.out.println(jsonstr6.trim()); JSONObject parentObject = (JSONObject)
+	 * parser.parse(jsonstr6.trim()); JSONArray parentArray = (JSONArray)
+	 * parentObject.get("xpath");
+	 * 
+	 * int i = 0; System.out.println(parentArray.size()); while (i <
+	 * parentArray.size()) { JSONObject finalObject = (JSONObject)
+	 * parentArray.get(i++); System.out.println(finalObject.get("field"));
+	 * System.out.println(finalObject.get("value")); }
+	 * 
+	 * }
+	 * 
 	 */
-
-	private static String readAllBytesJava7(String filePath) {
-		String content = "";
-		try {
-			content = new String(Files.readAllBytes(Paths.get(filePath)));
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return content;
-	}
-
-	public void createfilefromtemplate(String templatefileXML, String xpath, String value, String newfilename)
-			throws ParserConfigurationException, SAXException, IOException, XPathExpressionException,
-			TransformerException {
-		DocumentBuilderFactory f = DocumentBuilderFactory.newInstance();
-		DocumentBuilder b = f.newDocumentBuilder();
-		Document doc = b.parse(templatefileXML);
-		XPath xPath = XPathFactory.newInstance().newXPath();
-		System.out.println(xpath);
-
-		ModifyXMLdataUsingJasonFile(templatefileXML, xpath);
-		Node startDateNode = (Node) xPath.compile(xpath).evaluate(doc, XPathConstants.NODE);
-		System.out.println(startDateNode.getTextContent());
-		startDateNode.setTextContent(value);
-
-		// write the content into xml file
-		TransformerFactory transformerFactory = TransformerFactory.newInstance();
-		Transformer transformer = transformerFactory.newTransformer();
-		DOMSource source = new DOMSource(doc);
-		StreamResult result = new StreamResult(new File(newfilename));
-		transformer.transform(source, result);
-
-		System.out.println("Done");
-	}
-
-	public void ModifyXMLdataUsingJasonFile(String templatefileXML, String jasonxpath) {
-		JSONParser parser = new JSONParser();
-
-		JSONObject parentObject = null;
-		try {
-			parentObject = (JSONObject) parser.parse(jasonxpath);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		JSONArray parentArray = (JSONArray) parentObject.get("xpath");
-
-		int i = 0;
-		System.out.println(parentArray.size());
-		while (i < parentArray.size()) {
-			JSONObject finalObject = (JSONObject) parentArray.get(i++);
-			System.out.println(finalObject.get("field"));
-			String xpath = finalObject.get("field").toString();
-			System.out.println(finalObject.get("value"));
-		}
-	}
-
-	@SuppressWarnings("unchecked")
-	public void getJason(String jsonstr) throws ParseException {
-		String jsonstr5 = "{\r\n" + "\"xpath\":[\r\n" + "{ \"field\":\"Avengers\",\r\n" + "\"value\":\"2012\"\r\n"
-				+ "},\r\n" + "{\"field\":\"Avengers2\",\r\n" + "\"value\":\"2014\"\r\n" + "}\r\n" + "]\r\n" + "}";
-
-		// String
-		// jsonstr6="{\"xpath\":[{\"field\":\"Avengers\",\"value\":\"2012\"},{\"field\":\"Avengers2\",\"value\":\"2014\"}]}";
-		String jsonstr6 = "{\"xpath\":[{ \"field\":\"/MCCI_IN200100UV01/PORR_IN049006UV/controlActProcess/subject/investigationEvent/subjectOf1/controlActEvent/primaryInformationRecipient/assignedEntity[code/@code=\\\"T95009\\\"]/addr/country\",\"value\":\"countryNew\"},{\"field\":\"/MCCI_IN200100UV01/PORR_IN049006UV/controlActProcess/subject/investigationEvent/subjectOf1/controlActEvent/primaryInformationRecipient/assignedEntity[code/@code=\\\"T95009\\\"]/addr/city\",\"value\":\"city2014\"}]}";
-		// jsonstr6=jsonstr6.replace("\"", "\\\"");
-		JSONParser parser = new JSONParser();
-		System.out.println(jsonstr5.trim());
-		System.out.println(jsonstr6.trim());
-		JSONObject parentObject = (JSONObject) parser.parse(jsonstr6.trim());
-		JSONArray parentArray = (JSONArray) parentObject.get("xpath");
-
-		int i = 0;
-		System.out.println(parentArray.size());
-		while (i < parentArray.size()) {
-			JSONObject finalObject = (JSONObject) parentArray.get(i++);
-			System.out.println(finalObject.get("field"));
-			System.out.println(finalObject.get("value"));
-		}
-
-	}
 
 	public void createfilefromtemplate1(String templatefileXML, String jasonxpath, String newfilename)
 			throws ParserConfigurationException, SAXException, IOException, XPathExpressionException,
@@ -199,7 +161,7 @@ public class XpathSupport {
 		StreamResult result = new StreamResult(new File(newfilename));
 		transformer.transform(source, result);
 
-		System.out.println("File created "+newfilename);
+		System.out.println("File created " + newfilename);
 		System.out.println("********************************************************");
 		System.out.println();
 	}

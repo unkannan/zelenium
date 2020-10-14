@@ -80,8 +80,6 @@ public class SampleTest {
 		   String SelectedValue=sel.getFirstSelectedOption().getText();
 		   System.out.println(SelectedValue);
 		return SelectedValue;
-		 
-		
 	}
 
 	void CurrencySelectionFromDropList(WebElement ele,String SourceCurrency) {

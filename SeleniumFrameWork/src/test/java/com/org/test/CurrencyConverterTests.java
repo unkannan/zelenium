@@ -19,6 +19,10 @@ public class CurrencyConverterTests extends StartApplication {
 	CurrencyConverterPage currencyConverterPg;
 		CurrencyConverterResultsPage ResultsPg;
 	
+		
+		
+		
+		
 	@Test(dataProvider = "CurrencyInput")
 	public void tc_01_currencyConversionValidation(String sourceCountryCurrency, String targetCountryCurrency,String ConvertedToCurrencyResults) {
 		preSteps();

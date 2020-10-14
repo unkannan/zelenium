@@ -9,7 +9,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -28,19 +27,13 @@ public class AppTest
 	WebDriver driver;
 	@BeforeMethod
 	public void TestInitialize() {
-		//System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");
-		//WebDriver driver = new ChromeDriver();
 		driverManager =DriverManagerFactory.getManager(DriverType.FIREFOX);
 		driver=driverManager.getDriver();
 	}
     @Test
 	public void WebTableExcercise1() {
-	//System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");
-	//WebDriver driver = new ChromeDriver();
 		driver.get("https://www.techbeamers.com/");
 		
-		// driver.findElement(By.linkText("Python Tutorial – Beginners")).click();
-		 
 		 List<WebElement> WebTableElement= driver.findElements(By.xpath("//div[@class='main-container']//div[3]//div[1]//div[2]//div[1]/ul"));
 		 for(WebElement e : WebTableElement) {
 				System.out.println(e.getText());
@@ -50,14 +43,10 @@ public class AppTest
     
     @Test
 	public void DropDownWithoutSelectClass_WithBootStrapProgramTest() throws IOException {
-		//System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");
-		//	WebDriver driver = new ChromeDriver();
 			
 				driver.get("https://www.toolsqa.com/automation-practice-form");
 				driver.manage().window().maximize() ;
-				//Select sel=new Select(driver.findElement(By.id("continents")));
-				//sel.selectByValue("AUS");
-				
+
 				//BootStrapProgram
 				WebElement cookies=driver.findElement(By.id("cookie_action_close_header"));
 				if(cookies.isDisplayed())

@@ -25,7 +25,7 @@ public class StartApplication {
         System.out.println("Setup");
        driver.manage().window().maximize();
        driver.manage().timeouts().implicitlyWait(AppValidationConstantMessages.IMPLICIT_WAIT_TIME, TimeUnit.SECONDS);
-        driver.get(prop.getProperty("url"));
+        //driver.get(prop.getProperty("url"));
     }
 
     @AfterMethod(alwaysRun = true)

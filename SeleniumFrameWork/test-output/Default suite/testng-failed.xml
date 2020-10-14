@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.org.test.CurrencyConverterTests">
+      <class name="com.org.test.Guru99MainPageWebTableExcercise">
         <methods>
-          <include name="tc_01_currencyConversionValidation" invocation-numbers="0"/>
+          <include name="listAllElementsSize"/>
           <include name="setUp"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.org.test.CurrencyConverterTests -->
+      </class> <!-- com.org.test.Guru99MainPageWebTableExcercise -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
