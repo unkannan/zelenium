@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\kannanu\AppData\Local\Temp\testng-eclipse-1958003725\testng-customsuite.xml</span>
+                    <span>C:\Users\kannanu\AppData\Local\Temp\testng-eclipse--1900223264\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="TestSeleniumPlain.TestSeleniumPlain.EVWeb" hash-for-method="WebTableExcercise1">WebTableExcercise1</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="AdvanceSelenium.HeadlessBrowser" hash-for-method="headlessbrowser">headlessbrowser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,22 +120,70 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">TestSeleniumPlain.TestSeleniumPlain.EVWeb</span>
+              <span class="class-name">AdvanceSelenium.HeadlessBrowser</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="WebTableExcercise1">
-                  </a> <!-- WebTableExcercise1 -->
-                  <span class="method-name">WebTableExcercise1</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at java.util.Objects.requireNonNull(Objects.java:203)
-	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:100)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
-	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
-	at TestSeleniumPlain.TestSeleniumPlain.EVWeb.Click(EVWeb.java:29)
-	at TestSeleniumPlain.TestSeleniumPlain.EVWeb.SelectStartDate(EVWeb.java:77)
-	at TestSeleniumPlain.TestSeleniumPlain.EVWeb.WebTableExcercise1(EVWeb.java:57)
+                  <a name="headlessbrowser">
+                  </a> <!-- headlessbrowser -->
+                  <span class="method-name">headlessbrowser</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 79
+Build info: version: &apos;4.0.0-alpha-1&apos;, revision: &apos;d1d3728cae&apos;, time: &apos;2019-04-24T13:42:21&apos;
+System info: host: &apos;WP3078&apos;, ip: &apos;10.34.1.10&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_211&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0093A113+1548563]
+	Ordinal0 [0x008BDDA1+1039777]
+	Ordinal0 [0x0083E485+517253]
+	Ordinal0 [0x007CFD34+64820]
+	Ordinal0 [0x007CC61E+50718]
+	Ordinal0 [0x007EB797+178071]
+	Ordinal0 [0x007EB59D+177565]
+	Ordinal0 [0x007E95FB+169467]
+	Ordinal0 [0x007D160A+71178]
+	Ordinal0 [0x007D2690+75408]
+	Ordinal0 [0x007D2629+75305]
+	Ordinal0 [0x008D71B7+1143223]
+	GetHandleVerifier [0x009D2B46+507814]
+	GetHandleVerifier [0x009D2864+507076]
+	GetHandleVerifier [0x009D9F47+537511]
+	GetHandleVerifier [0x009D3402+510050]
+	Ordinal0 [0x008CF29C+1110684]
+	Ordinal0 [0x008D938B+1151883]
+	Ordinal0 [0x008D94F3+1152243]
+	Ordinal0 [0x008D83F5+1147893]
+	BaseThreadInitThunk [0x75376359+25]
+	RtlGetAppContainerNamedObjectPath [0x77667B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77667B44+180]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:139)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:577)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:211)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:189)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:176)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:165)
+	at AdvanceSelenium.HeadlessBrowser.headlessbrowser(HeadlessBrowser.java:22)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,7 +221,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\kannanu\AppData\Local\Temp\testng-eclipse-1958003725\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\kannanu\AppData\Local\Temp\testng-eclipse--1900223264\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,7 +230,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestSeleniumPlain.TestSeleniumPlain.EVWeb&quot;/&gt;
+      &lt;class name=&quot;AdvanceSelenium.HeadlessBrowser&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -224,14 +272,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'WebTableExcercise1')
-data.setCell(0, 2, 'TestSeleniumPlain.TestSeleniumPlain.EVWeb')
-data.setCell(0, 3, 83739);
+data.setCell(0, 1, 'headlessbrowser')
+data.setCell(0, 2, 'AdvanceSelenium.HeadlessBrowser')
+data.setCell(0, 3, 2072);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -257,11 +305,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestSeleniumPlain.TestSeleniumPlain.EVWeb</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">AdvanceSelenium.HeadlessBrowser</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">WebTableExcercise1</span>
+                <span class="method-name">headlessbrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

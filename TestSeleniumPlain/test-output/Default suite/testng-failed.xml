@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestSeleniumPlain.TestSeleniumPlain.EVWeb">
+      <class name="AdvanceSelenium.HeadlessBrowser">
         <methods>
-          <include name="WebTableExcercise1"/>
+          <include name="headlessbrowser"/>
         </methods>
-      </class> <!-- TestSeleniumPlain.TestSeleniumPlain.EVWeb -->
+      </class> <!-- AdvanceSelenium.HeadlessBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

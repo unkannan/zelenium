@@ -1,111 +1,49 @@
 package vich_file_creation.vich_file_creation;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
+import java.sql.SQLException;
 
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+import javax.xml.xpath.XPathExpressionException;
+
+import org.junit.Before;
 import org.junit.Test;
+//import eu.europa.ema.phv.adr.messaging.tests.FunctionalTestCases;
+import org.xml.sax.SAXException;
 
 public class createfiles {
-	static String ExcelFilePath = "C:\\Users\\kannanu\\OneDrive\\VICH\\MandatoryRuleFile.xlsx";
-	static String validtemplatefile = "Files/Templates/VICH_TestFile.xml";
-	static String VICH_TestFile_AllFields = "Files/Templates/VICH_TestFile_AllFields";
-	static String NullFlavorsTemplate = "Files/Templates/NullFlavorsTemplate.xml";
-
-	@Test
-	public void generatelenchecktestdatafiles() throws IOException {
-		// ExcelReadin
-		InputStream inp = new FileInputStream(ExcelFilePath);
-		Workbook wb = new XSSFWorkbook(inp);
-		int LengthChecks = 2;
-		Sheet sheet = wb.getSheetAt(LengthChecks);
-		XpathSupport createFile = new XpathSupport();
-		final int xmlField = 6;
-		final int flagcheck = 0;
-		final int filename = 7;
-
-		for (int j = 1; j < 400 - 1; j++) {
-			try {
-				if (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("y")) {
-					String jasonString = sheet.getRow(j).getCell(xmlField).getStringCellValue();
-					String newfilename = sheet.getRow(j).getCell(filename).getStringCellValue();
-					System.out.println(sheet.getRow(j).getCell(1));
-					try {
-						// createFile.CreateFileFromVICHTemplate(validtemplatefile, NullFlavorsTemplate,
-						// jasonString,"Files/"+sheet.getSheetName()+"/" + newfilename + ".xml");
-						createFile.CreateFileFromVICHTemplate(VICH_TestFile_AllFields, NullFlavorsTemplate, jasonString,
-								"Files/" + sheet.getSheetName() + "/" + newfilename + ".xml");
-					} catch (Exception e) {
-						System.out.println("Error in creating file > " + newfilename + ".xml");
-						e.printStackTrace();
-					}
-				}
-			} catch (Exception e) {
-			}
-		}
+	final String ExcelFilePath = "Files/Templates/createfilesfromxpath_A.xlsx";
+	//final String VICH_TestFile_AllFields = "Files/Templates/A11_Raname_valid.xml";
+	final String VICH_TestFile_AllFields = "Files/Templates/VICH_File_With_All_Elements.xml";
+	
+	final String NullFlavorsTemplate = "Files/Templates/NullFlavorsTemplate.xml";
+	//final String validtemplatefile = "Files/Templates/A11_Raname_valid.xml";
+	final String RenameTestFilesInDir="Files/bizrulefiles";
+	XpathSupport createFile=null; 
+	RenameFIle renamefileObj=null;
+	
+	
+	@Before
+	public void GetReadyBeforecreation() throws IOException {
+		createFile = new XpathSupport();
+		renamefileObj=new RenameFIle();
+		
 	}
-
-	@Test
-	public void generatemandatorychecktestdatafiles() throws IOException {
-		// ExcelReadin
-		InputStream inp = new FileInputStream(ExcelFilePath);
-		Workbook wb = new XSSFWorkbook(inp);
-		int MandatoryChecks = 1;
-		Sheet sheet = wb.getSheetAt(MandatoryChecks);
-		XpathSupport createFile = new XpathSupport();
-		final int xmlField = 6;
-		final int flagcheck = 0;
-		final int filename = 7;
-
-		for (int j = 1; j < 400 - 1; j++) {
-			try {
-				if (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("y")) {
-					String jasonString = sheet.getRow(j).getCell(xmlField).getStringCellValue();
-					String newfilename = sheet.getRow(j).getCell(filename).getStringCellValue();
-					System.out.println(sheet.getRow(j).getCell(1));
-					try {
-						createFile.CreateFileFromVICHTemplate(validtemplatefile, NullFlavorsTemplate, jasonString,
-								"Files/" + sheet.getSheetName() + "/" + newfilename + ".xml");
-					} catch (Exception e) {
-						System.out.println("Error in creating file > " + newfilename + ".xml");
-						e.printStackTrace();
-					}
-				}
-			} catch (Exception e) {
-			}
-		}
+	
+	//@Test
+	public void CreateTestDataFilesFromExcel() throws IOException {
+		//String sheet="createvichtestfiles";
+		int sheetnumber=0;
+		
+		createFile.CreatingXMLFilesFromGivenSheet(sheetnumber,ExcelFilePath,VICH_TestFile_AllFields,NullFlavorsTemplate);
 	}
-	/*
-	 * public static void main(String args[]) throws EncryptedDocumentException,
-	 * InvalidFormatException, IOException, XPathExpressionException,
-	 * ParserConfigurationException, SAXException, TransformerException,
-	 * ParseException {
-	 * 
-	 * 
-	 * // ExcelReadin InputStream inp = new FileInputStream(ExcelFilePath); Workbook
-	 * wb = new XSSFWorkbook(inp); Sheet sheet = wb.getSheetAt(2); int
-	 * MandatoryChecks=1,LengthChecks=2; XpathSupport createFile = new
-	 * XpathSupport(); final int xmlField = 6; final int flagcheck = 0; final int
-	 * filename = 7;
-	 * 
-	 * 
-	 * for (int j = 1; j < 400 - 1; j++) { try { if
-	 * (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("y")) {
-	 * //String jasonString = sheet.getRow(j).getCell(xmlField).toString(); String
-	 * jasonString = sheet.getRow(j).getCell(xmlField).getStringCellValue(); String
-	 * newfilename = sheet.getRow(j).getCell(filename).getStringCellValue();
-	 * System.out.println(sheet.getRow(j).getCell(1)); try {
-	 * //createFile.CreateFileFromVICHTemplate(validtemplatefile,
-	 * NullFlavorsTemplate, jasonString,"Files/"+sheet.getSheetName()+"/" +
-	 * newfilename + ".xml");
-	 * createFile.CreateFileFromVICHTemplate(VICH_TestFile_AllFields,
-	 * NullFlavorsTemplate, jasonString,"Files/"+sheet.getSheetName()+"/" +
-	 * newfilename + ".xml"); } catch (Exception e) {
-	 * System.out.println("Error in creating file > " + newfilename + ".xml");
-	 * e.printStackTrace(); } } } catch (Exception e) { } } }
-	 * 
-	 */
-}
+	
+	@Test
+	public void renameFile() throws IOException, XPathExpressionException, ParserConfigurationException, SAXException, TransformerException {
+		//String sheet="createvichtestfiles";
+		int sheetnumber=0;
+		
+		renamefileObj.renameExistingFilesinGivenFolder(sheetnumber,ExcelFilePath,RenameTestFilesInDir);
+	}
+}	 
