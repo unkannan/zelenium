@@ -18,25 +18,13 @@ public class RestAPI {
 	 private String text;
 
 	@Test
-	 public void GetWeatherDetails()
+	 public void GetStatusCodeForGoogleCOM()
 	 {
-		 System.setProperty("https.proxyHost", "10.234.0.121");
-		    System.setProperty("https.proxyPort", "8080");
-		    
-		 RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1/employees";
-		 Response response = RestAssured.get("http://dummy.restapiexample.com/api/v1/employee/1");
-		 
-		 // Get all the headers. Return value is of type Headers.
-		 // Headers class implements Iterable interface, hence we
-		 // can apply an advance for loop to go through all Headers
-		 // as shown in the code below
-		// Headers allHeaders = response.headers();
-		 
-		 // Iterate over all the Headers
-	//	 for(Header header : allHeaders)
-	//	 {
-	//	 System.out.println("Key: " + header.getName() + " Value: " + header.getValue());
-		// }
+		 String baseURI="http://www.google.com";
+		 		
+		 		Response response=RestAssured.get(baseURI);
+		 		System.out.println(response.getStatusCode());
+		 		System.out.println(response.getBody().asString());
 	 }
 	 
 	// @Test

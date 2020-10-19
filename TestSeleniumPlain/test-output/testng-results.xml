@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11956" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
+  <suite name="Default suite" duration-ms="2214" started-at="2020-10-19T07:55:38Z" finished-at="2020-10-19T07:55:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11956" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
-      <class name="WebElemetAndLocators.Alerts">
-        <test-method status="PASS" signature="AlertsExamples()[pri:0, instance:WebElemetAndLocators.Alerts@1c3a4799]" name="AlertsExamples" duration-ms="11868" started-at="2020-02-01T22:28:21 CET" finished-at="2020-02-01T22:28:33 CET">
+    <test name="Default test" duration-ms="2214" started-at="2020-10-19T07:55:38Z" finished-at="2020-10-19T07:55:40Z">
+      <class name="APITesting.RestAPI">
+        <test-method status="PASS" signature="GetStatusCodeForGoogleCOM()[pri:0, instance:APITesting.RestAPI@53b32d7]" name="GetStatusCodeForGoogleCOM" duration-ms="2182" started-at="2020-10-19T07:55:38Z" finished-at="2020-10-19T07:55:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AlertsExamples -->
-      </class> <!-- WebElemetAndLocators.Alerts -->
+        </test-method> <!-- GetStatusCodeForGoogleCOM -->
+      </class> <!-- APITesting.RestAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
