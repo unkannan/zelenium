@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2214" started-at="2020-10-19T07:55:38Z" finished-at="2020-10-19T07:55:40Z">
+  <suite name="Default suite" duration-ms="2156" started-at="2020-10-20T11:55:56Z" finished-at="2020-10-20T11:55:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2214" started-at="2020-10-19T07:55:38Z" finished-at="2020-10-19T07:55:40Z">
+    <test name="Default test" duration-ms="2156" started-at="2020-10-20T11:55:56Z" finished-at="2020-10-20T11:55:58Z">
       <class name="APITesting.RestAPI">
-        <test-method status="PASS" signature="GetStatusCodeForGoogleCOM()[pri:0, instance:APITesting.RestAPI@53b32d7]" name="GetStatusCodeForGoogleCOM" duration-ms="2182" started-at="2020-10-19T07:55:38Z" finished-at="2020-10-19T07:55:40Z">
+        <test-method status="PASS" signature="ReqresURL_CreateUserPost()[pri:0, instance:APITesting.RestAPI@4667ae56]" name="ReqresURL_CreateUserPost" duration-ms="2128" started-at="2020-10-20T11:55:56Z" finished-at="2020-10-20T11:55:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetStatusCodeForGoogleCOM -->
+        </test-method> <!-- ReqresURL_CreateUserPost -->
       </class> <!-- APITesting.RestAPI -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -5,7 +5,7 @@
     <classes>
       <class name="APITesting.RestAPI">
         <methods>
-          <include name="GetWeatherDetails"/>
+          <include name="ReqresURL_CreateUserPost"/>
         </methods>
       </class> <!-- APITesting.RestAPI -->
     </classes>
