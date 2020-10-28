@@ -7,7 +7,6 @@ class BankParent{
 	void CurrentAccount() {
 		System.out.println("Current Account");
 	};
-	
 }
 
 class ICICI extends BankParent{
@@ -18,9 +17,9 @@ class ICICI extends BankParent{
 		System.out.println("child method - mortgages account");
 	}
 }
+  
    
 class iciciHomeLoans extends ICICI{  //savings, current, homeloans  but cannot access sharesaccoutn or mortgages
-	
 	void Homeloans() {
 		System.out.println("homeloans");
 	}
@@ -33,8 +32,9 @@ public class inheritanceExample {
 			  child.sharesAccount();
 			  child.Mortgages();
 			   
-			 // 	child.savingsAccount();
-			  //	child.CurrentAccount();
+			   
+			  	child.savingsAccount();
+			  	child.CurrentAccount();
 			  	
 			  	BankParent parent=new BankParent();
 			  			parent.savingsAccount();

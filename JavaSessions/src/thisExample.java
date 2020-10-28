@@ -7,7 +7,7 @@ class Student{
 	
 	void createStudent(int rollno,String name) {
 		this.rollno=rollno;
-		stdname=name;
+		this.stdname=name;
 	}
 	
 	void printStudent() {
@@ -19,20 +19,24 @@ class Student{
 		this.rollno=rollno;
 		this.stdname=stdname;
 	}
+ 
 }
+
+
+
+
 public class thisExample {
 	public static void main(String args[]) {
 		Student s1=new Student();  //create Object
 		s1.createStudent(101, "john");//explicity you are calling the method
-		s1.printStudent();
+		s1.printStudent(); //101 john
+		
+		Student s2=new Student(); 
+		s2.printStudent();  
 		
 		Student RajObj=new Student();
 		RajObj.createStudent(102, "Raj");
-		RajObj.printStudent();
-		
-		Student s3=new Student();
-		s3.printStudent();
-		
+		RajObj.printStudent(); //102 Raj
 	}
 }
 

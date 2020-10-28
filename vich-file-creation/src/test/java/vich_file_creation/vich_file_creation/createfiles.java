@@ -16,14 +16,18 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.json.simple.parser.ParseException;
 import org.xml.sax.SAXException;
 
+import Lib.ExcelReader;
+
 public class createfiles {
 	// static String ExcelFilePath = "Files/MandatoryRuleFile.xlsx";
-	static String ExcelFilePath = "C:\\Users\\unkan\\OneDrive\\VICH\\MandatoryRuleFile.xlsx";
+	static String ExcelFilePath = "Files/MandatoryRuleFile.xlsx";
 	static String validtemplatefile = "Files/VICH_TestFile.xml";
-
 	public static void main(String args[]) throws EncryptedDocumentException, InvalidFormatException, IOException,
 			XPathExpressionException, ParserConfigurationException, SAXException, TransformerException, ParseException {
 		// ExcelReadin
+		ExcelReader xlreader=new ExcelReader();
+		System.out.println(xlreader.getDataRowCount(ExcelFilePath));
+		System.out.println(xlreader.getcolindex(ExcelFilePath,"FILENAME"));
 		InputStream inp = new FileInputStream(ExcelFilePath);
 		Workbook wb = WorkbookFactory.create(inp);
 		XpathSupport createFile = new XpathSupport();
@@ -31,9 +35,11 @@ public class createfiles {
 		final int flagcheck = 0;
 		final int filename = 4;
 		Sheet sheet = wb.getSheetAt(0);
-
+		
+		
+		
 		try {
-			for (int j = 1; j < 6 - 1; j++) {
+			for (int j = 1; j < 2; j++) {
 
 				if (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("Y")
 						|| sheet.getRow(j).getCell(flagcheck).toString() != null) {

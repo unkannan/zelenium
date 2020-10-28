@@ -8,50 +8,63 @@
 //8. chrome , IE  (IE in one package or lib) import and use them
 // java.io.file
 
-class Bank {
-
-	int moneydeposit;
-	int Customerid;
-
-	void customerCreate(int money) {
-
-		moneydeposit = money;
+class Bank{
+	int money;
+	String name;
+	 
+	
+	void CreateAccount(int money,String name) {
+		this.money=money;
+		this.name=name;
+		System.out.println("Account Created");
 	}
-
-	void createSavingsAccount(int custid, int money) {
-		if (money >= 1000) {
-			customerCreate(money);
-			System.out.println("Savings accoutnis created for Customer" + custid);
-			System.out.println("Money deposited" + money);
-		} else
-			System.out.println("deposity poclicy is not met");
+	void printBankDetails() {
+		System.out.println("Money Deposited="+money);
+		System.out.println("The account name is ="+name);
 	}
-
-	void createCurrentAccout() {
-
+	
+	//Constructors //method which has same class name
+	 public Bank(int money,String name){
+		this.money=money;
+		this.name=name;
+		System.out.println("Account Created");
+		
 	}
-
-	void createHomeLoans() {
+	public Bank(){
+		System.out.println("default constructor");
 	}
-
-	int presentLoanInterestRate() {
-		return 10;
+	protected Bank(int a, int b, int c){
+		System.out.println("3 parameter constructor");
 	}
+	
 }
 
-public class ClassAndObjectsExample {
 
+public class ClassAndObjectsExample{
 	public static void main(String args[]) {
-		Bank ICICI = new Bank();
-		ICICI.createSavingsAccount(102, 900);
-
-		int loanintrate = ICICI.presentLoanInterestRate();
-		System.out.println(loanintrate);
-
-		Bank HDFC = new Bank();
-		HDFC.createSavingsAccount(103, 1100);
-
+		Bank icici=new Bank();
+		icici.CreateAccount(1000, "xyz");
+		icici.printBankDetails();
+		
+		Bank Rajesh=new Bank(5000,"Rajesh");
+		Rajesh.printBankDetails();
+		
+		Bank Mahesh=new Bank(10000,"Mahesh");
+		
+		
+		Bank kk=new Bank();
+		Bank Suresh=new Bank(15000,"Suresh");
+		Bank kk1=new Bank(10,20,30);
+ 
+		
 	}
 }
+
 
 //can u call a mehod from a class with our objects - 
+
+// Bank- state - moneydeposit, Customerid   
+
+//-behavrio - customerCreate,createSavingsAccount, createCurrentAccout, createHomeLoans,
+//presentLoanInterestRate
+
