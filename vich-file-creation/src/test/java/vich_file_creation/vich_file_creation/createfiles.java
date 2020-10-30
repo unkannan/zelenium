@@ -26,8 +26,8 @@ public class createfiles {
 			XPathExpressionException, ParserConfigurationException, SAXException, TransformerException, ParseException {
 		// ExcelReadin
 		ExcelReader xlreader=new ExcelReader();
-		System.out.println(xlreader.getDataRowCount(ExcelFilePath));
-		System.out.println(xlreader.getcolindex(ExcelFilePath,"FILENAME"));
+		
+		System.out.println(xlreader.getcolumnindex(ExcelFilePath,"FILENAME"));
 		InputStream inp = new FileInputStream(ExcelFilePath);
 		Workbook wb = WorkbookFactory.create(inp);
 		XpathSupport createFile = new XpathSupport();
@@ -36,15 +36,17 @@ public class createfiles {
 		final int filename = 4;
 		Sheet sheet = wb.getSheetAt(0);
 		
-		
+		System.out.println("datarowcount="+xlreader.getDataRowCount(ExcelFilePath));
 		
 		try {
-			for (int j = 1; j < 2; j++) {
-
-				if (sheet.getRow(j).getCell(flagcheck).toString().equalsIgnoreCase("Y")
-						|| sheet.getRow(j).getCell(flagcheck).toString() != null) {
-					String jasonString = sheet.getRow(j).getCell(xmlField).toString();
-					String newfilename = sheet.getRow(j).getCell(filename).toString();
+			for (int j = 1; j < xlreader.getDataRowCount(ExcelFilePath); j++) {
+				System.out.println("flag="+xlreader.getcellvalue(ExcelFilePath,j,"flag"));
+				if (xlreader.getcellvalue(ExcelFilePath,j,"flag").equalsIgnoreCase("Y")
+						|| xlreader.getcellvalue(ExcelFilePath,j,"flag") != null) {
+					System.out.println("jasonString="+xlreader.getcellvalue(ExcelFilePath,j,"XPATH"));
+					String jasonString = xlreader.getcellvalue(ExcelFilePath,j,"XPATH"); 
+					System.out.println("newfilename="+xlreader.getcellvalue(ExcelFilePath,j,"FILENAME").toString());
+					String newfilename = xlreader.getcellvalue(ExcelFilePath,j,"FILENAME");
 					try {
 						createFile.createfilefromtemplate1(validtemplatefile, jasonString,
 								"Files/" + newfilename + ".xml");

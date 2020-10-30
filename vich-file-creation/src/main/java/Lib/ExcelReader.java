@@ -55,7 +55,7 @@ public class ExcelReader {
 		}
 	}
 
-	public int getcolindex(String xlFIle,String colname) {
+	public int getcolumnindex(String xlFIle,String colname) {
 		OpenExcelToAccess(xlFIle);
 		sheet = wb.getSheetAt(0);
 		int firstRow=0;
@@ -70,7 +70,13 @@ public class ExcelReader {
 		throw new NullPointerException();
 	}
 
-	public void getcellvalue() {
+	public String getcellvalue(String xlFIle,int row,String colname) {
+		OpenExcelToAccess(xlFIle);
+		sheet = wb.getSheetAt(0);
+		
+		String cellValue=sheet.getRow(row).getCell(getcolumnindex(xlFIle, colname)).toString(); 
+				closeExcel();
+		return cellValue;		 
 	}
 
 }
