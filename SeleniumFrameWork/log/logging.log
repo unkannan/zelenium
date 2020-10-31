@@ -296,3 +296,4 @@
 2020-02-20 17:49:26 INFO  CurrencyConverterPage:65 - # Source From Drop Down Selected USD
 2020-02-20 17:49:27 INFO  CurrencyConverterPage:74 - # Clicked on button: convert
 2020-02-20 17:49:27 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to US Dollar
+2020-10-12 20:28:44 INFO  CurrencyConverterPage:42 - # Convert Page Header Currency Converter

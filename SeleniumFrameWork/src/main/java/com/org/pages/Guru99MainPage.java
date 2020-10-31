@@ -16,25 +16,29 @@ public class Guru99MainPage{
        this.driver = driver; 
    }
 
-   public void WebTableElementsCheck() {
+   @SuppressWarnings("null")
+public String[] WebTableElementsCheck() {
 	   driver.get("http://demo.guru99.com/test/write-xpath-table.html");
 	   List<WebElement> WebTableElement=driver.findElements(By.xpath("//html//body//center//table//tbody/tr/td"));
-		
+		String[] listsize = new String[WebTableElement.size()];
+		int i=0;
 		for(WebElement e : WebTableElement) {
 			System.out.println(e.getText());
-			if(e.getText().equalsIgnoreCase("second cell"))
-				System.out.println(e.getText());
+			listsize[i++]=e.getText();
 		}
-		
-		List list=driver.findElements(By.xpath("//html//body//center//table//tbody/tr"));
-			int count=list.size();
-			
-			System.out.println(list.size());
-			
-			for(int i=0;i<count;i++) {
-				String svalue=list.get(i).toString();
-			}
+		return listsize;
    }
-  
-    
+
+   public int getListSize() {
+	   driver.get("http://demo.guru99.com/test/write-xpath-table.html");
+	   List list=driver.findElements(By.xpath("//html//body//center//table//tbody/tr"));
+		int count=list.size();
+		
+		System.out.println(list.size());
+		
+		for(int i=0;i<count;i++) {
+			String svalue=list.get(i).toString();
+		}
+			return count;
+	}
 }

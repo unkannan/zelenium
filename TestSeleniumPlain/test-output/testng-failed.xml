@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="AdvanceSelenium.HeadlessBrowser">
         <methods>
           <include name="headlessbrowser"/>
         </methods>
       </class> <!-- AdvanceSelenium.HeadlessBrowser -->
+=======
+      <class name="APITesting.RestAPI">
+        <methods>
+          <include name="ReqresURL_CreateUserPost"/>
+        </methods>
+      </class> <!-- APITesting.RestAPI -->
+>>>>>>> adfbf84d77190a22dcd4990f1e37fb68781bf2b7
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="2132" started-at="2020-09-17T15:03:05 CEST" finished-at="2020-09-17T15:03:07 CEST">
     <groups>
     </groups>
@@ -132,6 +133,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- headlessbrowser -->
       </class> <!-- AdvanceSelenium.HeadlessBrowser -->
+=======
+  <suite name="Default suite" duration-ms="2156" started-at="2020-10-20T11:55:56Z" finished-at="2020-10-20T11:55:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2156" started-at="2020-10-20T11:55:56Z" finished-at="2020-10-20T11:55:58Z">
+      <class name="APITesting.RestAPI">
+        <test-method status="PASS" signature="ReqresURL_CreateUserPost()[pri:0, instance:APITesting.RestAPI@4667ae56]" name="ReqresURL_CreateUserPost" duration-ms="2128" started-at="2020-10-20T11:55:56Z" finished-at="2020-10-20T11:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReqresURL_CreateUserPost -->
+      </class> <!-- APITesting.RestAPI -->
+>>>>>>> adfbf84d77190a22dcd4990f1e37fb68781bf2b7
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

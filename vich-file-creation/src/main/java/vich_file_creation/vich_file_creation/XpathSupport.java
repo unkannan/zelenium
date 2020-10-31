@@ -3,8 +3,22 @@ package vich_file_creation.vich_file_creation;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+<<<<<<< HEAD
 import java.io.InputStream;
 import java.util.Random;
+=======
+import java.io.StringReader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+
+import javax.swing.text.html.HTMLEditorKit.Parser;
+import javax.xml.namespace.QName;
+>>>>>>> adfbf84d77190a22dcd4990f1e37fb68781bf2b7
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -31,7 +45,10 @@ import org.json.simple.parser.ParseException;
 import org.apache.commons.io.FileUtils;
 
 public class XpathSupport {
+	 
+	public void createfilefromtemplate1(String templatefileXML, String jasonxpath, String newfilename){
 
+<<<<<<< HEAD
 	public XpathSupport() {
 	}
 	static DocumentBuilderFactory f = null;
@@ -122,10 +139,36 @@ public class XpathSupport {
 
 		parser = new JSONParser();
 		parentObject = (JSONObject) parser.parse(jasonxpath);
-		JSONArray parentArray = (JSONArray) parentObject.get("xpath");
+=======
+		DocumentBuilderFactory f = DocumentBuilderFactory.newInstance();
+		DocumentBuilder b = null;
+		try {
+			b = f.newDocumentBuilder();
+		} catch (ParserConfigurationException e) {
+			e.printStackTrace();
+		}
+		Document doc = null;
+		try {
+			doc = b.parse(templatefileXML);
+		} catch (SAXException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 
+		JSONParser parser = new JSONParser();
+
+		JSONObject parentObject = null;
+		try {
+			parentObject = (JSONObject) parser.parse(jasonxpath);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+>>>>>>> adfbf84d77190a22dcd4990f1e37fb68781bf2b7
+		JSONArray parentArray = (JSONArray) parentObject.get("xpath");
 		int i = 0;
 		while (i < parentArray.size()) {
+<<<<<<< HEAD
 			Random rand = new Random(); 
 			rand_int = rand.nextInt(1000);
 			
@@ -194,10 +237,60 @@ System.out.println(MainNode.getNodeName());
 
 	void createfinalfile(String newfilename) throws TransformerException {
 		// write the content into xml file
+=======
+				JSONObject finalObject = (JSONObject) parentArray.get(i++);
+					System.out.println(finalObject.get("field"));
+				String xpath = finalObject.get("field").toString();
+					System.out.println(finalObject.get("value"));
+
+			UpdateElementValueInXMLContent(doc,xpath,finalObject.get("value").toString());
+			UpdateBatchMessageIdentifiers(doc,newfilename);
+		}
+		// write the content into xml file
+		newfilename=writeFinalContentInXMLFile(doc,newfilename);
+		
+		System.out.println("File created " + newfilename);
+		System.out.println("********************************************************");
+	}
+	
+	private void UpdateElementValueInXMLContent(Document doc,String xpath,String value){
+		XPath xPath = XPathFactory.newInstance().newXPath();
+		Node startDateNode = null;
+		try {
+			startDateNode = (Node) xPath.compile(xpath).evaluate(doc, XPathConstants.NODE);
+		} catch (XPathExpressionException e) {
+			e.printStackTrace();
+		}
+		startDateNode.setTextContent(value);
+	}
+	
+	private void UpdateBatchMessageIdentifiers(Document doc,String newfilename) {
+		File f=new File(newfilename);
+		//Updating Batch ID
+		UpdateElementValueInXMLContent(doc,"/MCCI_IN200100UV01/id/@extension",f.getName().substring(0,f.getName().length()-4));
+		
+		//Updating Message id
+		UpdateElementValueInXMLContent(doc,"/MCCI_IN200100UV01/PORR_IN049006UV/id/@extension",f.getName().substring(0,f.getName().length()-4));
+		
+		//updating case id with random number in last chars
+		int n = 10000 + new Random().nextInt(90000); //generating random no.
+		UpdateElementValueInXMLContent(doc,"/MCCI_IN200100UV01/PORR_IN049006UV/controlActProcess/subject/investigationEvent/id/@extension",
+				"USA-GAPINDSY-"+n);
+
+	}
+	
+	private String writeFinalContentInXMLFile(Document doc,String newfilename){
+>>>>>>> adfbf84d77190a22dcd4990f1e37fb68781bf2b7
 		TransformerFactory transformerFactory = TransformerFactory.newInstance();
-		Transformer transformer = transformerFactory.newTransformer();
+		Transformer transformer = null;
+		try {
+			transformer = transformerFactory.newTransformer();
+		} catch (TransformerConfigurationException e) {
+			e.printStackTrace();
+		}
 		DOMSource source = new DOMSource(doc);
 		StreamResult result = new StreamResult(new File(newfilename));
+<<<<<<< HEAD
 		transformer.transform(source, result);
 
 		
@@ -231,5 +324,14 @@ System.out.println(MainNode.getNodeName());
 	            file.delete();
 	        }
 	    }
+=======
+		try {
+			transformer.transform(source, result);
+		} catch (TransformerException e) {
+			e.printStackTrace();
+		}
+		return newfilename;
+		
+>>>>>>> adfbf84d77190a22dcd4990f1e37fb68781bf2b7
 	}
 }
