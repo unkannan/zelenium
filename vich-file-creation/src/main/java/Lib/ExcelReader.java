@@ -15,7 +15,7 @@ public class ExcelReader {
 	static InputStream inp = null;
 	static Sheet sheet = null;
 	static Workbook wb = null;
-
+	 
 	private void OpenExcelToAccess(String xlFIle) {
 		try {
 			inp = new FileInputStream(xlFIle);
@@ -80,3 +80,5 @@ public class ExcelReader {
 	}
 
 }
+
+
