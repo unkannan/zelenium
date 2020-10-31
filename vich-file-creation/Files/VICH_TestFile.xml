@@ -805,7 +805,7 @@
 									<addr use="WP">
 										<streetAddressLine>7 Westferry Circus Canary Wharf </streetAddressLine>
 										<city>London</city>
-										<state />
+										<state>London</state>
 										<postalCode>E14 4HB</postalCode>
 										<country>GBR</country>
 									</addr>
