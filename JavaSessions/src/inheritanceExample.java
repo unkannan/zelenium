@@ -1,7 +1,8 @@
 class BankParent{
-	int loan;
+	private int loan;
 	
 	void savingsAccount() {
+		loan=10;
 		System.out.println("Saving Account");
 	};
 	void CurrentAccount() {
