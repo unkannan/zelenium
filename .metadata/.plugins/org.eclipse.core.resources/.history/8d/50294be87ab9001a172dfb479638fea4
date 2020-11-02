@@ -1,0 +1,20 @@
+package SeleniumSession1.SeleniumSession1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+  
+
+public class session1Test {
+	
+	static WebDriver driver=null;
+   
+	public static void main(String args[]) {
+		
+		System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");
+		driver=new ChromeDriver();
+		driver.get("www.google.com");
+		
+	}
+
+}

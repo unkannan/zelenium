@@ -1,0 +1,22 @@
+
+public class studenttest {
+
+	  int age;
+	  String name;
+	  
+	      void eat() {
+	    	  
+	      }
+	      
+	      public static void main(String args[]) {
+	    	  studenttest hari=new studenttest();
+	    	    hari.age=10;
+	    	    hari.name="Hari Krishnan";
+	    	    System.out.println("My name is "+hari.name);
+	    	    
+	    	    
+	    	    studenttest lakshmi=new studenttest();
+	      }
+}
+
+

@@ -1,0 +1,21 @@
+package SeleniumSession1.SeleniumSession1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Buttons_textbox {
+	public static void main(String args[]) {
+		System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe"); // 
+		WebDriver driver = new ChromeDriver();
+			
+		//1. open the url
+		 driver.get("https://www.testandquiz.com/selenium/testing.html");
+		
+		//2. enter the text in text box
+		//3. click the submit button
+		//4. click the link
+	}
+	
+
+}

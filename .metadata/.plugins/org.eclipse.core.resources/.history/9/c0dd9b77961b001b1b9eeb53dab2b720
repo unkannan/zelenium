@@ -1,0 +1,16 @@
+
+public class studenttest {
+
+	  int age;
+	  String name;
+	  
+	      void eat() {
+	    	  
+	      }
+	      
+	      public static void main(String args[]) {
+	    	  
+	      }
+}
+
+

@@ -1,0 +1,31 @@
+ 
+
+
+public class studentClass {
+
+	  int age;
+	  String name;
+	  
+	      void eat() {
+	    	  
+	      }
+	      
+	      public static void main(String args[]) {
+	    	   
+
+ //boy - age-10 name=gauri
+	    	  
+	    	  //create object
+	    	    //classname  objectname=new classname();
+	    	  
+	    	   studentClass boy=new studentClass();
+	    	    boy.age=10;
+	    	    boy.name="gauri";
+	    	    
+	    	    System.out.println("My name is "+boy.name);
+	    	    
+	    	     
+	      }
+}
+
+
