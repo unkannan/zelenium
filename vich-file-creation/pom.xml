@@ -49,6 +49,50 @@
     <artifactId>jackson-mapper-asl</artifactId>
     <version>1.9.13</version>
 </dependency>
+    <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-cosmos</artifactId>
+            <version>4.0.1</version>
+        </dependency>
+ 
+<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongo-java-driver</artifactId>
+    <version>3.12.5</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.7</version>
+</dependency>
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>json-path</artifactId>
+<version>4.2.0</version>
+<scope>test</scope>
+</dependency>
 
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>4.1.1</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>xml-path</artifactId>
+<version>4.2.0</version>
+<scope>test</scope>
+</dependency>
+
+
+<dependency>
+<groupId>io.rest-assured</groupId>
+<artifactId>json-schema-validator</artifactId>
+<version>4.2.0</version>
+<scope>test</scope>
+</dependency>
   </dependencies>
 </project>
