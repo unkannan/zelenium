@@ -1,0 +1,1180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MCCI_IN200100UV01 ITSVersion="XML_1.0" xsi:schemaLocation="urn:hl7-org:v3 http://eudravigilance.ema.europa.eu/xsd/multicacheschemas/MCCI_IN200100UV01.xsd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif">
+<!--N.1.2 - N.1, ICH ICSR Transmission Identification (batch wrapper), Batch Number-->
+<id root="2.16.840.1.113883.3.989.2.1.3.22" extension="GB-BELL SONS COMPANY (DRUGGISTS) LIMITED-2020SCBH004328 20200304153005"/>
+<!--N.1.5 - Date of Batch Transmission-->
+<creationTime value="20150114151617"/>
+<responseModeCode code="D"/>
+<interactionId root="2.16.840.1.113883.1.6" extension="MCCI_IN200100UV01"/>
+<!--N.1.1 - Type of Messages in Batch-->
+<name code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.1" codeSystemVersion="2.0" displayName="ICHICSR"/>
+<!--N.2.r - ICH ICSR Message Header (message wrapper) (repeat as necessary)-->
+<PORR_IN049016UV>
+<!--N.2.r.1 - Message Identifier-->
+<id root="2.16.840.1.113883.3.989.2.1.3.1" extension="GB-BELL SONS COMPANY (DRUGGISTS) LIMITED-2020SCBH004328"/>
+<!--N.2.r.4 - Date of Message Creation-->
+<creationTime value="20150114151617"/>
+<interactionId root="2.16.840.1.113883.1.6" extension="PORR_IN049016UV"/>
+<processingCode code="P"/>
+<processingModeCode code="T"/>
+<acceptAckCode code="AL"/>
+<receiver typeCode="RCV">
+<device classCode="DEV" determinerCode="INSTANCE">
+<!--N.2.r.3 - Message Receiver Identifier-->
+<id root="2.16.840.1.113883.3.989.2.1.3.12" extension="EVHUMAN"/>
+</device>
+</receiver>
+<sender typeCode="SND">
+<device classCode="DEV" determinerCode="INSTANCE">
+<!--N.2.r.2 - Message Sender Identifier-->
+<id root="2.16.840.1.113883.3.989.2.1.3.11" extension="MAHTEST01GW"/>
+</device>
+</sender>
+<controlActProcess classCode="CACT" moodCode="EVN">
+<code code="PORR_TA049016UV" codeSystem="2.16.840.1.113883.1.18"/>
+<!--C.1.2 - Date of Creation-->
+<effectiveTime value="20101214151617"/>
+<subject typeCode="SUBJ">
+<investigationEvent classCode="INVSTG" moodCode="EVN">
+<!--C.1.1 - Sender’s (case) Safety Report Unique Identifier-->
+<id root="2.16.840.1.113883.3.989.2.1.3.1" extension="GB-BELL SONS ' COMPANY (DRUGGISTS) LIMITED-2020SCBH004328"/>
+<!--C.1.8.1 - C.1.8, Worldwide Unique Case Identification, Worldwide Unique Case Identification Number-->
+<id root="2.16.840.1.113883.3.989.2.1.3.2" extension="GB-BELL SONS ' COMPANY (DRUGGISTS) LIMITED-2020SCBH004328"/>
+<code code="PAT_ADV_EVNT" codeSystem="2.16.840.1.113883.5.4"/>
+<!--H, H.1 - NARRATIVE CASE SUMMARY AND FURTHER INFORMATION, Case Narrative Including Clinical Course, Therapeutic Measures, Outcome and Additional Relevant Information-->
+<text>Sample Case NarrativeAT01</text>
+<statusCode code="active"/>
+<effectiveTime>
+<!--C.1.4 - Date Report Was First Received from Source-->
+<low value="20100101"/>
+</effectiveTime>
+<!--C.1.5 - Date of Most Recent Information for This Report-->
+<availabilityTime value="201002010101"/>
+<reference typeCode="REFR">
+<document classCode="DOC" moodCode="EVN">
+<!--C.4.r, C.4.r.1 - Literature Reference(s) (repeat as necessary), Literature Reference(s)-->
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.27" codeSystemVersion="2.0" displayName="literatureReference"/>
+<!--C.4.r.2 - Included Documents-->
+<text representation="TXT" mediaType="text/plain" >Sample Literature Reference TextAT01</text>
+<bibliographicDesignationText>Sample Literature Reference Biliographic Description TextAT01</bibliographicDesignationText>
+</document>
+</reference>
+<reference typeCode="REFR">
+<!--C.1.6.1.r.1 - Documents Held by Sender (repeat as necessary)-->
+<document classCode="DOC" moodCode="EVN">
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.27" codeSystemVersion="2.0" displayName="documentsHeldBySender"/>
+<title>Important reportAT01</title>
+<!--C.1.6.1.r.2 - Included Documents-->
+<text representation="TXT" mediaType="text/plain" >Sample Literature Reference TextAT01</text>
+</document>
+</reference>
+<component typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="additionalDocumentsAvailable"/>
+<!--C.1.6.1 - C.1.6, Additional Available Documents Held by Sender, Are Additional Documents Available?-->
+<value value="true" xsi:type="BL"/>
+</observationEvent>
+</component>
+<component typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="23" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="localCriteriaForExpedited"/>
+<!--C.1.7 - Does This Case Fulfil the Local Criteria for an Expedited Report?-->
+<value value="true" xsi:type="BL"/>
+</observationEvent>
+</component>
+<!--D - Patient Characteristics-->
+<component typeCode="COMP">
+<adverseEventAssessment classCode="INVSTG" moodCode="EVN">
+<subject1 typeCode="SBJ">
+<primaryRole classCode="INVSBJ">
+<player1 classCode="PSN" determinerCode="INSTANCE">
+<!--D.1 - Patient (name or initials)-->
+<name>Mr.</name>
+<!--D.5 - Sex-->
+<administrativeGenderCode code="2" codeSystem="1.0.5218"/>
+<!--D.2.1 - Date of Birth-->
+<birthTime value="20060101"/>
+<!--D.9.1 - Date of Death-->
+<deceasedTime value="20060201"/>
+<!--D.1.1 - Patient Medical Record Number(s) and Source(s) of the Record Number-->
+<asIdentifiedEntity classCode="IDENT">
+<!--D.1.1.1 - Patient Medical Record Number(s) and Source(s) of the Record Number (GP Medical Record Number)-->
+<id root="2.16.840.1.113883.3.989.2.1.3.7" extension="83444908-AT01"/>
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="GP"/>
+</asIdentifiedEntity>
+<asIdentifiedEntity classCode="IDENT">
+<!--D.1.1.2 - Patient Medical Record Number(s) and Source(s) of the Record Number (Specialist Record Number)-->
+<id root="2.16.840.1.113883.3.989.2.1.3.8" extension="8999-AT01"/>
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="Specialist"/>
+</asIdentifiedEntity>
+<asIdentifiedEntity classCode="IDENT">
+<!--D.1.1.3 - Patient Medical Record Number(s) and Source(s) of the Record Number (Hospital Record Number)-->
+<id root="2.16.840.1.113883.3.989.2.1.3.9" extension="333344400"/>
+<code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="Hospital Record"/>
+</asIdentifiedEntity>
+<asIdentifiedEntity classCode="IDENT">
+<!--D.1.1.4 - Patient Medical Record Number(s) and Source(s) of the Record Number (Investigation Number)-->
+<id root="2.16.840.1.113883.3.989.2.1.3.10" extension="92333475001"/>
+<code code="4" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="Investigation"/>
+</asIdentifiedEntity>
+<!--** - <PARENT>-->
+<role classCode="PRS">
+<code code="PRN" codeSystem="2.16.840.1.113883.5.111"/>
+<!--D.10 - For a Parent-child / Foetus Report, Information Concerning the Parent-->
+<associatedPerson classCode="PSN" determinerCode="INSTANCE">
+<!--D.10.1 - Parent Identification-->
+<name>PARENT NAME AT01</name>
+<!--D.10.6 - Sex of Parent-->
+<administrativeGenderCode code="2" codeSystem="1.0.5218"/>
+<!--D.10.2, D.10.2.1 - Parent Age Information, Date of Birth of Parent-->
+<birthTime value="19760101"/>
+</associatedPerson>
+<subjectOf2 typeCode="SBJ">
+<!--D.10.2.2 - Age of Parent-->
+<observation classCode="OBS" moodCode="EVN">
+<!--D.10.2.2a - Age of Parent (number)-->
+<code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="age"/>
+<!--D.10.2.2b - Age of Parent (unit)-->
+<value value="10" unit="a" xsi:type="PQ"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="22" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="lastMenstrualPeriodDate"/>
+<!--D.10.3 - Last Menstrual Period Date of Parent-->
+<value value="20060101" xsi:type="TS"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="7" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="bodyWeight"/>
+<!--D.10.4 - Body Weight (kg) of Parent-->
+<value value="50" unit="kg" xsi:type="PQ"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="17" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="height"/>
+<!--D.10.5 - Height (cm) of Parent-->
+<value value="160" unit="cm" xsi:type="PQ"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer classCode="CATEGORY" moodCode="EVN">
+<!--** -  <Parent Medical History>-->
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="relevantMedicalHistoryAndConcurrentConditions"/>
+<!--D.10.7, D.10.7.1.r - Relevant Medical History and Concurrent Conditions of Parent, Structured Information of Parent (MedDRA code) (repeat as necessary)95-->
+<component typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.10.7.1.r.1a - MedDRA Version for Medical History
+#combined in the below tag#-->
+<code code="10027415" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Metabolic abnormality management" xsi:type="CE"/>
+<effectiveTime xsi:type="IVL_TS">
+<!--D.10.7.1.r.2 - Start Date-->
+<low value="20060301"/>
+<!--D.10.7.1.r.4 - End Date-->
+<high value="20060401"/>
+</effectiveTime>
+<outboundRelationship2 typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+<code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+<!--D.10.7.1.r.5 - Comments-->
+<value xsi:type="ED">Recovered after steroid treatmentAT01</value>
+</observation>
+</outboundRelationship2>
+<inboundRelationship typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<code code="13" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="continuing"/>
+<!--D.10.7.1.r.3 - Continuing-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</inboundRelationship>
+</observation>
+</component>
+<component typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+<code code="18" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="historyAndConcurrentConditionText"/>
+<!--D.10.7.2 - Text for Relevant Medical History and Concurrent Conditions of Parent-->
+<value xsi:type="ED">Sample Text for Relevant Medical History and Concurrent Conditions of ParentAT01</value>
+</observation>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer classCode="CATEGORY" moodCode="EVN">
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="drugHistory"/>
+<component typeCode="COMP">
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+<effectiveTime xsi:type="IVL_TS">
+<!--D.10.8.r.4 - Start Date-->
+<low value="20060601"/>
+<!--D.10.8.r.5 - End Date-->
+<high value="20060602"/>
+</effectiveTime>
+<consumable typeCode="CSM">
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<!--<code code="G.k.2.1.1b" codeSystem="TBD-MPID" codeSystemVersion="2.0"/> -->
+<!--D.10.8.r, D.10.8.r.1 - Relevant Past Drug History of Parent (repeat as necessary), Name of Drug as Reported-->
+<name>Sample Drug ReportedNameAT01
+<!--D.10.8.r.1.EU.1 - Name part - Invented name-->
+<delimiter qualifier="INV">Sample Drug InventedNameAT01</delimiter>
+<!--D.10.8.r.1.EU.2 - Name part - Scientific name-->
+<delimiter qualifier="SCI">Sample Drug ScientificNameAT01</delimiter>
+<!--D.10.8.r.1.EU.3 - Name part - Trademark name-->
+<delimiter qualifier="TMK">Sample Drug TrademarkNameAT01</delimiter>
+<!--D.10.8.r.1.EU.4 - Name part - Strength name-->
+<delimiter qualifier="STR">Sample Drug StregthNameAT01</delimiter>
+<!--D.10.8.r.1.EU.5 - Name part - Form name-->
+<delimiter qualifier="FRM">Sample Drug FormNameAT01</delimiter>
+<!--D.10.8.r.1.EU.6 - Name part - Container name-->
+<delimiter qualifier="CON">Sample Drug ContainerNameAT01</delimiter>
+<!--D.10.8.r.1.EU.7 - Name part - Device name-->
+<delimiter qualifier="DEV">Sample Drug DeviceNameAT01</delimiter>
+<!--D.10.8.r.1.EU.8 - Name part - Intended use name-->
+<delimiter qualifier="USE">Sample Drug IntendedUseNameAT01</delimiter>
+</name>
+<ingredient classCode="ACTI">
+<quantity>
+<!--D.10.8.r.EU.r.3a  - Strength (number) -->
+<numerator value="10" unit="L"/>
+<!--D.10.8.r.EU.r.3b  - Strength (unit)-->
+<denominator value="1"/>
+</quantity>
+<ingredientSubstance classCode="MMAT" determinerCode="KIND">
+<!--D.10.8.r.3 - Pharmaceutical Product Identifier (PhPID), Substance / Specified Substance Identifier and Strength (repeat as necessary)-->
+<!--<code code="100000078226" codeSystem="TBD-Substance" codeSystemVersion="2.0"/>-->
+<!--D.10.8.r.EU.r.1  - Substance / Specified Substance Name-->
+<name>Sample Parent Susbtance NameAT01</name>
+</ingredientSubstance>
+</ingredient>
+</kindOfProduct>
+</instanceOfKind>
+</consumable>
+<outboundRelationship2 typeCode="RSON">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.10.8.r.6 - Indication (MedDRA code)-->
+<code code="19" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="indication"/>
+<!--D.10.8.r.6a - MedDRA Version for Indication
+#combined in the below tag#-->
+<value code="10036477" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Pre infarction syndrome" xsi:type="CE"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="CAUS">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.10.8.r.7 - Reactions (MedDRA code)-->
+<code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction"/>
+<!--D.10.8.r.7a - MedDRA Version for Reaction
+#combined in the below tag#-->
+<value code="10019267" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Heart block NOS" xsi:type="CE"/>
+</observation>
+</outboundRelationship2>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+</role>
+</player1>
+<!--** - STUDY-->
+<subjectOf1 typeCode="SBJ">
+<researchStudy classCode="CLNTRL" moodCode="EVN">
+<!--C.5.3 - Sponsor Study Number-->
+<id root="2.16.840.1.113883.3.989.2.1.3.5" extension="FR-SPONSORSTUDYNUM-AT01"/>
+<!--C.5.4 - Study Type Where Reaction(s) / Event(s) Were Observed-->
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.8" codeSystemVersion="2.0" displayName="Individual patient use"/>
+<!--C.5.2 - Study Name-->
+<title>Sample Study NameAT01</title>
+<!--C.5.1.r - Study Registration (repeat as necessary)-->
+<authorization typeCode="AUTH">
+<studyRegistration classCode="ACT" moodCode="EVN">
+<!--C.5.1.r.1 - Study Registration Number-->
+<id root="2.16.840.1.113883.3.989.2.1.3.6" extension="FR-STUDYREGNUM-AT01"/>
+<author typeCode="AUT">
+<territorialAuthority classCode="TERR">
+<governingPlace classCode="COUNTRY" determinerCode="INSTANCE">
+<!--C.5.1.r.2 - Study Registration Country-->
+<code code="FR" codeSystem="1.0.3166.1.2.2" displayName="France" xsi:type="CE"/>
+</governingPlace>
+</territorialAuthority>
+</author>
+</studyRegistration>
+</authorization>
+</researchStudy>
+</subjectOf1>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.2.2 - Age at Time of Onset of Reaction / Event-->
+<code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="age"/>
+<!--D.2.2b - Age at Time of Onset of Reaction / Event (unit)-->
+<value value="60" unit="a" xsi:type="PQ"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="16" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="gestationPeriod"/>
+<!--D.2.2.1b - Gestation Period When Reaction/Event Was Observed in the Foetus (unit)-->
+<value value="1" unit="mo" xsi:type="PQ"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="4" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="ageGroup"/>
+<!--D.2.3 - Patient Age Group (as per reporter)-->
+<value code="6" codeSystem="2.16.840.1.113883.3.989.2.1.1.9" codeSystemVersion="2.0" displayName="Elderly" xsi:type="CE"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="7" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="bodyWeight"/>
+<!--D.3 - Body Weight (kg)-->
+<value value="70" unit="g" xsi:type="PQ"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="17" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="height"/>
+<!--D.4 - Height (cm)-->
+<value value="180" unit="mm" xsi:type="PQ"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="22" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="lastMenstrualPeriodDate"/>
+<!--D.6 - Last Menstrual Period Date-->
+<value value="20060601" xsi:type="TS"/>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer classCode="CATEGORY" moodCode="EVN">
+<!--D.7, D.7.1.r - Relevant Medical History and Concurrent Conditions (not including reaction / event), Structured Information on Relevant Medical History (repeat as necessary)-->
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="relevantMedicalHistoryAndConcurrentConditions"/>
+<component typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.7.1.r.1a - MedDRA Version for Medical History
+#combined in the below tag#-->
+<code code="10019250" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Heart attack"/>
+<effectiveTime xsi:type="IVL_TS">
+<!--D.7.1.r.2 - Start Date-->
+<low value="20060602"/>
+<!--D.7.1.r.4 - End Date-->
+<high value="20060804"/>
+</effectiveTime>
+<outboundRelationship2 typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+<code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+<!--D.7.1.r.5 - Comments-->
+<value xsi:type="ED">Recovered after steroid treatmentAT01</value>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="EXPL">
+<observation classCode="OBS" moodCode="EVN">
+<code code="38" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="familyHistory"/>
+<!--D.7.1.r.6 - Family History-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<inboundRelationship typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<code code="13" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="continuing"/>
+<!--D.7.1.r.3 - Continuing-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</inboundRelationship>
+</observation>
+</component>
+<component typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+<code code="18" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="historyAndConcurrentConditionText"/>
+<!--D.7.2  - Text for Relevant Medical History and Concurrent Conditions (not including reaction / event)-->
+<value xsi:type="ED">Sample Medical HistoryAT01</value>
+</observation>
+</component>
+<component typeCode="COMP">
+<observation classCode="OBS" moodCode="EVN">
+<code code="11" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="concomitantTherapy"/>
+<!--D.7. 3 - Concomitant Therapies-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<code code="5" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="autopsy"/>
+<!--D.9.3 - Was Autopsy Done?-->
+<value value="true" xsi:type="BL"/>
+<outboundRelationship2 typeCode="DRIV">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.9.4.r - Autopsy-determined Cause(s) of Death (repeat as necessary)-->
+<code code="8" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causeOfDeath"/>
+<!--D.9.4.r.1a - MedDRA Version for Autopsy-determined Cause(s) of Death
+#combined in the below tag#-->
+<value code="10007515" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Cardiac arrest" xsi:type="CE">
+<!--D.9.4.r.2 - Autopsy-determined Cause(s) of Death (free text)-->
+<originalText>Sample Autopsy-determined Cause(s) of DeathAT01</originalText>
+</value>
+</observation>
+</outboundRelationship2>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.9.2.r - Reported Cause(s) of Death (repeat as necessary)-->
+<code code="32" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reportedCauseOfDeath"/>
+<!--D.9.2.r.1a - MedDRA Version for Reported Cause(s) of Death
+#combined in the below tag#-->
+<value code="10000922" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Acute myocardial infarction, subendocardial infarction, initial episode of care" xsi:type="CE">
+<!--D.9.2.r.2 - Reported Cause(s) of Death (free text)-->
+<originalText>Sample Reason for Cause of DeathAT01</originalText>
+</value>
+</observation>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer classCode="CATEGORY" moodCode="EVN">
+<code code="4" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="drugInformation"/>
+<!--G.k - DRUG(S) INFORMATION (REPEAT AS NECESSARY)-->
+<component typeCode="COMP">
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+<!--** - Drug's UUID-->
+<id root="ctd9o5uw-757z-8c6m-t2ud-ggwos1lm4o28"/>
+<consumable typeCode="CSM">
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<!--G.k.2.1 - Medicinal Product Unique Identifier/Pharmaceutical Product Unique Identifier.-->
+<!--<code code="G.k.2.1.1b" codeSystem="TBD-MPID" codeSystemVersion="2.0"/> -->
+<!--G.k.2.2  - Medicinal Product Name as Reported by the Primary Source-->
+<name>Metacen
+<!--G.k.2.2.EU.1 - Name part - Invented name-->
+<delimiter qualifier="INV">Metacen InventedNameAT01</delimiter>
+<!--G.k.2.2.EU.2 - Name part - Scientific name-->
+<delimiter qualifier="SCI">Metacen ScientificNameAT01</delimiter>
+<!--G.k.2.2.EU.3 - Name part - Trademark name-->
+<delimiter qualifier="TMK">Metacen TrademarkNameAT01</delimiter>
+<!--G.k.2.2.EU.4 - Name part - Strength name-->
+<delimiter qualifier="STR">Metacen StregthNameAT01</delimiter>
+<!--G.k.2.2.EU.5 - Name part - Form name-->
+<delimiter qualifier="FRM">Metacen FormNameAT01</delimiter>
+<!--G.k.2.2.EU.6 - Name part - Container name-->
+<delimiter qualifier="CON">Metacen ContainerNameAT01</delimiter>
+<!--G.k.2.2.EU.7 - Name part - Device name-->
+<delimiter qualifier="DEV">Metacen DeviceNameAT01</delimiter>
+<!--G.k.2.2.EU.8 - Name part - Intended use name-->
+<delimiter qualifier="USE">Metacen IntendedUseNameAT01</delimiter>
+</name>
+<asManufacturedProduct classCode="MANU">
+<subjectOf typeCode="SBJ">
+<approval classCode="CNTRCT" moodCode="EVN">
+<!--G.k.3.1 - Authorisation / Application Number-->
+<id root="2.16.840.1.113883.3.989.2.1.3.4" extension="NDA12AT01"/>
+<holder typeCode="HLD">
+<role classCode="HLD">
+<playingOrganization classCode="ORG" determinerCode="INSTANCE">
+<!--G.k.3.3  - Name of Holder / Applicant-->
+<name>Sample Holder NameAT01</name>
+</playingOrganization>
+</role>
+</holder>
+<author typeCode="AUT">
+<territorialAuthority classCode="TERR">
+<territory classCode="NAT" determinerCode="INSTANCE">
+<!--G.k.3, G.k.3.2 - Holder and Authorisation / Application Number of Drug, Country of Authorisation / Application-->
+<code code="SE" codeSystem="1.0.3166.1.2.2" displayName="Sweden"/>
+</territory>
+</territorialAuthority>
+</author>
+</approval>
+</subjectOf>
+</asManufacturedProduct>
+<ingredient classCode="ACTI">
+<quantity>
+<!--G.k.2.3.r.3b - Strength (unit)-->
+<numerator value="10" unit="mg"/>
+<denominator value="1"/>
+</quantity>
+<ingredientSubstance classCode="MMAT" determinerCode="KIND">
+<!--G.k.2.3.r.2a - Substance/Specified Substance TermID Version Date/Number-->
+<!--<code code="G.k.2.3.r.2b" codeSystem="TBD-Substance" codeSystemVersion="1"/>-->
+<!--G.k.2.3.r.1 - Substance / Specified Substance Name-->
+<name>PARACETAMOL</name>
+</ingredientSubstance>
+</ingredient>
+</kindOfProduct>
+<subjectOf typeCode="SBJ">
+<productEvent classCode="ACT" moodCode="EVN">
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.18" codeSystemVersion="2.0" displayName="retailSupply"/>
+<performer typeCode="PRF">
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<addr>
+<!--G.k.2.4 - Identification of the Country Where the Drug Was Obtained-->
+<country>GB</country>
+</addr>
+</representedOrganization>
+</assignedEntity>
+</performer>
+</productEvent>
+</subjectOf>
+</instanceOfKind>
+</consumable>
+<outboundRelationship1 typeCode="SAS">
+<!--G.k.9.i.3.1b - Time Interval between Beginning of Drug Administration and Start of Reaction / Event (unit)-->
+<pauseQuantity value="10" unit="a"/>
+<actReference classCode="OBS" moodCode="EVN">
+<id root="1skhmjv3-w3e6-wadt-h01l-4f3vrfmuhox1"/>
+</actReference>
+</outboundRelationship1>
+<outboundRelationship1 typeCode="SAE">
+<!--G.k.9.i.3.2b - Time Interval between Last Dose of Drug and Start of Reaction / Event (unit)-->
+<pauseQuantity value="1" unit="d"/>
+<actReference classCode="OBS" moodCode="EVN">
+<id root="1skhmjv3-w3e6-wadt-h01l-4f3vrfmuhox1"/>
+</actReference>
+</outboundRelationship1>
+<outboundRelationship2 typeCode="SUMM">
+<observation classCode="OBS" moodCode="EVN">
+<code code="14" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="cumulativeDoseToReaction"/>
+<!--G.k.5b - Cumulative Dose to First Reaction (unit)-->
+<value value="10" unit="ug" xsi:type="PQ"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="16" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="gestationPeriod"/>
+<!--G.k.6b - Gestation Period at Time of Exposure (unit)-->
+<value value="1" unit="wk" xsi:type="PQ"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="6" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="blinded"/>
+<!--G.k.2.5 - Investigational Product Blinded-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="additionalInformation"/>
+<!--G.k.11 - Additional Information on Drug (free text)-->
+<value xsi:type="ST">Yes, Sample some additional Information on Drug</value>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<code code="9" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="codedDrugInformation"/>
+<!--G.k.10.r - Additional Information on Drug (coded) (repeat as necessary)-->
+<value code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.17" codeSystemVersion="2.0" displayName="Counterfeit" xsi:type="CE"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="COMP">
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+<!--G.k.4.r.8 - Dosage Text-->
+<text>10 ml at 10am ; 10pm</text>
+<effectiveTime xsi:type="SXPR_TS">
+<comp xsi:type="PIVL_TS">
+<!--G.k.4.r.3 - Definition of the Time Interval Unit-->
+<period value="10" unit="a"/>
+</comp>
+<comp operator="A" xsi:type="IVL_TS">
+<!--G.k.4.r.4 - Date and Time of Start of Drug-->
+<low value="20060602"/>
+<!--G.k.4.r.5 - Date and Time of Last Administration-->
+<high value="20060703"/>
+</comp>
+<comp operator="A" xsi:type="IVL_TS">
+<!--G.k.4.r.6b - Duration of Drug Administration (unit)-->
+<width value="1" unit="wk"/>
+</comp>
+</effectiveTime>
+<!--G.k.4.r.10.2b - -->
+<routeCode code="004" codeSystem="2.16.840.1.113883.3.989.2.1.1.14" codeSystemVersion="2.1" displayName="Dental">
+<!--G.k.4.r.10, G.k.4.r.10.1 - Route of Administration (free text)-->
+<originalText>Sample ROA free TextAT01</originalText>
+</routeCode>
+<!--G.k.4.r.1b - Dose (unit)-->
+<doseQuantity value="10" unit="kg"/>
+<consumable typeCode="CSM">
+<instanceOfKind classCode="INST">
+<productInstanceInstance classCode="MMAT" determinerCode="INSTANCE">
+<!--G.k.4.r.7 - Batch / Lot Number-->
+<lotNumberText>Sample Batch or Lot Number TextAT01</lotNumberText>
+<part classCode="PART">
+<partDeviceInstance classCode="DEV">
+<!--G.k.2.2.EU.9.r.4 - Device Batch Lot number -->
+<lotNumberText>Batch Lot NumberAT01</lotNumberText>
+<asInstanceOfKind>
+<kindOfMaterialKind>
+<!--G.k.2.2.EU.9.r.3, G.k.2.2.EU.9.r.2 - Device Component TermID, Device Component TermID version Date/Number-->
+<!--<code code="COMPIDAT01" codeSystem="EUOID" codeSystemVersion="2.0"/>--> <code/>
+<!--G.k.2.2.EU.9.r.1 - Device Component name (free text)-->
+<name>Sample Device Component nameAT01</name>
+</kindOfMaterialKind>
+</asInstanceOfKind>
+</partDeviceInstance>
+</part>
+</productInstanceInstance>
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<!--G.k.4.r.9, G.k.4.r.9.2a - Pharmaceutical Dose Form TermID Version Date/Number-->
+<!--<formCode code="1221" codeSystem="TBD-DoseForm" codeSystemVersion="2.0">--> <formCode codeSystem="TBD-DoseForm">
+<!--G.k.4.r.9.1 - Pharmaceutical Dose Form (free text)-->
+<originalText>Syrup</originalText>
+</formCode>
+</kindOfProduct>
+</instanceOfKind>
+</consumable>
+<inboundRelationship typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<code code="28" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="parentRouteOfAdministration"/>
+<value code="025" codeSystem="2.16.840.1.113883.3.989.2.1.1.14" codeSystemVersion="2.1" displayName="Other" xsi:type="CE">
+<!--G.k.4.r.11.1 - Parent Route of Administration (free text)-->
+<originalText>Sample Parent Route of Administration (free text)AT01</originalText>
+</value>
+</observation>
+</inboundRelationship>
+</substanceAdministration>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="31" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="recurranceOfReaction"/>
+<!--G.k.9.i.4 - Did Reaction Recur on Re-administration?-->
+<value code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.16" codeSystemVersion="2.0" displayName="yes - yes (rechallenge was done, reaction recurred)" xsi:type="CE"/>
+<outboundRelationship1 typeCode="REFR">
+<actReference classCode="OBS" moodCode="EVN">
+<id root="1skhmjv3-w3e6-wadt-h01l-4f3vrfmuhox1"/>
+</actReference>
+</outboundRelationship1>
+</observation>
+</outboundRelationship2>
+<inboundRelationship typeCode="CAUS">
+<act classCode="ACT" moodCode="EVN">
+<!--G.k.8 - Action(s) Taken with Drug-->
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.15" codeSystemVersion="2.0" displayName="Dose reduced" xsi:type="CE"/>
+</act>
+</inboundRelationship>
+<inboundRelationship typeCode="RSON">
+<observation classCode="OBS" moodCode="EVN">
+<code code="19" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="indication"/>
+<!--G.k.7.r.2a - G.k.7.r, G.k.7.r.2, Indication for Use in Case (repeat as necessary), Indication (MedDRA code), MedDRA Version for Indication, #combined in the below tag#-->
+<value code="10019250" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Heart attack" xsi:type="CE">
+<!--G.k.7.r.1 - Indication as Reported by the Primary Source-->
+<originalText>Sample IndicationAT01</originalText>
+</value>
+<performer typeCode="PRF">
+<assignedEntity classCode="ASSIGNED">
+<code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sourceReporter"/>
+</assignedEntity>
+</performer>
+</observation>
+</inboundRelationship>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<observation classCode="OBS" moodCode="EVN">
+<!--** - Reaction identifier - Is used to correlate a reaction with a drug reaction-->
+<id root="1skhmjv3-w3e6-wadt-h01l-4f3vrfmuhox1"/>
+<code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction"/>
+<effectiveTime xsi:type="SXPR_TS">
+<comp xsi:type="IVL_TS">
+<!--E.i.4 - Date of Start of Reaction / Event-->
+<low value="20060601"/>
+<!--E.i.5 - Date of End of Reaction / Event-->
+<high value="20060602"/>
+</comp>
+<!--E.i.6 - Duration of Reaction / Event-->
+<comp operator="A" xsi:type="IVL_TS">
+<!--E.i.6b - Duration of Reaction / Event (unit)-->
+<width value="1" unit="d"/>
+</comp>
+</effectiveTime>
+<!--E.i.2.1a - Reaction / Event (MedDRA code), MedDRA Version for Reaction / Event, #combined in the below tag#-->
+<value code="10019267" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Heart block NOS" xsi:type="CE">
+<!--E.i.1.1b - Reaction / Event as Reported by the Primary Source Language-->
+<originalText language="eng">Sample Reaction in TextAT01</originalText>
+</value>
+<location typeCode="LOC">
+<locatedEntity classCode="LOCE">
+<locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+<!--E.i.9 - Identification of the Country Where the Reaction / Event Occurred-->
+<code code="IT" codeSystem="1.0.3166.1.2.2" displayName="Italy"/>
+</locatedPlace>
+</locatedEntity>
+</location>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="30" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reactionForTranslation"/>
+<!--E.i.1.2 - Reaction / Event as Reported by the Primary Source for Translation-->
+<value xsi:type="ED">Sample primary source for translationAT01</value>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="37" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="termHighlightedByReporter"/>
+<!--E.i.3.1 - Term Highlighted by the Reporter-->
+<value code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.10" codeSystemVersion="2.0" displayName="Yes, highlighted by the reporter, SERIOUS" xsi:type="CE"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="34" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInDeath"/>
+<!--E.i.3.2a - Results in Death-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="21" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="isLifeThreatening"/>
+<!--E.i.3.2b - Life Threatening-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="33" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="requiresInpatientHospitalization"/>
+<!--E.i.3.2c - Caused / Prolonged Hospitalisation-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="35" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInPersistentOrSignificantDisability"/>
+<!--E.i.3.2d - Disabling / Incapacitating-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="12" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="congenitalAnomalyBirthDefect"/>
+<!--E.i.3.2e - Congenital Anomaly / Birth Defect-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="26" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="otherMedicallyImportantCondition"/>
+<!--E.i.3.2f - Other Medically Important Condition-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="27" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="outcome"/>
+<!--E.i.7 - Outcome of Reaction / Event at the Time of Last Observation-->
+<value code="5" codeSystem="2.16.840.1.113883.3.989.2.1.1.11" codeSystemVersion="2.0" displayName="fatal" xsi:type="CE"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="24" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="medicalConfirmationByHealthProfessional"/>
+<!--E.i.8 - Medical Confirmation by Healthcare Professional-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+</observation>
+</subjectOf2>
+<!--D.8.r - Relevant Past Drug History (repeat as necessary)-->
+<subjectOf2 typeCode="SBJ">
+<organizer classCode="CATEGORY" moodCode="EVN">
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="drugHistory"/>
+<component typeCode="COMP">
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+<effectiveTime xsi:type="IVL_TS">
+<!--D.8.r.4 - Start Date-->
+<low value="20060602"/>
+<!--D.8.r.5 - End Date-->
+<high value="20060604"/>
+</effectiveTime>
+<consumable typeCode="CSM">
+<instanceOfKind classCode="INST">
+<kindOfProduct classCode="MMAT" determinerCode="KIND">
+<!--<code code="mpid" codeSystem="TBD-MPID" codeSystemVersion="2.0" />-->
+<!--D.8.r.1 - Name of Drug as Reported-->
+<name>Sample PT Drug ReportedNameAT01
+<!--D.8.r.1.EU.1 - Name part - Invented name-->
+<delimiter qualifier="INV">Sample PT Drug InventedNameAT01</delimiter>
+<!--D.8.r.1.EU.2 - Name part - Scientific name-->
+<delimiter qualifier="SCI">Sample PT Drug ScientificNameAT01</delimiter>
+<!--D.8.r.1.EU.3 - Name part - Trademark name-->
+<delimiter qualifier="TMK">Sample PT Drug TrademarkNameAT01</delimiter>
+<!--D.8.r.1.EU.4 - Name part - Strength name-->
+<delimiter qualifier="STR">Sample PT Drug StregthNameAT01</delimiter>
+<!--D.8.r.1.EU.5 - Name part - Form name-->
+<delimiter qualifier="FRM">Sample PT Drug FormNameAT01</delimiter>
+<!--D.8.r.1.EU.6 - Name part - Container name-->
+<delimiter qualifier="CON">Sample PT Drug ContainerNameAT01</delimiter>
+<!--D.8.r.1.EU.7 - Name part - Device name-->
+<delimiter qualifier="DEV">Sample PT Drug DeviceNameAT01</delimiter>
+<!--D.8.r.1.EU.8 - Name part - Intended use name-->
+<delimiter qualifier="USE">Sample PT Drug IntendedUseNameAT01</delimiter>
+</name>
+<ingredient classCode="ACTI">
+<quantity>
+<!--D.8.r.EU.r.3a  - Strength (number), #combined in the below tag#-->
+<numerator value="10" unit="mL"/>
+<!--D.8.r.EU.r.3b  - Strength (unit)-->
+<denominator value="1"/>
+</quantity>
+<ingredientSubstance classCode="MMAT" determinerCode="KIND">
+<!--D.8.r.EU.r.2b - -->
+<!--<code code="100000078226" codeSystem="TBD-Substance" codeSystemVersion="1.1"/>-->
+<!--D.8.r.EU.r.1  - Substance / Specified Substance Name-->
+<name>Sample Patient Substance NameAT01</name>
+</ingredientSubstance>
+</ingredient>
+</kindOfProduct>
+</instanceOfKind>
+</consumable>
+<outboundRelationship2 typeCode="RSON">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.8.r.6 - Indication (MedDRA code)-->
+<code code="19" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="indication"/>
+<!--D.8.r.6a - MedDRA Version for Indication
+#combined in the below tag#-->
+<value code="10019206" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Head X-ray" xsi:type="CE"/>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="CAUS">
+<observation classCode="OBS" moodCode="EVN">
+<!--D.8.r.7 - Reaction (MedDRA code)-->
+<code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction"/>
+<!--D.8.r.7a - MedDRA Version for Reaction
+#combined in the below tag#-->
+<value code="10028597" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Myocardial infarction acute" xsi:type="CE"/>
+</observation>
+</outboundRelationship2>
+</substanceAdministration>
+</component>
+</organizer>
+</subjectOf2>
+<subjectOf2 typeCode="SBJ">
+<organizer classCode="CATEGORY" moodCode="EVN">
+<code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="testsAndProceduresRelevantToTheInvestigation"/>
+<component typeCode="COMP">
+<!--F.r.2.2b - -->
+<observation classCode="OBS" moodCode="EVN">
+<!--F.r.2.2a - Test Name (MedDRA code), MedDRA Version for Test Name, #combined in the below tag#, Test Name (MedDRA code)-->
+<code code="10049054" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Brain death" xsi:type="CE">
+<!--F.r.2.1 - Test Name (free text)-->
+<originalText>Sample Test NameAT01</originalText>
+</code>
+<!--F.r, F.r.1 - Results of Tests and Procedures Relevant to the Investigation of the Patient (repeat as necessary)ICH ICSR, Test Date-->
+<effectiveTime value="20060604" xsi:type="IVL_TS"/>
+<value xsi:type="IVL_PQ">
+<!--F.r.3.2, F.r.3.3 - Test Result (value / qualifier), #combined in the below tag#-->
+<center value="10" unit="mg"/>
+</value>
+<!--F.r.3.4 - Result Unstructured Data (free text)-->
+<!--<value xsi:type="ED">Confirmed Cardiac arrest</value>-->
+<!--F.r.3.1 - Test Result (code)-->
+<!--<interpretationCode code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.12" codeSystemVersion="2.0" displayName="Positive"/>-->
+<referenceRange typeCode="REFV">
+<!--F.r.3 - Test Result-->
+<observationRange classCode="OBS" moodCode="EVN.CRT">
+<!--F.r.4  - Normal Low Value-->
+<value value="40" unit="mg" xsi:type="PQ"/>
+<interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+</observationRange>
+</referenceRange>
+<referenceRange typeCode="REFV">
+<observationRange classCode="OBS" moodCode="EVN.CRT">
+<!--F.r.5  - Normal High Value-->
+<value value="110" unit="mg" xsi:type="PQ"/>
+<interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
+</observationRange>
+</referenceRange>
+<outboundRelationship2 typeCode="PERT">
+<observation classCode="OBS" moodCode="EVN">
+<code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+<!--F.r.6  - Comments (free text)-->
+<value xsi:type="ED">Sample Comment for AT01</value>
+</observation>
+</outboundRelationship2>
+<outboundRelationship2 typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<code code="25" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="moreInformationAvailable"/>
+<!--F.r.7  - More Information Available-->
+<value value="true" xsi:type="BL"/>
+</observation>
+</outboundRelationship2>
+</observation>
+</component>
+</organizer>
+</subjectOf2>
+</primaryRole>
+</subject1>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="20" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="interventionCharacterization"/>
+<!--G.k.1 - Characterisation of Drug Role-->
+<value code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.13"  codeSystemVersion="2.0" displayName="Suspect" xsi:type="CE"/>
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="SBADM" moodCode="EVN">
+<!--** - Drug's UUID-->
+<id root="ctd9o5uw-757z-8c6m-t2ud-ggwos1lm4o28"/>
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component typeCode="COMP">
+<causalityAssessment classCode="OBS" moodCode="EVN">
+<code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality"/>
+<!--G.k.9.i.2.r.3 - Result of Assessment-->
+<value xsi:type="ST">Sample Result of AssessmentAT01</value>
+<!--G.k.9.i.2.r.3.EU.1 - -->
+<!--G.k.9.i.2.r.2 - Method of Assessment-->
+<methodCode>
+<!--Drug reaction assessment/G.k.9.i.2.r.2--><originalText>Sample Method of Assessment DrugAT01</originalText>
+</methodCode>
+<!--G.k.9.i.2.r.2.EU.1 - -->
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<!--G.k.9.i.2.r.1 - Source of Assessment-->
+<code>
+<!--Drug reaction assessment/G.k.9.i.2.r.1--><originalText>Sample Assessment SourceAT01</originalText>
+</code>
+<!--G.k.9.i.2.r.1.EU.1 - G.k.9.i.2.r.1.EU.1-->
+</assignedEntity>
+</author>
+<subject1 typeCode="SUBJ">
+<adverseEffectReference classCode="OBS" moodCode="EVN">
+<id root="1skhmjv3-w3e6-wadt-h01l-4f3vrfmuhox1"/>
+</adverseEffectReference>
+</subject1>
+<subject2 typeCode="SUBJ">
+<productUseReference classCode="SBADM" moodCode="EVN">
+<!--** - Drug's UUID-->
+<id root="ctd9o5uw-757z-8c6m-t2ud-ggwos1lm4o28"/>
+</productUseReference>
+</subject2>
+</causalityAssessment>
+</component>
+<component1 typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+<!--H.2 - Reporter's Comments-->
+<value xsi:type="ED">Sample Reporter's CommentAT01</value>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sourceReporter"/>
+</assignedEntity>
+</author>
+</observationEvent>
+</component1>
+<component1 typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+<!--H.4 - Sender's Comments-->
+<value xsi:type="ED">Sample Sender's CommentAT01</value>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sender"/>
+</assignedEntity>
+</author>
+</observationEvent>
+</component1>
+<component1 typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="15" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="diagnosis"/>
+<!--H.3.r, H.3.r.1a - Sender's Diagnosis (MedDRA code) (repeat as necessary), MedDRA Version for Sender's Diagnosis / Syndrome and / or Reclassification of Reaction / Event, #combined in the below tag#-->
+<value code="10048409" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="19.0" displayName="Brain malformation" xsi:type="CE"/>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sender"/>
+</assignedEntity>
+</author>
+</observationEvent>
+</component1>
+</adverseEventAssessment>
+</component>
+<component typeCode="COMP">
+<observationEvent classCode="OBS" moodCode="EVN">
+<code code="36" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="summaryAndComment"/>
+<!--H.5.r.1b - Case Summary and Reporter’s Comments Language-->
+<value language="eng" xsi:type="ED">Sample Case SummaryAT01</value>
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="reporter"/>
+</assignedEntity>
+</author>
+</observationEvent>
+</component>
+<outboundRelationship typeCode="SPRT">
+<!--C.2.r.5 - Primary Source for Regulatory Purposes-->
+<priorityNumber value="1"/>
+<relatedInvestigation classCode="INVSTG" moodCode="EVN">
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.22" codeSystemVersion="2.0" displayName="sourceReport"/>
+<subjectOf2 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<addr>
+<!--C.2.r.2.3 - Reporter’s Street-->
+<streetAddressLine>SampleRStreetAT01</streetAddressLine>
+<!--C.2.r.2.4 - Reporter’s City-->
+<city>SampleRCityAT01</city>
+<!--C.2.r.2.5 - Reporter’s State or Province-->
+<state>SampleRStateAT01</state>
+<!--C.2.r.2.6 - Reporter’s Postcode-->
+<postalCode>E144HB</postalCode>
+</addr>
+<!--C.2.r.2.7 - Reporter’s Telephone-->
+<telecom value="tel:389373763737"/>
+<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<!--C.2.r.1 - Reporter’s Name-->
+<name>
+<!--C.2.r.1.1 - Reporter’s Title-->
+<prefix>Mr</prefix>
+<!--C.2.r.1.2 - Reporter’s Given Name-->
+<given>SampleReporterGNameAT01</given>
+<!--C.2.r.1.3 - Reporter’s Middle Name-->
+<given>SampleReporterMNameAT01</given>
+<!--C.2.r.1.4 - Reporter’s Family Name-->
+<family>SampleReporterFNameAT01</family>
+</name>
+<asQualifiedEntity classCode="QUAL">
+<!--C.2.r.4 - Qualification-->
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.6" codeSystemVersion="2.0" displayName="Physician"/>
+</asQualifiedEntity>
+<asLocatedEntity classCode="LOCE">
+<location classCode="COUNTRY" determinerCode="INSTANCE">
+<!--C.2.r.3 - Reporter’s Country Code-->
+<code code="GI" codeSystem="1.0.3166.1.2.2" displayName="Gibraltar"/>
+</location>
+</asLocatedEntity>
+</assignedPerson>
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<!--C.2.r.2.2 - Reporter’s Department-->
+<name>Rullgardina (Cardiology)</name>
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<!--C.2.r.2.1 - Reporter’s Organisation-->
+<name>OrgNameAT01</name>
+</representedOrganization>
+</assignedEntity>
+</representedOrganization>
+</assignedEntity>
+</author>
+</controlActEvent>
+</subjectOf2>
+</relatedInvestigation>
+</outboundRelationship>
+<outboundRelationship typeCode="SPRT">
+<relatedInvestigation classCode="INVSTG" moodCode="EVN">
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.22" codeSystemVersion="2.0" displayName="initialReport"/>
+<subjectOf2 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<!--C.1.8.2 - First Sender of This Case-->
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.3"   codeSystemVersion="2.0" displayName="Regulator"/>
+</assignedEntity>
+</author>
+</controlActEvent>
+</subjectOf2>
+</relatedInvestigation>
+</outboundRelationship>
+<outboundRelationship typeCode="SPRT">
+<relatedInvestigation classCode="INVSTG" moodCode="EVN">
+<code nullFlavor="NA"/>
+<subjectOf2 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<!--C.1.10.r - Identification Number of the Report Linked to This Report (repeat as necessary)-->
+<id root="2.16.840.1.113883.3.989.2.1.3.2" extension="SE-MAHy-AT01"/>
+</controlActEvent>
+</subjectOf2>
+</relatedInvestigation>
+</outboundRelationship>
+<subjectOf1 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<author typeCode="AUT">
+<assignedEntity classCode="ASSIGNED">
+<!--C.3, C.3.1 - Information on Sender of Case Safety Report, Sender Type-->
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.7" codeSystemVersion="2.0" displayName="Pharmaceutical company"/>
+<!--C.3.4 - Sender’s Address, Fax, Telephone and E-mail Address-->
+<addr>
+<!--C.3.4.1 - Sender’s Street Address-->
+<streetAddressLine>SampleSStreetAT01</streetAddressLine>
+<!--C.3.4.2 - Sender’s City-->
+<city>SampleSCityAT01</city>
+<!--C.3.4.3 - Sender’s State or Province-->
+<state>SampleSStateAT01</state>
+<!--C.3.4.4 - Sender’s Postcode-->
+<postalCode>E144HB</postalCode>
+</addr>
+<!--C.3.4.6 - Sender’s Telephone-->
+<telecom value="tel:44020366000"/>
+<!--C.3.4.7 - Sender’s Fax-->
+<telecom value="fax:44020365520"/>
+<!--C.3.4.8 - Sender’s E-mail Address-->
+<telecom value="mailto:eudravigilance@ema.europa.eu"/>
+<assignedPerson classCode="PSN" determinerCode="INSTANCE">
+<name>
+<!--C.3.3.2 - Sender’s Title-->
+<prefix>Mr</prefix>
+<!--C.3.3.3 - Sender’s Given Name-->
+<given>SampleSenderGNameAT01</given>
+<!--C.3.3.4 - Sender’s Middle Name-->
+<given>SampleSenderMNameAT01</given>
+<!--C.3.3.5 - Sender’s Family Name-->
+<family>SampleSenderFNameAT01</family>
+</name>
+<asLocatedEntity classCode="LOCE">
+<location classCode="COUNTRY" determinerCode="INSTANCE">
+<!--C.3.4.5 - Sender’s Country Code-->
+<code code="SE" codeSystem="1.0.3166.1.2.2" displayName="Sweden"/>
+</location>
+</asLocatedEntity>
+</assignedPerson>
+<!--C.3.3 - Person Responsible for Sending the Report-->
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<!--C.3.3.1 - Sender’s Department-->
+<name>Sample DepartmentAT01</name>
+<assignedEntity classCode="ASSIGNED">
+<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+<!--C.3.2 - Sender’s Organisation-->
+<name>MAHTEST01GW</name>
+</representedOrganization>
+</assignedEntity>
+</representedOrganization>
+</assignedEntity>
+</author>
+</controlActEvent>
+</subjectOf1>
+<subjectOf1 typeCode="SUBJ">
+<controlActEvent classCode="CACT" moodCode="EVN">
+<!--C.1.9.1.r.2 - Case Identifier(s)-->
+<id root="2.16.840.1.113883.3.989.2.1.3.3" extension="SampleIdAT01" assigningAuthorityName="SampleSrcIdAT01"/>
+</controlActEvent>
+</subjectOf1>
+<subjectOf2 typeCode="SUBJ">
+<investigationCharacteristic classCode="OBS" moodCode="EVN">
+<code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.23" codeSystemVersion="2.0" displayName="ichReportType"/>
+<!--C.1.3 - Type of Report-->
+<value code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.2"   codeSystemVersion="2.0" displayName="Report from studies" xsi:type="CE"/>
+</investigationCharacteristic>
+</subjectOf2>
+<subjectOf2 typeCode="SUBJ">
+<investigationCharacteristic classCode="OBS" moodCode="EVN">
+<!--C.1.9 - Other Case Identifiers-->
+<code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.23" codeSystemVersion="2.0" displayName="otherCaseIds"/>
+<!--C.1.9.1 - Other Case Identifiers in Previous Transmissions-->
+<value value="true" xsi:type="BL"/>
+</investigationCharacteristic>
+</subjectOf2>
+</investigationEvent>
+</subject>
+</controlActProcess>
+</PORR_IN049016UV>
+<receiver typeCode="RCV">
+<device classCode="DEV" determinerCode="INSTANCE">
+<!--N.1.4 - Batch Receiver Identifier-->
+<id root="2.16.840.1.113883.3.989.2.1.3.14" extension="EVHUMAN"/>
+</device>
+</receiver>
+<sender typeCode="SND">
+<device classCode="DEV" determinerCode="INSTANCE">
+<!--N.1.3 - Batch Sender Identifier-->
+<id root="2.16.840.1.113883.3.989.2.1.3.13" extension="MAHTEST01GW"/>
+</device>
+</sender>
+</MCCI_IN200100UV01>

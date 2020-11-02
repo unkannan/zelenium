@@ -1,5 +1,9 @@
 eclipse.preferences.version=1
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.5
+<<<<<<< HEAD:.metadata/.plugins/org.eclipse.core.resources/.history/45/a0c452696c95001a1d30fb2cd32706db
+=======
+org.eclipse.jdt.core.compiler.compliance=1.5
+>>>>>>> d8fc335538d7ced32952422edb97ce2018102438:SeleniumFrameWork/.settings/org.eclipse.jdt.core.prefs
 org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
 org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning
 org.eclipse.jdt.core.compiler.release=disabled

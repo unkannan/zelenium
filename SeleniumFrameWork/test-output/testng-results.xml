@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35821" started-at="2020-10-12T22:35:17 CEST" finished-at="2020-10-12T22:35:52 CEST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35821" started-at="2020-10-12T22:35:17 CEST" finished-at="2020-10-12T22:35:52 CEST">
+      <class name="com.org.test.Guru99MainPageWebTableExcercise">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf]" name="setUp" is-config="true" duration-ms="7253" started-at="2020-10-12T22:35:17 CEST" finished-at="2020-10-12T22:35:24 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf]" name="WebTableExcercise1" duration-ms="28486" started-at="2020-10-12T22:35:24 CEST" finished-at="2020-10-12T22:35:52 CEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebTableExcercise1 -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf]" name="teardown" is-config="true" duration-ms="2" started-at="2020-10-12T22:35:52 CEST" finished-at="2020-10-12T22:35:52 CEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=WebTableExcercise1 status=SUCCESS method=Guru99MainPageWebTableExcercise.WebTableExcercise1()[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.org.test.Guru99MainPageWebTableExcercise -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="12284" started-at="2019-10-30T10:45:02Z" finished-at="2019-10-30T10:45:14Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="12284" started-at="2019-10-30T10:45:02Z" finished-at="2019-10-30T10:45:14Z">
+      <class name="com.gurukula.tests.BranchTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gurukula.tests.BranchTest@62ee68d8]" name="setUp" is-config="true" duration-ms="4982" started-at="2019-10-30T10:45:02Z" finished-at="2019-10-30T10:45:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_01_testBranchPage()[pri:0, instance:com.gurukula.tests.BranchTest@62ee68d8]" name="tc_01_testBranchPage" duration-ms="3" started-at="2019-10-30T10:45:07Z" finished-at="2019-10-30T10:45:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_01_testBranchPage -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.gurukula.tests.BranchTest@62ee68d8]" name="teardown" is-config="true" duration-ms="634" started-at="2019-10-30T10:45:07Z" finished-at="2019-10-30T10:45:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tc_01_testBranchPage status=SUCCESS method=BranchTest.tc_01_testBranchPage()[pri:0, instance:com.gurukula.tests.BranchTest@62ee68d8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.gurukula.tests.BranchTest -->
+      <class name="com.gurukula.tests.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.gurukula.tests.LoginTest@735b5592]" name="setUp" is-config="true" duration-ms="4285" started-at="2019-10-30T10:45:07Z" finished-at="2019-10-30T10:45:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:com.gurukula.tests.LoginTest@735b5592]" name="WebTableExcercise1" duration-ms="1724" started-at="2019-10-30T10:45:12Z" finished-at="2019-10-30T10:45:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebTableExcercise1 -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.gurukula.tests.LoginTest@735b5592]" name="teardown" is-config="true" duration-ms="638" started-at="2019-10-30T10:45:13Z" finished-at="2019-10-30T10:45:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=WebTableExcercise1 status=SUCCESS method=LoginTest.WebTableExcercise1()[pri:0, instance:com.gurukula.tests.LoginTest@735b5592] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.gurukula.tests.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

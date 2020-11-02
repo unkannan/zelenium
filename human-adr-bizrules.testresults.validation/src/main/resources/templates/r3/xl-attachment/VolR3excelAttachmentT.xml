@@ -1,0 +1,920 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MCCI_IN200100UV01 ITSVersion="XML_1.0" xsi:schemaLocation="urn:hl7-org:v3 http://eudravigilance.ema.europa.eu/XSD/multicacheschemas/MCCI_IN200100UV01.xsd"
+    xmlns="urn:hl7-org:v3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <id root="2.16.840.1.113883.3.989.2.1.3.22" extension="EU-AUTO-@@BATCH_NUMBER@@"/>
+    <creationTime value="20191204141745"/>
+    <responseModeCode code="D"/>
+    <interactionId root="2.16.840.1.113883.1.6" extension="MCCI_IN200100UV01"/>
+    <name code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.1" codeSystemVersion="2.0" displayName="ICHICSR"/>
+    <PORR_IN049016UV>
+        <id root="2.16.840.1.113883.3.989.2.1.3.1" extension="EU-AUTO-@@BATCH_NUMBER@@"/>
+        <creationTime value="20191204141745"/>
+        <interactionId root="2.16.840.1.113883.1.6" extension="PORR_IN049016UV"/>
+        <processingCode code="P"/>
+        <processingModeCode code="T"/>
+        <acceptAckCode code="AL"/>
+        <receiver typeCode="RCV">
+            <device classCode="DEV" determinerCode="INSTANCE">
+                <id root="2.16.840.1.113883.3.989.2.1.3.12" extension="EVHUMAN"/>
+            </device>
+        </receiver>
+        <sender typeCode="SND">
+            <device classCode="DEV" determinerCode="INSTANCE">
+                <id root="2.16.840.1.113883.3.989.2.1.3.11" extension="MAHTEST07WT"/>
+            </device>
+        </sender>
+        <controlActProcess classCode="CACT" moodCode="EVN">
+            <code code="PORR_TE049016UV" codeSystem="2.16.840.1.113883.1.18"/>
+            <effectiveTime value="20191204141745"/>
+            <subject typeCode="SUBJ">
+                <investigationEvent classCode="INVSTG" moodCode="EVN">
+                    <id root="2.16.840.1.113883.3.989.2.1.3.1" extension="EU-AUTO-@@SAFETY_REPORT_IDENTIFIER_001@@"/>
+                    <id root="2.16.840.1.113883.3.989.2.1.3.2" extension="EU-AUTO-@@CASE_IDENTIFICATION_NUMBER_001@@"/>
+                    <code code="PAT_ADV_EVNT" codeSystem="2.16.840.1.113883.5.4"/>
+                    <text>Sample Case NarrativeA001</text>
+                    <statusCode code="active"/>
+                    <effectiveTime>
+                        <low value="20100101"/>
+                    </effectiveTime>
+                    <availabilityTime value="201002010101"/>
+                    <reference typeCode="REFR">
+                        <document classCode="DOC" moodCode="EVN">
+                            <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.27" codeSystemVersion="2.0" displayName="literatureReference"/>
+                            <text mediaType="text/plain" representation="TXT">Sample Literature Reference TextA001</text>
+                            <bibliographicDesignationText>Sample Literature Reference Biliographic Description TextA001</bibliographicDesignationText>
+                        </document>
+                    </reference>
+                    <reference typeCode="REFR">
+                        <document classCode="DOC" moodCode="EVN">
+                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.27" codeSystemVersion="2.0" displayName="documentsHeldBySender"/>
+                            <title>Important reportA001</title>
+                            <text mediaType="text/plain" representation="TXT">Sample Literature Reference TextA001</text>
+                        </document>
+                    </reference>
+                    <reference typeCode="REFR">
+                        <document classCode="DOC" moodCode="EVN">
+                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.27" codeSystemVersion="2.0" displayName="documentsHeldBySender"/>
+                            <title>excel</title>
+                            <text mediaType="application/vnd.ms-excel" compression="DF" representation="B64">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</text>
+                        </document>
+                    </reference>
+                    <component typeCode="COMP">
+                        <observationEvent classCode="OBS" moodCode="EVN">
+                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="additionalDocumentsAvailable"/>
+                            <value xsi:type="BL" value="true"/>
+                        </observationEvent>
+                    </component>
+                    <component typeCode="COMP">
+                        <observationEvent classCode="OBS" moodCode="EVN">
+                            <code code="23" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="localCriteriaForExpedited"/>
+                            <value xsi:type="BL" value="true"/>
+                        </observationEvent>
+                    </component>
+                    <component typeCode="COMP">
+                        <adverseEventAssessment classCode="INVSTG" moodCode="EVN">
+                            <subject1 typeCode="SBJ">
+                                <primaryRole classCode="INVSBJ">
+                                    <player1 classCode="PSN" determinerCode="INSTANCE">
+                                        <name>Mr.</name>
+                                        <administrativeGenderCode code="2" codeSystem="1.0.5218"/>
+                                        <birthTime value="20060101"/>
+                                        <deceasedTime value="20060201"/>
+                                        <asIdentifiedEntity classCode="IDENT">
+                                            <id root="2.16.840.1.113883.3.989.2.1.3.7" extension="83444908-A001"/>
+                                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="GP"/>
+                                        </asIdentifiedEntity>
+                                        <asIdentifiedEntity classCode="IDENT">
+                                            <id root="2.16.840.1.113883.3.989.2.1.3.8" extension="8999-A001"/>
+                                            <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="Specialist"/>
+                                        </asIdentifiedEntity>
+                                        <asIdentifiedEntity classCode="IDENT">
+                                            <id root="2.16.840.1.113883.3.989.2.1.3.9" extension="3333444A001"/>
+                                            <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="Hospital Record"/>
+                                        </asIdentifiedEntity>
+                                        <asIdentifiedEntity classCode="IDENT">
+                                            <id root="2.16.840.1.113883.3.989.2.1.3.10" extension="0923334753A001"/>
+                                            <code code="4" codeSystem="2.16.840.1.113883.3.989.2.1.1.4" codeSystemVersion="2.0" displayName="Investigation"/>
+                                        </asIdentifiedEntity>
+                                        <role classCode="PRS">
+                                            <code code="PRN" codeSystem="2.16.840.1.113883.5.111"/>
+                                            <associatedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name>PARENT NAME A001</name>
+                                                <administrativeGenderCode code="2" codeSystem="1.0.5218"/>
+                                                <birthTime value="19760101"/>
+                                            </associatedPerson>
+                                            <subjectOf2 typeCode="SBJ">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="age"/>
+                                                    <value xsi:type="PQ" value="10" unit="a"/>
+                                                </observation>
+                                            </subjectOf2>
+                                            <subjectOf2 typeCode="SBJ">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="22" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="lastMenstrualPeriodDate"/>
+                                                    <value xsi:type="TS" value="20060101"/>
+                                                </observation>
+                                            </subjectOf2>
+                                            <subjectOf2 typeCode="SBJ">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="7" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="bodyWeight"/>
+                                                    <value xsi:type="PQ" value="50" unit="kg"/>
+                                                </observation>
+                                            </subjectOf2>
+                                            <subjectOf2 typeCode="SBJ">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="17" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="height"/>
+                                                    <value xsi:type="PQ" value="160" unit="cm"/>
+                                                </observation>
+                                            </subjectOf2>
+                                            <subjectOf2 typeCode="SBJ">
+                                                <organizer classCode="CATEGORY" moodCode="EVN">
+                                                    <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="relevantMedicalHistoryAndConcurrentConditions"/>
+                                                    <component typeCode="COMP">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="10027415" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Metabolic abnormality management"/>
+                                                            <effectiveTime xsi:type="IVL_TS">
+                                                                <low value="20060301"/>
+                                                                <high value="20060401"/>
+                                                            </effectiveTime>
+                                                            <outboundRelationship2 typeCode="COMP">
+                                                                <observation classCode="OBS" moodCode="EVN">
+                                                                    <code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+                                                                    <value xsi:type="ED">Recovered after steroid treatmentA001</value>
+                                                                </observation>
+                                                            </outboundRelationship2>
+                                                            <inboundRelationship typeCode="REFR">
+                                                                <observation classCode="OBS" moodCode="EVN">
+                                                                    <code code="13" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="continuing"/>
+                                                                    <value xsi:type="BL" value="true"/>
+                                                                </observation>
+                                                            </inboundRelationship>
+                                                        </observation>
+                                                    </component>
+                                                    <component typeCode="COMP">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="18" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="historyAndConcurrentConditionText"/>
+                                                            <value xsi:type="ED">Sample Text for Relevant Medical History and Concurrent Conditions of ParentA001</value>
+                                                        </observation>
+                                                    </component>
+                                                </organizer>
+                                            </subjectOf2>
+                                            <subjectOf2 typeCode="SBJ">
+                                                <organizer classCode="CATEGORY" moodCode="EVN">
+                                                    <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="drugHistory"/>
+                                                    <component typeCode="COMP">
+                                                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                                            <effectiveTime xsi:type="IVL_TS">
+                                                                <low value="20060601"/>
+                                                                <high value="20060602"/>
+                                                            </effectiveTime>
+                                                            <consumable typeCode="CSM">
+                                                                <instanceOfKind classCode="INST">
+                                                                    <kindOfProduct classCode="MMAT" determinerCode="KIND">
+                                                                        <name>Sample Drug ReportedNameA001
+                                                                            <delimiter qualifier="INV">Sample Drug InventedNameA001</delimiter>
+                                                                            <delimiter qualifier="SCI">Sample Drug ScientificNameA001</delimiter>
+                                                                            <delimiter qualifier="TMK">Sample Drug TrademarkNameA001</delimiter>
+                                                                            <delimiter qualifier="STR">Sample Drug StregthNameA001</delimiter>
+                                                                            <delimiter qualifier="FRM">Sample Drug FormNameA001</delimiter>
+                                                                            <delimiter qualifier="CON">Sample Drug ContainerNameA001</delimiter>
+                                                                            <delimiter qualifier="DEV">Sample Drug DeviceNameA001</delimiter>
+                                                                            <delimiter qualifier="USE">Sample Drug IntendedUseNameA001</delimiter>
+                                                                        </name>
+                                                                        <ingredient classCode="ACTI">
+                                                                            <quantity>
+                                                                                <numerator value="10" unit="L"/>
+                                                                                <denominator value="1"/>
+                                                                            </quantity>
+                                                                            <ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                                                                <name>Sample Parent Susbtance NameA001</name>
+                                                                            </ingredientSubstance>
+                                                                        </ingredient>
+                                                                    </kindOfProduct>
+                                                                </instanceOfKind>
+                                                            </consumable>
+                                                            <outboundRelationship2 typeCode="RSON">
+                                                                <observation classCode="OBS" moodCode="EVN">
+                                                                    <code code="19" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="indication"/>
+                                                                    <value xsi:type="CE" code="10036477" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Pre infarction syndrome"/>
+                                                                </observation>
+                                                            </outboundRelationship2>
+                                                            <outboundRelationship2 typeCode="CAUS">
+                                                                <observation classCode="OBS" moodCode="EVN">
+                                                                    <code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction"/>
+                                                                    <value xsi:type="CE" code="10019267" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Heart block NOS"/>
+                                                                </observation>
+                                                            </outboundRelationship2>
+                                                        </substanceAdministration>
+                                                    </component>
+                                                </organizer>
+                                            </subjectOf2>
+                                        </role>
+                                    </player1>
+                                    <subjectOf1 typeCode="SBJ">
+                                        <researchStudy classCode="CLNTRL" moodCode="EVN">
+                                            <id root="2.16.840.1.113883.3.989.2.1.3.5" extension="FR-SPONSORSTUDYNUM-A001"/>
+                                            <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.8" codeSystemVersion="2.0" displayName="Individual patient use"/>
+                                            <title>Sample Study NameA001</title>
+                                            <authorization typeCode="AUTH">
+                                                <studyRegistration classCode="ACT" moodCode="EVN">
+                                                    <id root="2.16.840.1.113883.3.989.2.1.3.6" extension="FR-STUDYREGNUM-A001"/>
+                                                    <author typeCode="AUT">
+                                                        <territorialAuthority classCode="TERR">
+                                                            <governingPlace classCode="COUNTRY" determinerCode="INSTANCE">
+                                                                <code xsi:type="CE" code="FR" codeSystem="1.0.3166.1.2.2" displayName="France"/>
+                                                            </governingPlace>
+                                                        </territorialAuthority>
+                                                    </author>
+                                                </studyRegistration>
+                                            </authorization>
+                                        </researchStudy>
+                                    </subjectOf1>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="age"/>
+                                            <value xsi:type="PQ" value="60" unit="a"/>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="16" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="gestationPeriod"/>
+                                            <value xsi:type="PQ" value="1" unit="mo"/>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="4" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="ageGroup"/>
+                                            <value xsi:type="CE" code="6" codeSystem="2.16.840.1.113883.3.989.2.1.1.9" codeSystemVersion="2.0" displayName="Elderly"/>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="7" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="bodyWeight"/>
+                                            <value xsi:type="PQ" value="70" unit="kg"/>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="17" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="height"/>
+                                            <value xsi:type="PQ" value="180" unit="cm"/>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="22" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="lastMenstrualPeriodDate"/>
+                                            <value xsi:type="TS" value="20060601"/>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <organizer classCode="CATEGORY" moodCode="EVN">
+                                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="relevantMedicalHistoryAndConcurrentConditions"/>
+                                            <component typeCode="COMP">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="10019250" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Heart attack"/>
+                                                    <effectiveTime xsi:type="IVL_TS">
+                                                        <low value="20060602"/>
+                                                        <high value="20060804"/>
+                                                    </effectiveTime>
+                                                    <outboundRelationship2 typeCode="COMP">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+                                                            <value xsi:type="ED">Recovered after steroid treatmentA001</value>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="EXPL">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="38" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="familyHistory"/>
+                                                            <value xsi:type="BL" value="true"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <inboundRelationship typeCode="REFR">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="13" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="continuing"/>
+                                                            <value xsi:type="BL" value="true"/>
+                                                        </observation>
+                                                    </inboundRelationship>
+                                                </observation>
+                                            </component>
+                                            <component typeCode="COMP">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="18" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="historyAndConcurrentConditionText"/>
+                                                    <value xsi:type="ED">Sample Medical HistoryA001</value>
+                                                </observation>
+                                            </component>
+                                            <component typeCode="COMP">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="11" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="concomitantTherapy"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </component>
+                                        </organizer>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="5" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="autopsy"/>
+                                            <value xsi:type="BL" value="true"/>
+                                            <outboundRelationship2 typeCode="DRIV">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="8" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causeOfDeath"/>
+                                                    <value xsi:type="CE" code="10007515" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Cardiac arrest">
+                                                        <originalText>Sample Autopsy-determined Cause(s) of DeathA001</originalText>
+                                                    </value>
+                                                </observation>
+                                            </outboundRelationship2>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="32" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reportedCauseOfDeath"/>
+                                            <value xsi:type="CE" code="10000922" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Acute myocardial infarction, subendocardial infarction, initial episode of care">
+                                                <originalText>Sample Reason for Cause of DeathA001</originalText>
+                                            </value>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <organizer classCode="CATEGORY" moodCode="EVN">
+                                            <code code="4" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="drugInformation"/>
+                                            <component typeCode="COMP">
+                                                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                                    <id root="76b0fe75-cbef-335f-9600-0a89a4209a0a"/>
+                                                    <consumable typeCode="CSM">
+                                                        <instanceOfKind classCode="INST">
+                                                            <kindOfProduct classCode="MMAT" determinerCode="KIND">
+                                                                <name>Metacen
+                                                                    <delimiter qualifier="INV">A InventedNameA001</delimiter>
+                                                                    <delimiter qualifier="SCI">A ScientificNameA001</delimiter>
+                                                                    <delimiter qualifier="TMK">A TrademarkNameA001</delimiter>
+                                                                    <delimiter qualifier="STR">A StregthNameA001</delimiter>
+                                                                    <delimiter qualifier="FRM">A FormNameA001</delimiter>
+                                                                    <delimiter qualifier="CON">A ContainerNameA001</delimiter>
+                                                                    <delimiter qualifier="DEV">A DeviceNameA001</delimiter>
+                                                                    <delimiter qualifier="USE">A IntendedUseNameA001</delimiter>
+                                                                </name>
+                                                                <asManufacturedProduct classCode="MANU">
+                                                                    <subjectOf typeCode="SBJ">
+                                                                        <approval classCode="CNTRCT" moodCode="EVN">
+                                                                            <id root="2.16.840.1.113883.3.989.2.1.3.4" extension="NDA12A001"/>
+                                                                            <holder typeCode="HLD">
+                                                                                <role classCode="HLD">
+                                                                                    <playingOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                                                        <name>Sample Holder NameA001</name>
+                                                                                    </playingOrganization>
+                                                                                </role>
+                                                                            </holder>
+                                                                            <author typeCode="AUT">
+                                                                                <territorialAuthority classCode="TERR">
+                                                                                    <territory classCode="NAT" determinerCode="INSTANCE">
+                                                                                        <code code="SE" codeSystem="1.0.3166.1.2.2" displayName="Sweden"/>
+                                                                                    </territory>
+                                                                                </territorialAuthority>
+                                                                            </author>
+                                                                        </approval>
+                                                                    </subjectOf>
+                                                                </asManufacturedProduct>
+                                                                <ingredient classCode="ACTI">
+                                                                    <quantity>
+                                                                        <numerator value="10" unit="mg"/>
+                                                                        <denominator value="1"/>
+                                                                    </quantity>
+                                                                    <ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                                                        <name>PARACETAMOL</name>
+                                                                    </ingredientSubstance>
+                                                                </ingredient>
+                                                            </kindOfProduct>
+                                                            <subjectOf typeCode="SBJ">
+                                                                <productEvent classCode="ACT" moodCode="EVN">
+                                                                    <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.18" codeSystemVersion="2.0" displayName="retailSupply"/>
+                                                                    <performer typeCode="PRF">
+                                                                        <assignedEntity classCode="ASSIGNED">
+                                                                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                                                <addr>
+                                                                                    <country>GB</country>
+                                                                                </addr>
+                                                                            </representedOrganization>
+                                                                        </assignedEntity>
+                                                                    </performer>
+                                                                </productEvent>
+                                                            </subjectOf>
+                                                        </instanceOfKind>
+                                                    </consumable>
+                                                    <outboundRelationship1 typeCode="SAS">
+                                                        <pauseQuantity value="10" unit="a"/>
+                                                        <actReference classCode="OBS" moodCode="EVN">
+                                                            <id root="37b8b3ea-f9d7-3995-b51c-a2dea06fc34a"/>
+                                                        </actReference>
+                                                    </outboundRelationship1>
+                                                    <outboundRelationship1 typeCode="SAE">
+                                                        <pauseQuantity value="1" unit="d"/>
+                                                        <actReference classCode="OBS" moodCode="EVN">
+                                                            <id root="37b8b3ea-f9d7-3995-b51c-a2dea06fc34a"/>
+                                                        </actReference>
+                                                    </outboundRelationship1>
+                                                    <outboundRelationship2 typeCode="SUMM">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="14" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="cumulativeDoseToReaction"/>
+                                                            <value xsi:type="PQ" value="10" unit="ug"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="PERT">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="16" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="gestationPeriod"/>
+                                                            <value xsi:type="PQ" value="1" unit="wk"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="PERT">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="6" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="blinded"/>
+                                                            <value xsi:type="BL" value="true"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="REFR">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="additionalInformation"/>
+                                                            <value xsi:type="ST">Yes, Sample some additional Information on Drug</value>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="REFR">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="9" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="codedDrugInformation"/>
+                                                            <value xsi:type="CE" code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.17" codeSystemVersion="2.0"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="COMP">
+                                                        <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                                            <text>10 ml at 10am ; 10pm</text>
+                                                            <effectiveTime xsi:type="SXPR_TS">
+                                                                <comp xsi:type="PIVL_TS">
+                                                                    <period value="10" unit="a"/>
+                                                                </comp>
+                                                                <comp xsi:type="IVL_TS">
+                                                                    <low value="20060602"/>
+                                                                    <high value="20060703"/>
+                                                                </comp>
+                                                                <comp xsi:type="IVL_TS" operator="A">
+                                                                    <width value="1" unit="wk"/>
+                                                                </comp>
+                                                            </effectiveTime>
+                                                            <routeCode code="048" codeSystem="2.16.840.1.113883.3.989.2.1.1.14" codeSystemVersion="2.1" displayName="Oral">
+                                                                <originalText>Sample ROA free TextA001</originalText>
+                                                            </routeCode>
+                                                            <doseQuantity value="10" unit="kg"/>
+                                                            <consumable typeCode="CSM">
+                                                                <instanceOfKind classCode="INST">
+                                                                    <productInstanceInstance classCode="MMAT" determinerCode="INSTANCE">
+                                                                        <lotNumberText>Sample Batch or Lot Number TextA001</lotNumberText>
+                                                                        <part classCode="PART">
+                                                                            <partDeviceInstance classCode="DEV">
+                                                                                <lotNumberText>Batch Lot NumberA001</lotNumberText>
+                                                                                <asInstanceOfKind>
+                                                                                    <kindOfMaterialKind>
+                                                                                        <code/>
+                                                                                        <name>Sample Device Component nameA001</name>
+                                                                                    </kindOfMaterialKind>
+                                                                                </asInstanceOfKind>
+                                                                            </partDeviceInstance>
+                                                                        </part>
+                                                                    </productInstanceInstance>
+                                                                    <kindOfProduct classCode="MMAT" determinerCode="KIND">
+                                                                        <formCode>
+                                                                            <originalText>Syrup</originalText>
+                                                                        </formCode>
+                                                                    </kindOfProduct>
+                                                                </instanceOfKind>
+                                                            </consumable>
+                                                            <inboundRelationship typeCode="REFR">
+                                                                <observation classCode="OBS" moodCode="EVN">
+                                                                    <code code="28" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="parentRouteOfAdministration"/>
+                                                                    <value xsi:type="CE" code="048" codeSystem="2.16.840.1.113883.3.989.2.1.1.14" codeSystemVersion="2.1" displayName="Oral">
+                                                                        <originalText>Sample Parent Route of Administration (free text)A001</originalText>
+                                                                    </value>
+                                                                </observation>
+                                                            </inboundRelationship>
+                                                        </substanceAdministration>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="PERT">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="31" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="recurranceOfReaction"/>
+                                                            <value xsi:type="CE" code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.16" codeSystemVersion="2.0" displayName="yes - yes (rechallenge was done, reaction recurred)"/>
+                                                            <outboundRelationship1 typeCode="REFR">
+                                                                <actReference classCode="OBS" moodCode="EVN">
+                                                                    <id root="37b8b3ea-f9d7-3995-b51c-a2dea06fc34a"/>
+                                                                </actReference>
+                                                            </outboundRelationship1>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <inboundRelationship typeCode="CAUS">
+                                                        <act classCode="ACT" moodCode="EVN">
+                                                            <code xsi:type="CE" code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.15" codeSystemVersion="2.0" displayName="Dose reduced"/>
+                                                        </act>
+                                                    </inboundRelationship>
+                                                    <inboundRelationship typeCode="RSON">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="19" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="indication"/>
+                                                            <value xsi:type="CE" code="10019250" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Heart attack">
+                                                                <originalText>Sample IndicationA001</originalText>
+                                                            </value>
+                                                            <performer typeCode="PRF">
+                                                                <assignedEntity classCode="ASSIGNED">
+                                                                    <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sourceReporter"/>
+                                                                </assignedEntity>
+                                                            </performer>
+                                                        </observation>
+                                                    </inboundRelationship>
+                                                </substanceAdministration>
+                                            </component>
+                                        </organizer>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <id root="37b8b3ea-f9d7-3995-b51c-a2dea06fc34a"/>
+                                            <code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction"/>
+                                            <effectiveTime xsi:type="SXPR_TS">
+                                                <comp xsi:type="IVL_TS">
+                                                    <low value="20060601"/>
+                                                    <high value="20060602"/>
+                                                </comp>
+                                                <comp xsi:type="IVL_TS" operator="A">
+                                                    <width value="1" unit="d"/>
+                                                </comp>
+                                            </effectiveTime>
+                                            <value xsi:type="CE" code="10019267" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Heart block NOS">
+                                                <originalText language="eng">Sample Reaction in TextA001</originalText>
+                                            </value>
+                                            <location typeCode="LOC">
+                                                <locatedEntity classCode="LOCE">
+                                                    <locatedPlace classCode="COUNTRY" determinerCode="INSTANCE">
+                                                        <code code="SE" codeSystem="1.0.3166.1.2.2" displayName="Sweden"/>
+                                                    </locatedPlace>
+                                                </locatedEntity>
+                                            </location>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="30" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reactionForTranslation"/>
+                                                    <value xsi:type="ED">Sample primary source for translationA001</value>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="37" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="termHighlightedByReporter"/>
+                                                    <value xsi:type="CE" code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.10" codeSystemVersion="2.0" displayName="Yes, highlighted by the reporter, SERIOUS"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="34" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInDeath"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="21" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="isLifeThreatening"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="33" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="requiresInpatientHospitalization"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="35" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="resultsInPersistentOrSignificantDisability"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="12" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="congenitalAnomalyBirthDefect"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="26" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="otherMedicallyImportantCondition"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="27" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="outcome"/>
+                                                    <value xsi:type="CE" code="5" codeSystem="2.16.840.1.113883.3.989.2.1.1.11" codeSystemVersion="2.0" displayName="fatal"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                            <outboundRelationship2 typeCode="PERT">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="24" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="medicalConfirmationByHealthProfessional"/>
+                                                    <value xsi:type="BL" value="true"/>
+                                                </observation>
+                                            </outboundRelationship2>
+                                        </observation>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <organizer classCode="CATEGORY" moodCode="EVN">
+                                            <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="drugHistory"/>
+                                            <component typeCode="COMP">
+                                                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                                    <effectiveTime xsi:type="IVL_TS">
+                                                        <low value="20060602"/>
+                                                        <high value="20060604"/>
+                                                    </effectiveTime>
+                                                    <consumable typeCode="CSM">
+                                                        <instanceOfKind classCode="INST">
+                                                            <kindOfProduct classCode="MMAT" determinerCode="KIND">
+                                                                <name>Sample PT Drug ReportedNameA001
+                                                                    <delimiter qualifier="INV">Sample PT Drug InventedNameA001</delimiter>
+                                                                    <delimiter qualifier="SCI">Sample PT Drug ScientificNameA001</delimiter>
+                                                                    <delimiter qualifier="TMK">Sample PT Drug TrademarkNameA001</delimiter>
+                                                                    <delimiter qualifier="STR">Sample PT Drug StregthNameA001</delimiter>
+                                                                    <delimiter qualifier="FRM">Sample PT Drug FormNameA001</delimiter>
+                                                                    <delimiter qualifier="CON">Sample PT Drug ContainerNameA001</delimiter>
+                                                                    <delimiter qualifier="DEV">Sample PT Drug DeviceNameA001</delimiter>
+                                                                    <delimiter qualifier="USE">Sample PT Drug IntendedUseNameA001</delimiter>
+                                                                </name>
+                                                                <ingredient classCode="ACTI">
+                                                                    <quantity>
+                                                                        <numerator value="10" unit="mL"/>
+                                                                        <denominator value="1"/>
+                                                                    </quantity>
+                                                                    <ingredientSubstance classCode="MMAT" determinerCode="KIND">
+                                                                        <name>Sample Patient Substance NameA001</name>
+                                                                    </ingredientSubstance>
+                                                                </ingredient>
+                                                            </kindOfProduct>
+                                                        </instanceOfKind>
+                                                    </consumable>
+                                                    <outboundRelationship2 typeCode="RSON">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="19" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="indication"/>
+                                                            <value xsi:type="CE" code="10019206" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Head X-ray"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="CAUS">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="29" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="reaction"/>
+                                                            <value xsi:type="CE" code="10028597" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Myocardial infarction acute"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                </substanceAdministration>
+                                            </component>
+                                        </organizer>
+                                    </subjectOf2>
+                                    <subjectOf2 typeCode="SBJ">
+                                        <organizer classCode="CATEGORY" moodCode="EVN">
+                                            <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.20" codeSystemVersion="2.0" displayName="testsAndProceduresRelevantToTheInvestigation"/>
+                                            <component typeCode="COMP">
+                                                <observation classCode="OBS" moodCode="EVN">
+                                                    <code code="10049054" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Brain death">
+                                                        <originalText>Sample Test NameA001</originalText>
+                                                    </code>
+                                                    <effectiveTime xsi:type="IVL_TS" value="20060604"/>
+                                                    <value xsi:type="IVL_PQ">
+                                                        <center value="10" unit="g"/>
+                                                    </value>
+                                                    <referenceRange typeCode="REFV">
+                                                        <observationRange classCode="OBS" moodCode="EVN.CRT">
+                                                            <value xsi:type="PQ" value="40" unit="g"/>
+                                                            <interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+                                                        </observationRange>
+                                                    </referenceRange>
+                                                    <referenceRange typeCode="REFV">
+                                                        <observationRange classCode="OBS" moodCode="EVN.CRT">
+                                                            <value xsi:type="PQ" value="110" unit="g"/>
+                                                            <interpretationCode code="H" codeSystem="2.16.840.1.113883.5.83"/>
+                                                        </observationRange>
+                                                    </referenceRange>
+                                                    <outboundRelationship2 typeCode="PERT">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+                                                            <value xsi:type="ED">Sample Comment for A001</value>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                    <outboundRelationship2 typeCode="REFR">
+                                                        <observation classCode="OBS" moodCode="EVN">
+                                                            <code code="25" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="moreInformationAvailable"/>
+                                                            <value xsi:type="BL" value="true"/>
+                                                        </observation>
+                                                    </outboundRelationship2>
+                                                </observation>
+                                            </component>
+                                        </organizer>
+                                    </subjectOf2>
+                                </primaryRole>
+                            </subject1>
+                            <component typeCode="COMP">
+                                <causalityAssessment classCode="OBS" moodCode="EVN">
+                                    <code code="20" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="interventionCharacterization"/>
+                                    <value xsi:type="CE" code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.13" codeSystemVersion="2.0" displayName="Suspect"/>
+                                    <subject2 typeCode="SUBJ">
+                                        <productUseReference classCode="SBADM" moodCode="EVN">
+                                            <id root="76b0fe75-cbef-335f-9600-0a89a4209a0a"/>
+                                        </productUseReference>
+                                    </subject2>
+                                </causalityAssessment>
+                            </component>
+                            <component typeCode="COMP">
+                                <causalityAssessment classCode="OBS" moodCode="EVN">
+                                    <code code="39" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="causality"/>
+                                    <value xsi:type="ST">Sample Result of AssessmentA001</value>
+                                    <methodCode>
+                                        <originalText>Sample Method of Assessment DrugA001</originalText>
+                                    </methodCode>
+                                    <author typeCode="AUT">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <code>
+                                                <originalText>Sample Assessment SourceA001</originalText>
+                                            </code>
+                                        </assignedEntity>
+                                    </author>
+                                    <subject1 typeCode="SUBJ">
+                                        <adverseEffectReference classCode="OBS" moodCode="EVN">
+                                            <id root="37b8b3ea-f9d7-3995-b51c-a2dea06fc34a"/>
+                                        </adverseEffectReference>
+                                    </subject1>
+                                    <subject2 typeCode="SUBJ">
+                                        <productUseReference classCode="SBADM" moodCode="EVN">
+                                            <id root="76b0fe75-cbef-335f-9600-0a89a4209a0a"/>
+                                        </productUseReference>
+                                    </subject2>
+                                </causalityAssessment>
+                            </component>
+                            <component1 typeCode="COMP">
+                                <observationEvent classCode="OBS" moodCode="EVN">
+                                    <code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+                                    <value xsi:type="ED">Sample Reporter&apos;s CommentA001</value>
+                                    <author typeCode="AUT">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <code code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sourceReporter"/>
+                                        </assignedEntity>
+                                    </author>
+                                </observationEvent>
+                            </component1>
+                            <component1 typeCode="COMP">
+                                <observationEvent classCode="OBS" moodCode="EVN">
+                                    <code code="10" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="comment"/>
+                                    <value xsi:type="ED">Sample Sender&apos;s CommentA001</value>
+                                    <author typeCode="AUT">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sender"/>
+                                        </assignedEntity>
+                                    </author>
+                                </observationEvent>
+                            </component1>
+                            <component1 typeCode="COMP">
+                                <observationEvent classCode="OBS" moodCode="EVN">
+                                    <code code="15" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="diagnosis"/>
+                                    <value xsi:type="CE" code="10048409" codeSystem="2.16.840.1.113883.6.163" codeSystemVersion="21.1" displayName="Brain malformation"/>
+                                    <author typeCode="AUT">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="sender"/>
+                                        </assignedEntity>
+                                    </author>
+                                </observationEvent>
+                            </component1>
+                        </adverseEventAssessment>
+                    </component>
+                    <component typeCode="COMP">
+                        <observationEvent classCode="OBS" moodCode="EVN">
+                            <code code="36" codeSystem="2.16.840.1.113883.3.989.2.1.1.19" codeSystemVersion="2.0" displayName="summaryAndComment"/>
+                            <value xsi:type="ED" language="eng">Sample Case SummaryA001</value>
+                            <author typeCode="AUT">
+                                <assignedEntity classCode="ASSIGNED">
+                                    <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.21" codeSystemVersion="2.0" displayName="reporter"/>
+                                </assignedEntity>
+                            </author>
+                        </observationEvent>
+                    </component>
+                    <outboundRelationship typeCode="SPRT">
+                        <priorityNumber value="1"/>
+                        <relatedInvestigation classCode="INVSTG" moodCode="EVN">
+                            <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.22" codeSystemVersion="2.0" displayName="sourceReport"/>
+                            <subjectOf2 typeCode="SUBJ">
+                                <controlActEvent classCode="CACT" moodCode="EVN">
+                                    <author typeCode="AUT">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <addr>
+                                                <streetAddressLine>SampleRStreetA001</streetAddressLine>
+                                                <city>SampleRCityA001</city>
+                                                <state>SampleRStateA001</state>
+                                                <postalCode>E144HB</postalCode>
+                                            </addr>
+                                            <telecom value="tel:389373763737"/>
+                                            <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                                <name>
+                                                    <prefix>Mr</prefix>
+                                                    <given>SampleReporterGNameA001</given>
+                                                    <given>SampleReporterMNameA001</given>
+                                                    <family>SampleReporterFNameA001</family>
+                                                </name>
+                                                <asQualifiedEntity classCode="QUAL">
+                                                    <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.6" codeSystemVersion="2.0" displayName="Physician"/>
+                                                </asQualifiedEntity>
+                                                <asLocatedEntity classCode="LOCE">
+                                                    <location classCode="COUNTRY" determinerCode="INSTANCE">
+                                                        <code code="SE" codeSystem="1.0.3166.1.2.2" displayName="Sweden"/>
+                                                    </location>
+                                                </asLocatedEntity>
+                                            </assignedPerson>
+                                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                <name>Rullgardina (Cardiology)</name>
+                                                <assignedEntity classCode="ASSIGNED">
+                                                    <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                        <name>OrgNameA001</name>
+                                                    </representedOrganization>
+                                                </assignedEntity>
+                                            </representedOrganization>
+                                        </assignedEntity>
+                                    </author>
+                                </controlActEvent>
+                            </subjectOf2>
+                        </relatedInvestigation>
+                    </outboundRelationship>
+                    <outboundRelationship typeCode="SPRT">
+                        <relatedInvestigation classCode="INVSTG" moodCode="EVN">
+                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.22" codeSystemVersion="2.0" displayName="initialReport"/>
+                            <subjectOf2 typeCode="SUBJ">
+                                <controlActEvent classCode="CACT" moodCode="EVN">
+                                    <author typeCode="AUT">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.3" codeSystemVersion="2.0" displayName="Regulator"/>
+                                        </assignedEntity>
+                                    </author>
+                                </controlActEvent>
+                            </subjectOf2>
+                        </relatedInvestigation>
+                    </outboundRelationship>
+                    <outboundRelationship typeCode="SPRT">
+                        <relatedInvestigation classCode="INVSTG" moodCode="EVN">
+                            <code nullFlavor="NA"/>
+                            <subjectOf2 typeCode="SUBJ">
+                                <controlActEvent classCode="CACT" moodCode="EVN">
+                                    <id root="2.16.840.1.113883.3.989.2.1.3.2" extension="SE-MAHy-A001"/>
+                                </controlActEvent>
+                            </subjectOf2>
+                        </relatedInvestigation>
+                    </outboundRelationship>
+                    <subjectOf1 typeCode="SUBJ">
+                        <controlActEvent classCode="CACT" moodCode="EVN">
+                            <author typeCode="AUT">
+                                <assignedEntity classCode="ASSIGNED">
+                                    <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.7" codeSystemVersion="2.0" displayName="Pharmaceutical company"/>
+                                    <addr>
+                                        <streetAddressLine>Test street</streetAddressLine>
+                                        <city>Test town,</city>
+                                        <postalCode>123 TEST</postalCode>
+                                    </addr>
+                                    <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+                                        <name>
+                                            <given>John</given>
+                                            <family>MAHTEST07WTU01</family>
+                                        </name>
+                                        <asLocatedEntity classCode="LOCE">
+                                            <location classCode="COUNTRY" determinerCode="INSTANCE">
+                                                <code code="FR" codeSystem="1.0.3166.1.2.2" displayName="France"/>
+                                            </location>
+                                        </asLocatedEntity>
+                                    </assignedPerson>
+                                    <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                        <assignedEntity classCode="ASSIGNED">
+                                            <representedOrganization classCode="ORG" determinerCode="INSTANCE">
+                                                <name>MAHTEST07WT</name>
+                                            </representedOrganization>
+                                        </assignedEntity>
+                                    </representedOrganization>
+                                </assignedEntity>
+                            </author>
+                        </controlActEvent>
+                    </subjectOf1>
+                    <subjectOf1 typeCode="SUBJ">
+                        <controlActEvent classCode="CACT" moodCode="EVN">
+                            <id root="2.16.840.1.113883.3.989.2.1.3.3" extension="SampleIdA001" assigningAuthorityName="SampleSrcIdA001"/>
+                        </controlActEvent>
+                    </subjectOf1>
+                    <subjectOf2 typeCode="SUBJ">
+                        <investigationCharacteristic classCode="OBS" moodCode="EVN">
+                            <code code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.23" codeSystemVersion="2.0" displayName="ichReportType"/>
+                            <value xsi:type="CE" code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.2" codeSystemVersion="2.0" displayName="Report from studies"/>
+                        </investigationCharacteristic>
+                    </subjectOf2>
+                    <subjectOf2 typeCode="SUBJ">
+                        <investigationCharacteristic classCode="OBS" moodCode="EVN">
+                            <code code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.23" codeSystemVersion="2.0" displayName="otherCaseIds"/>
+                            <value xsi:type="BL" value="true"/>
+                        </investigationCharacteristic>
+                    </subjectOf2>
+                </investigationEvent>
+            </subject>
+        </controlActProcess>
+    </PORR_IN049016UV>
+    <receiver typeCode="RCV">
+        <device classCode="DEV" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.3.989.2.1.3.14" extension="EVHUMAN"/>
+        </device>
+    </receiver>
+    <sender typeCode="SND">
+        <device classCode="DEV" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.3.989.2.1.3.13" extension="MAHTEST07WT"/>
+        </device>
+    </sender>
+</MCCI_IN200100UV01>

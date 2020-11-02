@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MCCI_IN200101UV01 xsi:schemaLocation="urn:hl7-org:v3 http://eudravigilance.ema.europa.eu/XSD/multicacheschemas/MCCI_IN200101UV01.xsd" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ITSVersion="XML_1.0">
+	<id root="2.16.840.1.113883.3.989.2.1.3.20" extension="@@BATCH_NUMBER@@"/>
+	<creationTime value="20171005125743"/>
+	<responseModeCode code="D"/>
+	<interactionId root="2.16.840.1.113883.1.6" extension="MCCI_IN200101UV01"/>
+	<MCCI_IN000002UV01>
+		<id root="2.16.840.1.113883.3.989.2.1.3.19"/>
+		<creationTime value="20171005125743"/>
+		<interactionId root="2.16.840.1.113883.1.6" extension="MCCI_IN000002UV01"/>
+		<processingCode code="P"/>
+		<processingModeCode code="T"/>
+		<acceptAckCode code="NE"/>
+		<receiver typeCode="RCV">
+			<device classCode="DEV" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.3.989.2.1.3.16" extension="NCAATWT"/>
+			</device>
+		</receiver>
+		<sender typeCode="SND">
+			<device classCode="DEV" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.3.989.2.1.3.15" extension="EVHUMAN"/>
+			</device>
+		</sender>
+		<attentionLine>
+			<keyWordText code="1" codeSystem="2.16.840.1.113883.3.989.2.1.1.24" codeSystemVersion="2.0" displayName="dateOfIcsrMessageCreation"/>
+			<value value="20171005104837" xsi:type="TS"/>
+		</attentionLine>
+		<acknowledgement typeCode="CA">
+			<targetMessage>
+				<id root="2.16.840.1.113883.3.989.2.1.3.1" extension="@@BATCH_RECEIVER@@"/>
+			</targetMessage>
+			<acknowledgementDetail>
+				<text>safety report loaded; Validated against 2.6 business rules;
+Comments: 1 - [[R744][G.k.2.2][BR.3]] :In section Drug(s) Information on field Medicinal Product Name as Reported by the Primary Source - G.k.2.2 Value: Codeina Reported error LookupProducts The field Medicinal Product Name as Reported by the Primary Source - G.k.2.2 must be a valid medicinal product.;
+ Parsing process: Parsing process: Report with warnings;</text>
+			</acknowledgementDetail>
+		</acknowledgement>
+	</MCCI_IN000002UV01>
+	<receiver typeCode="RCV">
+		<device classCode="DEV" determinerCode="INSTANCE">
+			<id root="2.16.840.1.113883.3.989.2.1.3.18" extension="EVHUMAN"/>
+		</device>
+	</receiver>
+	<sender typeCode="SND">
+		<device classCode="DEV" determinerCode="INSTANCE">
+			<id root="2.16.840.1.113883.3.989.2.1.3.17" extension="NCAATWT"/>
+		</device>
+	</sender>
+	<attentionLine>
+		<keyWordText code="2" codeSystem="2.16.840.1.113883.3.989.2.1.1.24" codeSystemVersion="2.0" displayName="acknowledgementLocalMessageNumber"/>
+		<value root="2.16.840.1.113883.3.989.2.1.3.21" xsi:type="II"/>
+	</attentionLine>
+	<attentionLine>
+		<keyWordText code="3" codeSystem="2.16.840.1.113883.3.989.2.1.1.24" codeSystemVersion="2.0" displayName="dateOfIcsrBatchTransmission"/>
+		<value value="20171005095036" xsi:type="TS"/>
+	</attentionLine>
+	<acknowledgement typeCode="AA">
+		<targetBatch>
+			<id root="2.16.840.1.113883.3.989.2.1.3.22" extension="EVHUMAN-NCAROUTING-10000006208"/>
+		</targetBatch>
+		<acknowledgementDetail>
+			<text>Batch message processed without errors</text>
+		</acknowledgementDetail>
+	</acknowledgement>
+</MCCI_IN200101UV01>
