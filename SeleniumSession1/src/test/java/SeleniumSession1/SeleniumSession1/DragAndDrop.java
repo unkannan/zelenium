@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class DragAndDrop {
 
-	//@Test
+	@Test
 	public void DragAndDrop() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe"); //
 		WebDriver driver = new ChromeDriver();
@@ -30,10 +30,10 @@ public class DragAndDrop {
 		// WebElement ele=driver.findElement(By.id("dblClkBtn"));
 		// action.doubleClick(ele).build().perform();
 		// driver.manage().window().maximize();
-		WebElement sourceElement = driver.findElement(By.id("sourceImage"));
-		WebElement TargetElement = driver.findElement(By.id("targetDiv"));
-		action.dragAndDrop(sourceElement, TargetElement).build().perform();
-		action.click().build().perform();
+	//	WebElement sourceElement = driver.findElement(By.id("sourceImage"));
+	//	WebElement TargetElement = driver.findElement(By.id("targetDiv"));
+	//	action.dragAndDrop(sourceElement, TargetElement).build().perform();
+	//	action.click().build().perform();
 
 //Dragged and dropped.		
 
@@ -124,7 +124,7 @@ public class DragAndDrop {
 		 act.dragAndDrop(drag, drop).build().perform();
 		}
 
-	@Test
+	//@Test
 	public void DragAndDrop4() throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe"); //
 		WebDriver driver = new ChromeDriver();

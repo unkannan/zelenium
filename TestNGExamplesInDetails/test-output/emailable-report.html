@@ -7,38 +7,15 @@
 </head>
 <body>
 <table>
-<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">265</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Test1</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">3</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">286</th><th colspan="2"></th></tr>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">107</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SmokeTestPackage.Component2</td><td><a href="#m0">Component2TC1</a></td><td rowspan="1">1580859181060</td><td rowspan="1">178</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">SmokeTestPackage.Component1</td><td><a href="#m1">Component1TC1</a></td><td rowspan="1">1580859181059</td><td rowspan="1">36</td></tr><tr class="passedeven"><td><a href="#m2">Component1TC2</a></td><td rowspan="1">1580859181059</td><td rowspan="1">37</td></tr><tr class="passedeven"><td><a href="#m3">Component1TC3</a></td><td rowspan="1">1580859181059</td><td rowspan="1">37</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Test1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">RegressionTestPackage.RegComponent1.RegressionTCs</td><td><a href="#m4">CreateCustomer</a></td><td rowspan="1">1580859181423</td><td rowspan="1">10</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">RegressionTestPackage.RegComponent1.RegressionTCs</td><td><a href="#m0">AddDetaisofExistingCustomer</a></td><td rowspan="3">1612902912738</td><td rowspan="3">6</td></tr><tr class="passedeven"><td><a href="#m1">AddDetaisofExistingCustomer</a></td></tr><tr class="passedeven"><td><a href="#m2">AddDetaisofExistingCustomer</a></td></tr><tr class="passedeven"><td><a href="#m3">CustomerSearch</a></td><td rowspan="1">1612902912759</td><td rowspan="1">10</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">SmokeTestPackage.Component2#Component2TC1</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\SeleniumGrid\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:177)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:335)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:100)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:105)
-	at SmokeTestPackage.Component2.Component2TC1(Component2.java:28)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">SmokeTestPackage.Component1#Component1TC1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">SmokeTestPackage.Component1#Component1TC2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">SmokeTestPackage.Component1#Component1TC3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test1</h2><h3 id="m4">RegressionTestPackage.RegComponent1.RegressionTCs#CreateCustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
-	expected [annan] but found [kannan]
-	at RegressionTestPackage.RegComponent1.RegressionTCs.CreateCustomer(RegressionTCs.java:52)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">RegressionTestPackage.RegComponent1.RegressionTCs#AddDetaisofExistingCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>20000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">RegressionTestPackage.RegComponent1.RegressionTCs#AddDetaisofExistingCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>10000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">RegressionTestPackage.RegComponent1.RegressionTCs#AddDetaisofExistingCustomer</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>30000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">RegressionTestPackage.RegComponent1.RegressionTCs#CustomerSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

@@ -52,7 +52,7 @@ public class CurrencyConverterPage extends UIOperation {
      */
     public void selectSourceCurrency(String selectSourceCurrency) {
     	//waitForElementID(idSourceCurrencySelectDropDown);
-    		setDropDownValue(idSourceCurrencySelectDropDown,xpathSearchBox,selectSourceCurrency);
+    	//	setDropDownValue(idSourceCurrencySelectDropDown,xpathSearchBox,selectSourceCurrency);
     			logger.info("# Source From Drop Down Selected " + selectSourceCurrency);
     }
     
@@ -61,7 +61,7 @@ public class CurrencyConverterPage extends UIOperation {
      */
     public void selectTargetCurrency(String selectTargetCurrency) {
     	waitForElementID(idTargetCurrencySelectDropDown);
-    		setDropDownValue(idTargetCurrencySelectDropDown,xpathTargetSearchBox,selectTargetCurrency);
+    	//	setDropDownValue(idTargetCurrencySelectDropDown,xpathTargetSearchBox,selectTargetCurrency);
     			logger.info("# Source From Drop Down Selected " + selectTargetCurrency);
     }
    

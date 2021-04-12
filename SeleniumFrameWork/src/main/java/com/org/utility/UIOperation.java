@@ -18,25 +18,12 @@ public abstract class UIOperation {
 
     protected WebDriver driver;
 
-    public void utility_All_UIOperation(String elementText) {
-    		
-    	//Element present check
-    	  try{  assertElementPresent(elementText);}catch(Exception e){};
-     	
-    }
+    
     
     public UIOperation(WebDriver driver) {
         this.driver = driver;
     }
-
-    /**
-     * This function is to assert and click on the element.
-     */
-    protected void assertAndClick(String xpath) {
-        assertElementPresent(xpath);
-        driver.findElement(By.xpath(xpath)).click();
-    }
-    
+ 
     /**
      * This function is to assert and click on the id element.
      */
@@ -52,37 +39,7 @@ public abstract class UIOperation {
         assertElementPresent(xpath);
         return driver.findElement(By.xpath(xpath)).getText();
     }
-
-    /**
-     * This function is to assert and type.
-     */
-    protected void assertAndType(String xpath, String txt) {
-        assertElementPresent(xpath);
-        driver.findElement(By.xpath(xpath)).clear();
-        driver.findElement(By.xpath(xpath)).sendKeys(txt);
-    }
-
-    protected void assertAndTypeID(String ID, String txt) {
-    	assertElementPresentById(ID);
-        driver.findElement(By.id(ID)).clear();
-        driver.findElement(By.id(ID)).sendKeys(txt);
-    }
-     
-    
-    protected void assertEnterControlADeleteKeys(String id) {
-        assertElementPresentById(id);
-        int len=driver.findElement(By.id(id)).getAttribute("value").length();
-        
-        for(int i=0;i<len;i++) {
-        	driver.findElement(By.id(id)).sendKeys(Keys.BACK_SPACE);
-        }
-        
-        driver.findElement(By.id(id)).sendKeys("");
-        driver.findElement(By.id(id)).sendKeys(Keys.CONTROL,"a",Keys.DELETE);
-        driver.findElement(By.id(id)).sendKeys(Keys.CONTROL,Keys.DELETE);
-    }
-
-    /**
+     /**
      * This function is to assert element is present by id.
      */
     private void assertElementPresentById(String id) {
@@ -234,7 +191,7 @@ public abstract class UIOperation {
         select.selectByValue(value);
     }
     
-	public void setDropDownValue(String idStr,String xpathStr,String currency)  {
+	public void DropDownValue(String idStr,String xpathStr,String currency)  {
 		waitForElementID(idStr);
 		WebElement selectFromCurrencyDropDown = driver.findElement(By.id(idStr));
 		
@@ -263,5 +220,16 @@ public abstract class UIOperation {
         if(driver.findElement(By.xpath(xpath)).isEnabled())
         	return true;
         	return false;
+    }
+    
+    protected void EnterText(String locator,String text) {
+    	waitForElementID(locator);
+    	driver.findElement(By.id(locator)).sendKeys(text);
+    	
+	}
+    
+    protected void SelectOption(String locator) {
+    	 waitForElement(locator);
+    	 driver.findElement(By.xpath(locator)).click();
     }
 }

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumSession1.SeleniumSession1.SwitchTO">
+      <class name="SeleniumSession1.SeleniumSession1.DragAndDrop">
         <methods>
-          <include name="DragAndDrop4"/>
+          <include name="DragAndDrop"/>
         </methods>
-      </class> <!-- SeleniumSession1.SeleniumSession1.SwitchTO -->
+      </class> <!-- SeleniumSession1.SeleniumSession1.DragAndDrop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,31 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35821" started-at="2020-10-12T22:35:17 CEST" finished-at="2020-10-12T22:35:52 CEST">
+  <suite name="Default suite" duration-ms="37378" started-at="2020-11-20T13:34:11 CET" finished-at="2020-11-20T13:34:48 CET">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35821" started-at="2020-10-12T22:35:17 CEST" finished-at="2020-10-12T22:35:52 CEST">
-      <class name="com.org.test.Guru99MainPageWebTableExcercise">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf]" name="setUp" is-config="true" duration-ms="7253" started-at="2020-10-12T22:35:17 CEST" finished-at="2020-10-12T22:35:24 CEST">
+    <test name="Default test" duration-ms="37378" started-at="2020-11-20T13:34:11 CET" finished-at="2020-11-20T13:34:48 CET">
+      <class name="com.org.test.TacxTestAssignment">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.test.TacxTestAssignment@15d9bc04]" name="setUp" is-config="true" duration-ms="10425" started-at="2020-11-20T13:34:11 CET" finished-at="2020-11-20T13:34:21 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="WebTableExcercise1()[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf]" name="WebTableExcercise1" duration-ms="28486" started-at="2020-10-12T22:35:24 CEST" finished-at="2020-10-12T22:35:52 CEST">
+        <test-method status="PASS" signature="OpenTacxApplication()[pri:0, instance:com.org.test.TacxTestAssignment@15d9bc04]" name="OpenTacxApplication" is-config="true" duration-ms="0" started-at="2020-11-20T13:34:21 CET" finished-at="2020-11-20T13:34:21 CET">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- WebTableExcercise1 -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf]" name="teardown" is-config="true" duration-ms="2" started-at="2020-10-12T22:35:52 CEST" finished-at="2020-10-12T22:35:52 CEST">
+        </test-method> <!-- OpenTacxApplication -->
+        <test-method status="PASS" signature="tc_05_clickSignUp_withdetails()[pri:0, instance:com.org.test.TacxTestAssignment@15d9bc04]" name="tc_05_clickSignUp_withdetails" duration-ms="26867" started-at="2020-11-20T13:34:21 CET" finished-at="2020-11-20T13:34:48 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_05_clickSignUp_withdetails -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.test.TacxTestAssignment@15d9bc04]" name="teardown" is-config="true" duration-ms="0" started-at="2020-11-20T13:34:48 CET" finished-at="2020-11-20T13:34:48 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=WebTableExcercise1 status=SUCCESS method=Guru99MainPageWebTableExcercise.WebTableExcercise1()[pri:0, instance:com.org.test.Guru99MainPageWebTableExcercise@80169cf] output={null}]]]>
+                <![CDATA[[TestResult name=tc_05_clickSignUp_withdetails status=SUCCESS method=TacxTestAssignment.tc_05_clickSignUp_withdetails()[pri:0, instance:com.org.test.TacxTestAssignment@15d9bc04] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.org.test.Guru99MainPageWebTableExcercise -->
+      </class> <!-- com.org.test.TacxTestAssignment -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

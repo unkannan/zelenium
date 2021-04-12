@@ -63,7 +63,6 @@ public class NuvasiveLoginPage extends UIOperation {
         String actualHeading = assertAndGetText(xpathLoginLink);
         logger.info("# Login Page " + actualHeading);
         assertEquals(actualHeading, LoginText,"Actual heading '" + actualHeading + "' should be same as expected heading '" + LoginText+ "'.");
-		
 	}
 
 	public void CharacterCountLinkAvailabilityCheck() {

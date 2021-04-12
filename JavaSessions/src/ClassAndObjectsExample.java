@@ -55,7 +55,7 @@ public class ClassAndObjectsExample{
 		Bank kk=new Bank();
 		Bank Suresh=new Bank(15000,"Suresh");
 		Bank kk1=new Bank(10,20,30);
- 
+		 
 		
 	}
 }

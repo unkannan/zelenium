@@ -22,7 +22,7 @@ public class AppTest
      */
     @Test
 	public void WebTableExcercise1() {
-	System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");
+	System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 		driver.get("https://www.techbeamers.com/");
 		
@@ -37,7 +37,7 @@ public class AppTest
     
     @Test
 	public void DropDownWithoutSelectClass_WithBootStrapProgramTest() throws IOException {
-		System.setProperty("webdriver.chrome.driver","drivers/chromedriver79.exe");
+		System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			
 				driver.get("https://www.toolsqa.com/automation-practice-form");
@@ -64,7 +64,7 @@ public class AppTest
 
     @Test
 	public void GooglePage() {
-		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver79.exe");
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		Boolean found = false;
 		driver.manage().window().maximize();

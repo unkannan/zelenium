@@ -972,3 +972,6 @@
 2020-02-20 17:41:47 INFO  CurrencyConverterPage:65 - # Source From Drop Down Selected INR
 2020-02-20 17:41:48 INFO  CurrencyConverterPage:74 - # Clicked on button: convert
 2020-02-20 17:41:48 INFO  CurrencyConverterResultsPage:36 - # Convert Page Header 1 Euro to Indian Rupee
+2021-02-16 21:50:02 INFO  CurrencyConverterPage:40 - # Convert Page Header Currency Converter
+2021-02-16 21:50:34 INFO  CurrencyConverterPage:40 - # Convert Page Header Currency Converter
+2021-03-17 21:26:59 INFO  CurrencyConverterPage:40 - # Convert Page Header Currency Converter

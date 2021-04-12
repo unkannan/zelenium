@@ -35,7 +35,7 @@ public void Fun_MethodBefore(ITestResult result) {
 //	System.out.println(result.getMethod().getMethodName());
 }
 
-@Test(priority=2)
+//@Test(priority=2)
 public void CreateCustomer() throws InterruptedException {
 	 System.out.println("CreateCustomer");
 	  
@@ -52,20 +52,20 @@ public void CreateCustomer() throws InterruptedException {
 	 softAssert.assertAll();
 }
 
-//@Test(priority=3,dataProvider="salary")
+@Test(dataProvider="salary")
 public void AddDetaisofExistingCustomer(int sal) throws InterruptedException {
 	System.out.println("AddDetaisofExistingCustomer and his slary="+sal);
 	 
 } 
-//@Test(priority=4)
+@Test//(priority=4)
 public void CustomerSearch() throws InterruptedException {
 	System.out.println("CustomerSearch");
 	 
 }
 
-//@Test(priority=1,dataProvider = "Login")
-public void LoginFunctionality(String username,String Password) throws InterruptedException {
-	System.out.println(username +" "+ Password);
+//@Test(priority=1)
+public void LoginFunctionality() throws InterruptedException {
+	System.out.println("Login");
 }
 
 @DataProvider(name = "Login")

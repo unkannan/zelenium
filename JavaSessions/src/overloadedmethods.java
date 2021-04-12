@@ -13,11 +13,13 @@ void method1() {
 }
 
 class B extends A{
-	  
+	   
   void method2() {}
+   
   void method2(int l) {}
   void method2(int k1, String k) {}
   
+  @Override
   void method1(){
     super.method1();
 	  System.out.println("child method1");
@@ -29,11 +31,14 @@ public class overloadedmethods {
 	public static void main(String args[]) {
 		B b1=new B();
 		B b=new B();
-        b.method2();  b.method2(10); b.method2(10,"raj");
+        b.method2();  b.method2(10); b.method2(10,"raj"); //static poly or complie time poly
        
         b.parentmethod();
      
         b.method1();  //java will give priority to local method
+        
+        A aObj=new B();
+        aObj.method1();//run time polymorphism or dynamic poly
 	}
 }
  

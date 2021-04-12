@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.org.test.Guru99MainPageWebTableExcercise">
+      <class name="com.org.test.TacxTestAssignment">
         <methods>
-          <include name="listAllElementsSize"/>
           <include name="setUp"/>
           <include name="teardown"/>
+          <include name="tc_05_clickSignUp_withdetails"/>
+          <include name="OpenTacxApplication"/>
         </methods>
-      </class> <!-- com.org.test.Guru99MainPageWebTableExcercise -->
+      </class> <!-- com.org.test.TacxTestAssignment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

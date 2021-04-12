@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14678" started-at="2021-03-16T19:41:59Z" finished-at="2021-03-16T19:42:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14678" started-at="2021-03-16T19:41:59Z" finished-at="2021-03-16T19:42:14Z">
+      <class name="SeleniumProjectDesign.SeleniumProjectDesign.CurrencyCoverTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:SeleniumProjectDesign.SeleniumProjectDesign.CurrencyCoverTests@4f7d0008]" name="setUp" is-config="true" duration-ms="14385" started-at="2021-03-16T19:41:59Z" finished-at="2021-03-16T19:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="T1_HeaderCheck()[pri:0, instance:SeleniumProjectDesign.SeleniumProjectDesign.CurrencyCoverTests@4f7d0008]" name="T1_HeaderCheck" duration-ms="260" started-at="2021-03-16T19:42:14Z" finished-at="2021-03-16T19:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- T1_HeaderCheck -->
+      </class> <!-- SeleniumProjectDesign.SeleniumProjectDesign.CurrencyCoverTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

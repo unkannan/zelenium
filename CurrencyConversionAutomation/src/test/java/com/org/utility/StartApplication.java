@@ -11,6 +11,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import com.org.enums.AppValidationConstantMessages;
 
@@ -24,7 +25,7 @@ import com.org.enums.AppValidationConstantMessages;
     public final static String BROWSER = prop.getProperty("browser");
 
 	 
-
+    @Parameters({ "browserName" })
     @BeforeMethod(alwaysRun = true)
     public void setUp() {
         driver = getDriver();

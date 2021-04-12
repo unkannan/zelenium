@@ -1,0 +1,544 @@
+2021-04-10 01:54:25 INFO  PrintRange:15 - Array Range of Numbes is declared
+2021-04-10 01:54:25 INFO  PrintRange:10 - Number Range Method is called
+2021-04-10 01:55:07 INFO  PrintRange:15 - Array Range of Numbes is declared
+2021-04-10 01:55:07 INFO  PrintRange:10 - Number Range Method is called
+2021-04-10 01:55:07 INFO  PrintRange:19 - outputActual:1-6,8,10-11
+2021-04-11 20:45:23 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:45:23 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:45:23 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:45:23 INFO  PrintRange:28 - Test in progress to calculate the area of the trianger
+2021-04-11 20:49:40 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:49:40 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:49:40 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:49:40 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:49:40 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:51:15 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:51:15 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:51:25 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:51:25 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:51:55 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:51:55 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:51:55 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:51:55 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:51:55 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:52:54 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:52:54 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:52:54 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:52:54 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:52:54 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:53:28 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:53:28 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:53:28 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:53:28 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:53:28 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:55:00 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:55:00 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:55:00 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:55:00 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:55:00 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:55:40 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:55:40 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:55:40 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:55:40 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:55:40 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:56:30 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:56:30 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:56:30 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:56:30 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:56:30 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 20:58:40 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 20:58:40 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 20:58:40 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 20:58:40 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 20:58:40 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 21:08:06 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-11 21:08:06 INFO  PrintRange:10 - Number Range Method is called
+2021-04-11 21:08:06 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-11 21:08:06 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-11 21:08:06 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-11 23:25:06 INFO  HCLWebTests:25 - Accept All Cookies button is not available
+2021-04-12 01:05:46 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:05:50 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:05:56 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:05:56 INFO  HCLMainPage:36 - # Click AllCookies Button if available
+2021-04-12 01:05:56 INFO  HCLMainPage:44 - # Click Leadership link
+2021-04-12 01:05:57 INFO  HCLMainPage:48 - # Click Leadership link: Success
+2021-04-12 01:05:57 INFO  HCLMainPage:50 - # Retreiving Shiv Nadar text
+2021-04-12 01:18:28 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:18:33 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:18:38 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:18:38 INFO  LeadershipPage:24 - # Retreiving Shiv Nadar text
+2021-04-12 01:20:09 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:20:13 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:20:18 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:20:18 INFO  HCLMainPage:29 - # Click AllCookies Button if available
+2021-04-12 01:20:18 INFO  HCLMainPage:37 - # Click Leadership link
+2021-04-12 01:20:19 INFO  HCLMainPage:41 - # Click Leadership link: Success
+2021-04-12 01:20:19 INFO  LeadershipPage:24 - # Retreiving Shiv Nadar text
+2021-04-12 01:20:19 INFO  HCLWebTests:28 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 01:39:12 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:39:17 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:39:22 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:39:22 INFO  HCLMainPage:29 - # Click AllCookies Button if available
+2021-04-12 01:39:22 INFO  HCLMainPage:37 - # Click Leadership link
+2021-04-12 01:39:24 INFO  HCLMainPage:41 - # Click Leadership link: Success
+2021-04-12 01:39:26 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: a7b4e43960f9d2c1faf20ed6211577fd
+2021-04-12 01:39:26 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:39:30 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:39:34 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:39:34 INFO  HCLMainPage:29 - # Click AllCookies Button if available
+2021-04-12 01:39:35 INFO  HCLMainPage:37 - # Click Leadership link
+2021-04-12 01:39:36 INFO  HCLMainPage:41 - # Click Leadership link: Success
+2021-04-12 01:39:36 INFO  LeadershipPage:24 - # Retreiving Shiv Nadar text
+2021-04-12 01:39:36 INFO  HCLWebTests:31 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 01:39:36 INFO  HCLWebTests:32 - # actualResult found : Shiv Nadar
+2021-04-12 01:52:06 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:52:10 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:52:16 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:52:16 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 01:52:16 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 01:52:17 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 01:52:19 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 70a8b8fc28132c9874b6603ee97e5501
+2021-04-12 01:52:19 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:52:22 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:52:27 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:52:27 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 01:52:27 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 01:52:29 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 01:52:29 INFO  LeadershipPage:24 - # Retreiving Shiv Nadar text
+2021-04-12 01:52:29 INFO  HCLWebTests:32 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 01:52:29 INFO  HCLWebTests:33 - # actualResult found : Shiv Nadar
+2021-04-12 01:54:07 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:54:11 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:54:16 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:54:16 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 01:54:16 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 01:54:18 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 01:54:20 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 70b8eac43ea051edd3ea259668fa0359
+2021-04-12 01:56:14 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:56:19 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:56:25 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:56:25 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 01:56:26 INFO  HCLMainPage:31 - # Accept All Cookies button is not available
+2021-04-12 01:56:26 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 01:56:29 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 01:56:35 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: b442c8ca0b7bc9360342bbc6e3b8183d
+2021-04-12 01:57:36 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:57:41 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:57:46 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:57:46 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 01:57:47 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 01:57:48 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 01:57:50 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 5a047686ecae697065002965613987d1
+2021-04-12 01:58:15 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 01:58:20 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 01:58:25 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 01:58:25 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 01:58:25 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 01:58:27 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 01:58:30 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: e47f6e92d05eef7ef7080f69a7089c1f
+2021-04-12 08:14:21 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 08:14:26 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 08:15:17 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 08:15:17 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 08:15:17 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 08:15:18 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 08:15:22 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 2ca87fcf9dd60edb17b30d2703c0cac1
+2021-04-12 08:15:24 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 08:15:29 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 08:16:14 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 08:16:14 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 08:16:14 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 08:16:41 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 08:16:44 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: f01081eda3c45b8094a4a1a08d06c663
+2021-04-12 08:22:00 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 08:22:06 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 08:22:25 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 08:22:25 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 08:22:25 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 08:22:26 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 08:22:37 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 08:22:37 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 08:22:37 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 08:22:37 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 08:22:37 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 08:22:39 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 08:22:40 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: c2bef832a2f5565e3919bce8961e32bb
+2021-04-12 08:31:34 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-12 08:31:34 INFO  PrintRange:10 - Number Range Method is called
+2021-04-12 08:31:34 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-12 08:31:34 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-12 08:31:34 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-12 08:31:34 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 08:31:38 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 08:32:08 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 08:32:08 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 08:32:08 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 08:32:13 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 08:32:39 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 08:32:39 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 08:32:39 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 08:32:40 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 08:32:40 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 08:32:44 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 08:32:45 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: ea21d0f5385672c95a569dc0316866e6
+2021-04-12 08:32:45 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 08:32:48 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 08:33:10 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 08:33:10 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 08:33:16 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 08:33:50 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 08:33:50 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-12 08:33:50 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 08:33:50 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-12 08:38:21 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-12 08:38:21 INFO  PrintRange:10 - Number Range Method is called
+2021-04-12 08:38:21 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-12 08:38:21 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-12 08:38:21 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-12 08:38:21 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 08:38:26 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 08:38:51 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 08:38:51 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 08:38:51 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 08:38:56 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 08:39:23 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 08:39:23 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 08:39:23 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 08:39:24 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 08:39:24 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 08:39:27 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 08:39:31 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 94ff209a74224586b2180459a73425a8
+2021-04-12 08:39:32 INFO  StartApplication:59 - # chrome driver is initiated
+2021-04-12 08:39:35 INFO  StartApplication:32 - # WebDriver Setup : Success
+2021-04-12 08:40:04 INFO  StartApplication:36 - # Navigated to the URL successfully
+2021-04-12 08:40:04 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 08:40:09 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 08:40:35 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 08:40:35 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-12 08:40:35 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 08:40:35 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-12 13:52:09 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 13:52:15 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 13:52:20 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 13:52:20 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 13:52:20 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 13:52:20 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 13:52:22 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 13:52:22 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 13:52:22 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 13:52:22 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 13:52:22 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 13:52:24 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 13:52:28 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: b2e60e88d948f830bb985fb999e1d0d9
+2021-04-12 13:52:59 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 13:53:06 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 13:53:11 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 13:53:11 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 13:53:11 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 13:53:11 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 13:53:13 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 13:53:13 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 13:53:13 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 13:53:13 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 13:53:13 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 13:53:14 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 13:53:15 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 5e4c6347da61b79900fa73e9bd11aef8
+2021-04-12 13:53:30 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 13:53:34 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 13:53:40 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 13:53:40 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 13:53:40 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 13:53:40 INFO  HCLMainPage:31 - # Accept All Cookies button is not available
+2021-04-12 13:53:40 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 13:53:43 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 13:53:43 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 13:53:43 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 13:53:43 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 13:53:43 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 13:53:44 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 13:53:45 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: b2a721dca985edd35330f66b2cb426b6
+2021-04-12 13:54:08 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 13:54:13 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 13:54:19 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 13:54:19 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 13:54:19 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 13:54:19 INFO  HCLMainPage:31 - # Accept All Cookies button is not available
+2021-04-12 13:54:19 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 13:54:22 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 13:54:22 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 13:54:22 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 13:54:22 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 13:54:22 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 13:54:23 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 13:54:23 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 30f2e8687f36b34a5a4f576678c15d79
+2021-04-12 13:54:34 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 13:54:39 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 13:54:45 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 13:54:45 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 13:54:45 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 13:54:45 INFO  HCLMainPage:31 - # Accept All Cookies button is not available
+2021-04-12 13:54:45 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 13:54:48 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 13:54:48 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 13:54:48 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 13:54:48 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 13:54:48 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 13:54:50 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 13:54:54 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 9dde19585327e34c5d8c7e1e725b66b1
+2021-04-12 13:56:17 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-12 13:56:17 INFO  PrintRange:10 - Number Range Method is called
+2021-04-12 13:56:17 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-12 13:56:17 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-12 13:56:17 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-12 13:56:17 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 13:56:22 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 13:56:27 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 13:56:27 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 13:56:27 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 13:56:27 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 13:56:29 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 13:56:29 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 13:56:29 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 13:56:29 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 13:56:29 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 13:56:30 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 13:56:31 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 39f16ed539d96541bed7c6d63aa37e85
+2021-04-12 13:56:31 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 13:56:35 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 13:56:40 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 13:56:40 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 13:56:40 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 13:56:43 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 13:56:43 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-12 13:56:44 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 13:56:44 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-12 14:02:25 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-12 14:02:25 INFO  PrintRange:10 - Number Range Method is called
+2021-04-12 14:02:25 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-12 14:02:25 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-12 14:02:25 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-12 14:02:25 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 14:02:30 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 14:02:35 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 14:02:35 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 14:02:35 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 14:02:35 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 14:02:37 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 14:02:37 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 14:02:37 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 14:02:37 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 14:02:37 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 14:02:38 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 14:02:39 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: e502c16cd102ac00b490222b7494a4f4
+2021-04-12 14:02:40 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 14:02:43 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 14:02:48 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 14:02:48 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 14:02:48 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 14:02:50 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 14:02:50 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-12 14:02:50 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 14:02:50 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-12 14:26:56 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-12 14:26:56 INFO  PrintRange:10 - Number Range Method is called
+2021-04-12 14:26:56 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-12 14:26:56 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-12 14:26:56 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-12 14:26:56 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 14:27:00 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 14:27:05 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 14:27:05 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 14:27:05 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 14:27:05 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 14:27:07 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 14:27:07 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 14:27:07 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 14:27:07 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 14:27:07 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 14:27:08 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 14:27:08 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-12 14:27:08 INFO  AppValidationConstantMessages:27 - true
+2021-04-12 14:27:08 INFO  AppValidationConstantMessages:29 - Photos directory is created in target folder
+2021-04-12 14:27:09 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: 4da3aeff1931d0b4530d485730497ec6
+2021-04-12 14:27:09 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 14:27:13 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 14:27:17 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 14:27:17 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 14:27:17 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 14:27:19 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 14:27:19 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-12 14:27:19 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 14:27:19 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-12 14:29:51 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-12 14:29:51 INFO  PrintRange:10 - Number Range Method is called
+2021-04-12 14:29:51 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-12 14:29:51 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-12 14:29:51 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-12 14:29:51 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 14:29:55 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 14:30:01 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 14:30:01 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-12 14:30:01 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 14:30:01 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 14:30:06 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 14:30:06 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-12 14:30:06 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-12 14:30:06 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-12 14:30:06 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-12 14:30:07 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-12 14:30:07 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-12 14:30:07 INFO  AppValidationConstantMessages:27 - true
+2021-04-12 14:30:07 INFO  AppValidationConstantMessages:29 - Photos directory is created in target folder
+2021-04-12 14:30:08 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.114, webStorageEnabled: true}
+Session ID: d7322057950ed4543491dc6f5395e54f
+2021-04-12 14:30:08 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-12 14:30:12 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-12 14:30:17 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-12 14:30:17 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-12 14:30:17 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-12 14:30:18 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-12 14:30:18 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-12 14:30:19 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-12 14:30:19 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar

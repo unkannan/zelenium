@@ -2,7 +2,7 @@ package Abstraction;
 
  abstract class BankParent{
 	int loan;
-	void savingsAccount() {
+	 void savingsAccount() {
 		System.out.println("Saving Account");
 	};
 	void CurrentAccount() {
@@ -12,11 +12,8 @@ package Abstraction;
 }
   
 class ICICI extends BankParent{
-	void sharesAccount() {
-		System.out.println("child method - shares account");
-	}
 	void Mortgages() {
-		System.out.println("child method - mortgages account");
+		System.out.println("icici mortgages");
 	}
 	@Override
 	void interestCalculation() {
@@ -24,14 +21,30 @@ class ICICI extends BankParent{
 	}
 }
  
+class hdfc extends BankParent{
+	void MortgagesofHdfc() {
+		System.out.println("hdfc mortgages");
+	}
+	@Override
+	void interestCalculation() {
+		System.out.println("hdfc style of interestcalculation");
+	}
+}
+
  
 public class abstractClasses {
 	public static void main(String args[]) {
 			 ICICI icicibank=new ICICI();
-			 icicibank.sharesAccount();
-			 icicibank.Mortgages();
-			 icicibank.interestCalculation();
-			  		 
+			// icicibank.Mortgages();
+			// icicibank.interestCalculation();
+			   
+			  		BankParent bp=new hdfc();
+			  		bp.savingsAccount();
+			  		bp.CurrentAccount();
+			  		bp.interestCalculation();
+			  		
+			  		bp=new ICICI();
+			  		bp.interestCalculation();
 	}
 }
  

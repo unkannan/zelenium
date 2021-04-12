@@ -1,17 +1,9 @@
 package APITesting;
 
-import java.util.HashMap;
-
-import org.apache.xmlbeans.XmlObject;
 import org.testng.annotations.Test;
 
-import io.restassured.RestAssured;
-import io.restassured.http.Header;
-import io.restassured.http.Headers;
-import io.restassured.http.Method;
-import io.restassured.path.xml.XmlPath;
+import io.restassured.RestAssured;  // Do do an automation for Rest API
 import io.restassured.response.Response;
-import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 
 public class RestAPI {
@@ -20,16 +12,25 @@ public class RestAPI {
     
 	 private String text;
 
-	//@Test
+	@Test
 	 public void GetStatusCodeForGoogleCOM()
 	 {
 		 String baseURI="http://www.google.com";
 		 		
 		 		Response response=RestAssured.get(baseURI);
+		 		
+		 		
 		 		System.out.println(response.getStatusCode());
 		 		System.out.println(response.getBody().asString());
 	 }
-	//@Test
+	// create a customer
+	// customer is created  - customer id will be given as the response
+	// validation on the output of that rest api request
+	
+	
+	
+	
+	@Test
 	public void GetEmployeeData() {
 		 String baseURI="http://dummy.restapiexample.com/api/v1/employee/21";
 	 		
@@ -39,7 +40,7 @@ public class RestAPI {
 	 		System.out.println(response.getStatusCode());
 	 		System.out.println(response.getBody().asString());
 	}
-	//@Test
+	@Test
 		 public void PostRequestRestAssured()
 		 {
 			 String baseURI="http://dummy.restapiexample.com/api/v1/create";
@@ -51,7 +52,7 @@ public class RestAPI {
 		 }
 		 
 	
-	// @Test
+	 @Test
 	 public void UpdateRequestForRecord() {
 		 String  baseURI="http://dummy.restapiexample.com/api/v1/update/21";
 		 
@@ -62,7 +63,7 @@ public class RestAPI {
 		 System.out.println(response.getBody().asString());
 	 }
 	 
-	// @Test
+	 @Test
 	 public void DeleteRequestForRecord() {
 		 String  baseURI="http://dummy.restapiexample.com/api/v1/delete/21";
 		 
@@ -74,7 +75,7 @@ public class RestAPI {
 	 }
 	 
 	 //------------------------------------------------------------------------------------------------------------------------
-	 //@Test
+	 @Test
 	 public void GetWhetherDetailsCity()
 	 {
 		 String  baseURI="https://maps.googleapis.com";
@@ -94,7 +95,7 @@ public class RestAPI {
 	 
 	 
 	 
-	 //@Test
+	 @Test
 	 public void ReqresURL_GetSingleUser()
 	 {
 		 String baseURI="https://reqres.in/api/users/2";
