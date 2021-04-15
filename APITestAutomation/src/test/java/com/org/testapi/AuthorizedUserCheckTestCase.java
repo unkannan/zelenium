@@ -2,12 +2,14 @@ package com.org.testapi;
 
 import static org.testng.Assert.assertEquals;
 
+import org.testng.annotations.Test;
+
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class AuthorizedUserCheckTestCase {
 	       
-	          // @Test
+	           @Test
 			 public void unauthorizedRequestSent() {
 				 String uri="https://dummyapi.io/data/api/user/0F8JIqi4zwvb77FGz6Wt";
 				 
@@ -19,7 +21,7 @@ public class AuthorizedUserCheckTestCase {
 			 		assertEquals(res.getStatusCode(), 403);
 			 }
 			
-			 // @Test
+			  @Test
 			 public void Valid_authorizedRequestSent() {
 				 String uri="https://dummyapi.io/data/api/user/0F8JIqi4zwvb77FGz6Wt";
 				 

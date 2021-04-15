@@ -1,26 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="14" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9231" started-at="2021-04-06T12:46:19Z" finished-at="2021-04-06T12:46:28Z">
+  <suite name="Suite" duration-ms="15078" started-at="2021-04-15T13:51:21Z" finished-at="2021-04-15T13:51:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9231" started-at="2021-04-06T12:46:19Z" finished-at="2021-04-06T12:46:28Z">
-      <class name="com.org.testapi.TestAPIWithInputExcelData">
-        <test-method status="FAIL" signature="ValidateJasonForGetSingleUser1()[pri:0, instance:com.org.testapi.TestAPIWithInputExcelData@e45f292]" name="ValidateJasonForGetSingleUser1" duration-ms="9106" started-at="2021-04-06T12:46:19Z" finished-at="2021-04-06T12:46:28Z">
-          <exception class="java.lang.AssertionError">
+    <test name="Test" duration-ms="15078" started-at="2021-04-15T13:51:21Z" finished-at="2021-04-15T13:51:36Z">
+      <class name="com.org.testapi.TestApiGetMethod">
+        <test-method status="PASS" signature="GetRequestLive()[pri:0, instance:com.org.testapi.TestApiGetMethod@cb644e]" name="GetRequestLive" duration-ms="1154" started-at="2021-04-15T13:51:32Z" finished-at="2021-04-15T13:51:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetRequestLive -->
+        <test-method status="PASS" signature="GetSingleUser()[pri:0, instance:com.org.testapi.TestApiGetMethod@cb644e]" name="GetSingleUser" duration-ms="125" started-at="2021-04-15T13:51:33Z" finished-at="2021-04-15T13:51:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetSingleUser -->
+        <test-method status="PASS" signature="GetUsersData()[pri:0, instance:com.org.testapi.TestApiGetMethod@cb644e]" name="GetUsersData" duration-ms="111" started-at="2021-04-15T13:51:33Z" finished-at="2021-04-15T13:51:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetUsersData -->
+        <test-method status="PASS" signature="ValidateJasonForGetSingleUser()[pri:0, instance:com.org.testapi.TestApiGetMethod@cb644e]" name="ValidateJasonForGetSingleUser" duration-ms="362" started-at="2021-04-15T13:51:33Z" finished-at="2021-04-15T13:51:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateJasonForGetSingleUser -->
+        <test-method status="PASS" signature="ValidateJasonForGetSingleUser1()[pri:0, instance:com.org.testapi.TestApiGetMethod@cb644e]" name="ValidateJasonForGetSingleUser1" duration-ms="400" started-at="2021-04-15T13:51:33Z" finished-at="2021-04-15T13:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateJasonForGetSingleUser1 -->
+        <test-method status="PASS" signature="ValidateResponseForCreatedUser()[pri:0, instance:com.org.testapi.TestApiGetMethod@cb644e]" name="ValidateResponseForCreatedUser" duration-ms="260" started-at="2021-04-15T13:51:34Z" finished-at="2021-04-15T13:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateResponseForCreatedUser -->
+      </class> <!-- com.org.testapi.TestApiGetMethod -->
+      <class name="com.org.testapi.TestApiDelete">
+        <test-method status="PASS" signature="testDelete()[pri:0, instance:com.org.testapi.TestApiDelete@ff5b51f]" name="testDelete" duration-ms="268" started-at="2021-04-15T13:51:36Z" finished-at="2021-04-15T13:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDelete -->
+      </class> <!-- com.org.testapi.TestApiDelete -->
+      <class name="com.org.testapi.TestApiPostMethod">
+        <test-method status="PASS" signature="PostRequestRestAssured()[pri:0, instance:com.org.testapi.TestApiPostMethod@13805618]" name="PostRequestRestAssured" duration-ms="182" started-at="2021-04-15T13:51:34Z" finished-at="2021-04-15T13:51:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PostRequestRestAssured -->
+        <test-method status="PASS" signature="ValidateResponseForCreatedUser()[pri:0, instance:com.org.testapi.TestApiPostMethod@13805618]" name="ValidateResponseForCreatedUser" duration-ms="305" started-at="2021-04-15T13:51:34Z" finished-at="2021-04-15T13:51:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateResponseForCreatedUser -->
+      </class> <!-- com.org.testapi.TestApiPostMethod -->
+      <class name="com.org.testapi.TestApiGetUsingQueryParams">
+        <test-method status="PASS" signature="queryParameter()[pri:0, instance:com.org.testapi.TestApiGetUsingQueryParams@56ef9176]" name="queryParameter" duration-ms="1002" started-at="2021-04-15T13:51:35Z" finished-at="2021-04-15T13:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- queryParameter -->
+      </class> <!-- com.org.testapi.TestApiGetUsingQueryParams -->
+      <class name="com.org.testapi.TestApiWithXML">
+        <test-method status="FAIL" signature="testGet()[pri:0, instance:com.org.testapi.TestApiWithXML@1ed4004b]" name="testGet" duration-ms="109" started-at="2021-04-15T13:51:36Z" finished-at="2021-04-15T13:51:36Z">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[expected [201] but found [200]]]>
+              <![CDATA[com.jayway.restassured.internal.assertion.AssertParameter.notNull(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [201] but found [200]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:652)
-at org.testng.Assert.assertEquals(Assert.java:662)
-at com.org.testapi.TestAPIWithInputExcelData.ValidateJasonForGetSingleUser1(TestAPIWithInputExcelData.java:38)
+              <![CDATA[java.lang.NoSuchMethodError: com.jayway.restassured.internal.assertion.AssertParameter.notNull(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;
+at com.jayway.restassured.config.SSLConfig.<init>(SSLConfig.java:192)
+at com.jayway.restassured.config.SSLConfig.<init>(SSLConfig.java:184)
+at com.jayway.restassured.config.RestAssuredConfig.<init>(RestAssuredConfig.java:41)
+at com.jayway.restassured.RestAssured.<clinit>(RestAssured.java:423)
+at com.org.testapi.TestApiWithXML.testGet(TestApiWithXML.java:13)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -48,11 +94,27 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateJasonForGetSingleUser1 -->
-      </class> <!-- com.org.testapi.TestAPIWithInputExcelData -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- testGet -->
+      </class> <!-- com.org.testapi.TestApiWithXML -->
+      <class name="com.org.testapi.JasonResponsedataInArray">
+        <test-method status="PASS" signature="ValidateAllSearchResulrsUsingArray()[pri:0, instance:com.org.testapi.JasonResponsedataInArray@5cb9f472]" name="ValidateAllSearchResulrsUsingArray" duration-ms="7279" started-at="2021-04-15T13:51:21Z" finished-at="2021-04-15T13:51:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAllSearchResulrsUsingArray -->
+        <test-method status="PASS" signature="ValidateAllSearchResulrsUsingArray1()[pri:0, instance:com.org.testapi.JasonResponsedataInArray@5cb9f472]" name="ValidateAllSearchResulrsUsingArray1" duration-ms="3037" started-at="2021-04-15T13:51:29Z" finished-at="2021-04-15T13:51:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateAllSearchResulrsUsingArray1 -->
+      </class> <!-- com.org.testapi.JasonResponsedataInArray -->
+      <class name="com.org.testapi.TestApiPutMethods">
+        <test-method status="PASS" signature="UpdateCustomerUsingPUT()[pri:0, instance:com.org.testapi.TestApiPutMethods@4566e5bd]" name="UpdateCustomerUsingPUT" duration-ms="300" started-at="2021-04-15T13:51:36Z" finished-at="2021-04-15T13:51:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateCustomerUsingPUT -->
+      </class> <!-- com.org.testapi.TestApiPutMethods -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

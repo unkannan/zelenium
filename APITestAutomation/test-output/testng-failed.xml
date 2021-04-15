@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.org.testapi.TestAPIWithInputExcelData">
+      <class name="com.org.testapi.TestApiWithXML">
         <methods>
-          <include name="ValidateJasonForGetSingleUser1"/>
+          <include name="testGet"/>
         </methods>
-      </class> <!-- com.org.testapi.TestAPIWithInputExcelData -->
+      </class> <!-- com.org.testapi.TestApiWithXML -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

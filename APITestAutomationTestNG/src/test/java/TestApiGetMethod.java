@@ -1,4 +1,4 @@
-package com.org.testapi;
+
 
 import static org.testng.Assert.assertEquals;
 
@@ -11,7 +11,7 @@ import io.restassured.response.Response;
 
 public class TestApiGetMethod {
 
-	@Test
+	//@Test
 	public void GetUsersData() {
 		  String baseURI="https://reqres.in/api/users?page=2";
 		  
@@ -36,7 +36,7 @@ public class TestApiGetMethod {
 	 		assertEquals(response.getStatusLine(), "HTTP/1.1 200 OK");
 	}
 	
-	@Test
+	//@Test
 	public void GetSingleUser() {
 		   RestAssured.baseURI="https://reqres.in/api/users/2";
 		   
@@ -75,7 +75,7 @@ public class TestApiGetMethod {
 	 		assertEquals(response.getStatusLine(), "HTTP/1.1 200 OK");
 	}
 	
-	@Test
+	//@Test
 		public void ValidateJasonForGetSingleUser1() {
 			   RestAssured.baseURI="https://api.github.com/users/Haja49";
 			   
@@ -101,7 +101,7 @@ public class TestApiGetMethod {
 		
 	
 	//Validating the whether the user is created
-	@Test
+	//@Test
 	 public void ValidateResponseForCreatedUser()
 	 {
 		 String baseURI="https://reqres.in/api/users";
@@ -122,7 +122,7 @@ public class TestApiGetMethod {
 		 		System.out.println(jsonResponseResult.get("name"));
 	 }
 	
-@Test
+//@Test
 public void GetRequestLive()
 {
 	 		RestAssured.baseURI="https://dummyapi.io/data/api/user?limit=10";

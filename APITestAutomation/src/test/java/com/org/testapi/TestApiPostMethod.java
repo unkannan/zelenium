@@ -44,7 +44,7 @@ public class TestApiPostMethod {
 			 		 
 		 }
 		
-		//@Test
+		@Test
 		 public void PostRequestRestAssured()
 		 {
 			 		RestAssured.baseURI="https://reqres.in/api/v1/create";

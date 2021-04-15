@@ -16,7 +16,7 @@ import io.restassured.response.Response;
 
 public class JasonResponsedataInArray {
 	
-	//@Test
+	@Test
 	public void ValidateAllSearchResulrsUsingArray() throws ParseException {
 		  
 		//Step 1: Declaring end point
