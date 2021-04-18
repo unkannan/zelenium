@@ -616,3 +616,503 @@ Session ID: 4c6facd125d4843339a161d7a97305e1
 2021-04-12 20:42:34 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
 2021-04-12 20:42:34 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
 2021-04-12 20:42:34 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-18 23:39:46 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-18 23:39:46 INFO  PrintRange:10 - Number Range Method is called
+2021-04-18 23:39:46 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-18 23:39:46 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-18 23:39:46 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-18 23:39:46 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:39:55 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:40:00 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:40:00 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-18 23:40:00 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:40:00 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:40:03 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:40:03 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-18 23:40:03 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-18 23:40:03 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-18 23:40:03 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-18 23:40:04 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-18 23:40:04 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-18 23:40:04 INFO  AppValidationConstantMessages:27 - true
+2021-04-18 23:40:04 INFO  AppValidationConstantMessages:29 - Photos directory is created in target folder
+2021-04-18 23:40:05 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 6c0899a6f4ae99b6b1a60bb10c3803a6
+2021-04-18 23:40:06 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:40:09 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:40:14 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:40:14 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:40:14 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:40:16 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:40:16 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-18 23:40:16 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-18 23:40:16 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-18 23:51:23 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-18 23:51:23 INFO  PrintRange:10 - Number Range Method is called
+2021-04-18 23:51:23 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-18 23:51:23 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-18 23:51:23 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-18 23:51:23 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:51:27 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:51:32 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:51:32 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-18 23:51:32 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:51:32 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:51:35 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:51:35 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-18 23:51:35 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-18 23:51:35 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-18 23:51:35 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-18 23:51:36 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-18 23:51:36 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-18 23:51:36 INFO  AppValidationConstantMessages:27 - true
+2021-04-18 23:51:36 INFO  AppValidationConstantMessages:29 - Photos directory is created in target folder
+2021-04-18 23:51:36 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: c79f7e5cdfbedb7c9cc07344af538ffe
+2021-04-18 23:51:37 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:51:40 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:51:45 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:51:45 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:51:45 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:51:47 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:51:47 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-18 23:51:47 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-18 23:51:47 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-18 23:53:33 INFO  PrintSmallestDifferenceGoal:60 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-18 23:53:33 INFO  PrintSmallestDifferenceGoal:61 - Leicester  -34
+2021-04-18 23:53:57 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-18 23:53:57 INFO  PrintRange:10 - Number Range Method is called
+2021-04-18 23:53:57 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-18 23:53:57 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-18 23:53:57 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-18 23:53:57 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:54:03 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:54:08 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:54:08 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-18 23:54:08 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:54:08 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:54:10 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:54:10 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-18 23:54:10 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-18 23:54:10 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-18 23:54:10 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-18 23:54:11 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-18 23:54:11 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-18 23:54:11 INFO  AppValidationConstantMessages:27 - false
+2021-04-18 23:54:11 INFO  AppValidationConstantMessages:31 - Photos directory is avaiable in target folder
+2021-04-18 23:54:12 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: c91a90958c64b62cbcb2adc501b65db1
+2021-04-18 23:54:13 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:54:16 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:54:21 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:54:21 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:54:21 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:54:22 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:54:22 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-18 23:54:22 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-18 23:54:22 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-18 23:56:51 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-18 23:56:51 INFO  PrintRange:10 - Number Range Method is called
+2021-04-18 23:56:51 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-18 23:56:51 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-18 23:56:51 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-18 23:56:51 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:56:55 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:57:00 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:57:00 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-18 23:57:00 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:57:00 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:57:04 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:57:04 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-18 23:57:04 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-18 23:57:04 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-18 23:57:04 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-18 23:57:05 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-18 23:57:05 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-18 23:57:05 INFO  AppValidationConstantMessages:27 - false
+2021-04-18 23:57:05 INFO  AppValidationConstantMessages:31 - Photos directory is avaiable in target folder
+2021-04-18 23:57:05 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 4590abdeff882ad527b9aa45062a02dd
+2021-04-18 23:57:06 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:57:09 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:57:14 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:57:14 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:57:15 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:57:16 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:57:16 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-18 23:57:16 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-18 23:57:16 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-18 23:57:18 INFO  PrintSmallestDifferenceGoal:60 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-18 23:57:18 INFO  PrintSmallestDifferenceGoal:61 - Leicester  -34
+2021-04-18 23:57:38 INFO  PrintRange:17 - Array Range of Numbes is declared
+2021-04-18 23:57:38 INFO  PrintRange:10 - Number Range Method is called
+2021-04-18 23:57:38 INFO  PrintRange:21 - outputActual:1-6,8,10-11
+2021-04-18 23:57:38 INFO  PrintRange:28 - Test in progress to calculate the area of the triangle
+2021-04-18 23:57:38 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-18 23:57:38 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:57:43 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:57:48 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:57:48 INFO  HCLWebTests:31 - # clicking leadership link
+2021-04-18 23:57:48 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:57:48 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:57:50 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:57:50 INFO  HCLWebTests:33 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-18 23:57:50 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-18 23:57:50 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-18 23:57:50 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-18 23:57:51 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-18 23:57:51 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-18 23:57:51 INFO  AppValidationConstantMessages:27 - false
+2021-04-18 23:57:51 INFO  AppValidationConstantMessages:31 - Photos directory is avaiable in target folder
+2021-04-18 23:57:52 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: a86e040045d52701dbc5f99743c9bc6e
+2021-04-18 23:57:52 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-18 23:57:56 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-18 23:58:01 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-18 23:58:01 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-18 23:58:03 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-18 23:58:05 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-18 23:58:05 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-18 23:58:05 INFO  HCLWebTests:23 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-18 23:58:05 INFO  HCLWebTests:24 - # actualResult found : Shiv Nadar
+2021-04-18 23:58:07 INFO  PrintSmallestDifferenceGoal:60 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-18 23:58:07 INFO  PrintSmallestDifferenceGoal:61 - Leicester  -34
+2021-04-18 23:59:56 INFO  PrintRange:16 - Test Case Started for: PrintGiveRange
+2021-04-18 23:59:56 INFO  PrintRange:18 - Array Range of Numbes is declared
+2021-04-18 23:59:56 INFO  PrintRange:10 - Number Range Method is called
+2021-04-18 23:59:56 INFO  PrintRange:22 - outputActual:1-6,8,10-11
+2021-04-18 23:59:56 INFO  PrintRange:24 - Test Case Execution Completed for: PrintGiveRange
+2021-04-18 23:59:56 INFO  PrintRange:29 - Test Case Started for: TriangleArea
+2021-04-18 23:59:56 INFO  PrintRange:30 - Test in progress to calculate the area of the triangle
+2021-04-18 23:59:56 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:01:46 INFO  PrintRange:16 - Test Case Started for: PrintGiveRange
+2021-04-19 00:01:46 INFO  PrintRange:18 - Array Range of Numbes is declared
+2021-04-19 00:01:46 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:01:46 INFO  PrintRange:22 - outputActual:1-6,8,10-11
+2021-04-19 00:01:46 INFO  PrintRange:24 - Test Case Execution Completed for: PrintGiveRange
+2021-04-19 00:01:46 INFO  PrintRange:29 - Test Case Started for: TriangleArea
+2021-04-19 00:01:46 INFO  PrintRange:30 - Test in progress to calculate the area of the triangle
+2021-04-19 00:01:46 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:01:46 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:01:51 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:01:56 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:01:56 INFO  HCLWebTests:31 - Test Case Started for: SavingShivNadarPhoto
+2021-04-19 00:01:56 INFO  HCLWebTests:33 - # clicking leadership link
+2021-04-19 00:01:56 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:01:56 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:01:58 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:01:58 INFO  HCLWebTests:35 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-19 00:01:58 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-19 00:01:58 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-19 00:01:58 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-19 00:01:59 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-19 00:01:59 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-19 00:01:59 INFO  AppValidationConstantMessages:27 - false
+2021-04-19 00:01:59 INFO  AppValidationConstantMessages:31 - Photos directory is avaiable in target folder
+2021-04-19 00:01:59 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 5ef5a4789b1aa0a134b3ead78b200297
+2021-04-19 00:02:00 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:02:06 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:02:11 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:02:11 INFO  HCLWebTests:19 - Test Case Started for: ValidateShivNadarTextInBODList
+2021-04-19 00:02:11 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:02:11 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:02:13 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:02:13 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-19 00:02:13 INFO  HCLWebTests:24 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-19 00:02:13 INFO  HCLWebTests:25 - # actualResult found : Shiv Nadar
+2021-04-19 00:02:15 INFO  PrintSmallestDifferenceGoal:60 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-19 00:02:15 INFO  PrintSmallestDifferenceGoal:61 - Leicester  -34
+2021-04-19 00:04:21 INFO  PrintRange:16 - Test Case Started for: PrintGiveRange
+2021-04-19 00:04:21 INFO  PrintRange:18 - Array Range of Numbes is declared
+2021-04-19 00:04:21 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:04:21 INFO  PrintRange:22 - outputActual:1-6,8,10-11
+2021-04-19 00:04:21 INFO  PrintRange:24 - Test Case Execution Completed for: PrintGiveRange
+2021-04-19 00:04:21 INFO  PrintRange:29 - Test Case Started for: TriangleArea
+2021-04-19 00:04:21 INFO  PrintRange:30 - Test in progress to calculate the area of the triangle
+2021-04-19 00:04:21 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:04:21 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:04:25 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:04:30 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:04:30 INFO  HCLWebTests:31 - Test Case Started for: SavingShivNadarPhoto
+2021-04-19 00:04:30 INFO  HCLWebTests:33 - # clicking leadership link
+2021-04-19 00:04:30 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:04:30 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:04:32 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:04:32 INFO  HCLWebTests:35 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-19 00:04:32 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-19 00:04:32 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-19 00:04:32 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-19 00:04:35 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-19 00:04:35 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-19 00:04:35 INFO  AppValidationConstantMessages:27 - false
+2021-04-19 00:04:35 INFO  AppValidationConstantMessages:31 - Photos directory is avaiable in target folder
+2021-04-19 00:04:35 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: ceaf2dfb829e13b34d9b7a7d61b66a52
+2021-04-19 00:04:36 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:04:39 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:04:44 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:04:44 INFO  HCLWebTests:19 - Test Case Started for: ValidateShivNadarTextInBODList
+2021-04-19 00:04:44 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:04:44 INFO  HCLMainPage:31 - # Accept All Cookies button is not available
+2021-04-19 00:04:44 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:04:48 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:04:48 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-19 00:04:48 INFO  HCLWebTests:24 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-19 00:04:48 INFO  HCLWebTests:25 - # actualResult found : Shiv Nadar
+2021-04-19 00:04:50 INFO  PrintSmallestDifferenceGoal:16 - *********************************************
+2021-04-19 00:04:50 INFO  PrintSmallestDifferenceGoal:17 - Test Case Started for: TeamWithSmallestDifferenceGoal
+2021-04-19 00:04:50 INFO  PrintSmallestDifferenceGoal:62 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-19 00:04:50 INFO  PrintSmallestDifferenceGoal:63 - Leicester  -34
+2021-04-19 00:06:12 INFO  PrintRange:16 - Test Case Started for: PrintGiveRange
+2021-04-19 00:06:12 INFO  PrintRange:18 - Array Range of Numbes is declared
+2021-04-19 00:06:12 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:06:12 INFO  PrintRange:22 - outputActual:1-6,8,10-11
+2021-04-19 00:06:12 INFO  PrintRange:24 - Test Case Execution Completed for: PrintGiveRange
+2021-04-19 00:06:12 INFO  PrintRange:29 - Test Case Started for: TriangleArea
+2021-04-19 00:06:12 INFO  PrintRange:30 - Test in progress to calculate the area of the triangle
+2021-04-19 00:06:12 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:06:12 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:06:16 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:06:22 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:06:22 INFO  HCLWebTests:31 - Test Case Started for: SavingShivNadarPhoto
+2021-04-19 00:06:22 INFO  HCLWebTests:33 - # clicking leadership link
+2021-04-19 00:06:22 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:06:22 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:06:23 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:06:23 INFO  HCLWebTests:35 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-19 00:06:23 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-19 00:06:23 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-19 00:06:23 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-19 00:06:25 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-19 00:06:25 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-19 00:06:25 INFO  AppValidationConstantMessages:27 - true
+2021-04-19 00:06:25 INFO  AppValidationConstantMessages:29 - Photos directory is created in target folder
+2021-04-19 00:06:25 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: f4d7fee14edb82860e0dfbe109bb06a0
+2021-04-19 00:06:26 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:06:29 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:06:34 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:06:34 INFO  HCLWebTests:19 - Test Case Started for: ValidateShivNadarTextInBODList
+2021-04-19 00:06:34 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:06:34 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:06:36 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:06:36 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-19 00:06:36 INFO  HCLWebTests:24 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-19 00:06:36 INFO  HCLWebTests:25 - # actualResult found : Shiv Nadar
+2021-04-19 00:06:37 INFO  PrintSmallestDifferenceGoal:16 - *********************************************
+2021-04-19 00:06:37 INFO  PrintSmallestDifferenceGoal:17 - Test Case Started for: TeamWithSmallestDifferenceGoal
+2021-04-19 00:06:37 INFO  PrintSmallestDifferenceGoal:62 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-19 00:06:37 INFO  PrintSmallestDifferenceGoal:63 - Leicester  -34
+2021-04-19 00:08:13 INFO  PrintRange:16 - Test Case Started for: PrintGiveRange
+2021-04-19 00:08:13 INFO  PrintRange:18 - Array Range of Numbes is declared
+2021-04-19 00:08:13 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:08:13 INFO  PrintRange:22 - outputActual:1-6,8,10-11
+2021-04-19 00:08:13 INFO  PrintRange:24 - Test Case Execution Completed for: PrintGiveRange
+2021-04-19 00:08:13 INFO  PrintRange:29 - Test Case Started for: TriangleArea
+2021-04-19 00:08:13 INFO  PrintRange:30 - Test in progress to calculate the area of the triangle
+2021-04-19 00:08:13 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:08:13 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:08:17 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:08:22 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:08:22 INFO  HCLWebTests:31 - Test Case Started for: SavingShivNadarPhoto
+2021-04-19 00:08:22 INFO  HCLWebTests:33 - # clicking leadership link
+2021-04-19 00:08:22 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:08:22 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:08:24 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:08:24 INFO  HCLWebTests:35 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-19 00:08:24 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-19 00:08:24 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-19 00:08:24 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-19 00:08:25 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-19 00:08:25 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-19 00:08:25 INFO  AppValidationConstantMessages:27 - false
+2021-04-19 00:08:25 INFO  AppValidationConstantMessages:31 - Photos directory is avaiable in target folder
+2021-04-19 00:08:25 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: de41b72657f1f6c72945bc769a40d38b
+2021-04-19 00:08:26 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:08:29 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:08:34 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:08:34 INFO  HCLWebTests:19 - Test Case Started for: ValidateShivNadarTextInBODList
+2021-04-19 00:08:34 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:08:34 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:08:36 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:08:36 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-19 00:08:36 INFO  HCLWebTests:24 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-19 00:08:36 INFO  HCLWebTests:25 - # actualResult found : Shiv Nadar
+2021-04-19 00:08:38 INFO  PrintSmallestDifferenceGoal:16 - *********************************************
+2021-04-19 00:08:38 INFO  PrintSmallestDifferenceGoal:17 - Test Case Started for: TeamWithSmallestDifferenceGoal
+2021-04-19 00:08:38 INFO  PrintSmallestDifferenceGoal:62 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-19 00:08:38 INFO  PrintSmallestDifferenceGoal:63 - Leicester  -34
+2021-04-19 00:09:45 INFO  PrintRange:16 - *********************************************
+2021-04-19 00:09:45 INFO  PrintRange:17 - Test Case Started for: PrintGiveRange
+2021-04-19 00:09:45 INFO  PrintRange:19 - Array Range of Numbes is declared
+2021-04-19 00:09:45 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:09:45 INFO  PrintRange:23 - outputActual:1-6,8,10-11
+2021-04-19 00:09:57 INFO  PrintRange:16 - *********************************************
+2021-04-19 00:09:57 INFO  PrintRange:17 - Test Case Started for: PrintGiveRange
+2021-04-19 00:09:57 INFO  PrintRange:19 - Array Range of Numbes is declared
+2021-04-19 00:09:57 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:09:57 INFO  PrintRange:23 - outputActual:1-6,8,10-11
+2021-04-19 00:09:57 INFO  PrintRange:29 - *********************************************
+2021-04-19 00:09:57 INFO  PrintRange:30 - Test Case Started for: TriangleArea
+2021-04-19 00:09:57 INFO  PrintRange:31 - Test in progress to calculate the area of the triangle
+2021-04-19 00:09:57 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:10:58 INFO  PrintRange:16 - *********************************************
+2021-04-19 00:10:58 INFO  PrintRange:17 - Test Case Started for: PrintGiveRange
+2021-04-19 00:10:58 INFO  PrintRange:19 - Array Range of Numbes is declared
+2021-04-19 00:10:58 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:10:58 INFO  PrintRange:23 - outputActual:1-6,8,10-11
+2021-04-19 00:10:58 INFO  PrintRange:29 - *********************************************
+2021-04-19 00:10:58 INFO  PrintRange:30 - Test Case Started for: TriangleArea
+2021-04-19 00:10:58 INFO  PrintRange:31 - Test in progress to calculate the area of the triangle
+2021-04-19 00:10:58 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:10:58 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:11:03 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:11:08 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:11:08 INFO  HCLWebTests:32 - *********************************************
+2021-04-19 00:11:08 INFO  HCLWebTests:33 - Test Case Started for: SavingShivNadarPhoto
+2021-04-19 00:11:08 INFO  HCLWebTests:35 - # clicking leadership link
+2021-04-19 00:11:08 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:11:08 INFO  HCLMainPage:31 - # Accept All Cookies button is not available
+2021-04-19 00:11:08 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:11:12 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:11:12 INFO  HCLWebTests:37 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-19 00:11:12 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-19 00:11:12 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-19 00:11:12 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-19 00:11:13 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-19 00:11:13 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-19 00:11:13 INFO  AppValidationConstantMessages:27 - true
+2021-04-19 00:11:13 INFO  AppValidationConstantMessages:29 - Photos directory is created in target folder
+2021-04-19 00:11:13 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 95ed2b509f9dfb48bdf9a3db064884af
+2021-04-19 00:11:14 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:11:17 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:11:23 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:11:23 INFO  HCLWebTests:19 - *********************************************
+2021-04-19 00:11:23 INFO  HCLWebTests:20 - Test Case Started for: ValidateShivNadarTextInBODList
+2021-04-19 00:11:23 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:11:23 INFO  HCLMainPage:31 - # Accept All Cookies button is not available
+2021-04-19 00:11:23 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:11:26 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:11:26 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-19 00:11:26 INFO  HCLWebTests:25 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-19 00:11:26 INFO  HCLWebTests:26 - # actualResult found : Shiv Nadar
+2021-04-19 00:11:28 INFO  PrintSmallestDifferenceGoal:18 - *********************************************
+2021-04-19 00:11:28 INFO  PrintSmallestDifferenceGoal:19 - Test Case Started for: TeamWithSmallestDifferenceGoal
+2021-04-19 00:11:28 INFO  PrintSmallestDifferenceGoal:64 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-19 00:11:28 INFO  PrintSmallestDifferenceGoal:65 - Leicester  -34
+2021-04-19 00:12:22 INFO  PrintSmallestDifferenceGoal:18 - *********************************************
+2021-04-19 00:12:22 INFO  PrintSmallestDifferenceGoal:19 - Test Case Started for: TeamWithSmallestDifferenceGoal
+2021-04-19 00:12:22 INFO  PrintSmallestDifferenceGoal:64 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-19 00:12:22 INFO  PrintSmallestDifferenceGoal:65 - Leicester  -34
+2021-04-19 00:12:45 INFO  PrintRange:16 - *********************************************
+2021-04-19 00:12:45 INFO  PrintRange:17 - Test Case Started for: PrintGiveRange
+2021-04-19 00:12:45 INFO  PrintRange:19 - Array Range of Numbes is declared
+2021-04-19 00:12:45 INFO  PrintRange:10 - Number Range Method is called
+2021-04-19 00:12:45 INFO  PrintRange:23 - outputActual:1-6,8,10-11
+2021-04-19 00:12:45 INFO  PrintRange:29 - *********************************************
+2021-04-19 00:12:45 INFO  PrintRange:30 - Test Case Started for: TriangleArea
+2021-04-19 00:12:45 INFO  PrintRange:31 - Test in progress to calculate the area of the triangle
+2021-04-19 00:12:45 INFO  AreaCalculatehelper:10 - AreaCalculatehelper is called
+2021-04-19 00:12:45 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:12:50 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:12:55 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:12:55 INFO  HCLWebTests:32 - *********************************************
+2021-04-19 00:12:55 INFO  HCLWebTests:33 - Test Case Started for: SavingShivNadarPhoto
+2021-04-19 00:12:55 INFO  HCLWebTests:35 - # clicking leadership link
+2021-04-19 00:12:55 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:12:55 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:12:57 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:12:57 INFO  HCLWebTests:37 - # Saving Shiv Nadar Photo in Target Folder
+2021-04-19 00:12:57 INFO  LeadershipPage:40 - # declared the log for ShivNadar Image
+2021-04-19 00:12:57 INFO  LeadershipPage:42 - # Retrieving src Attribute url
+2021-04-19 00:12:57 INFO  LeadershipPage:46 - # Reading the image to save
+2021-04-19 00:12:58 INFO  LeadershipPage:49 - # Saving the Image to Target Folder
+2021-04-19 00:12:58 INFO  AppValidationConstantMessages:24 - Verifying if dir is available and if not gets created
+2021-04-19 00:12:58 INFO  AppValidationConstantMessages:27 - true
+2021-04-19 00:12:58 INFO  AppValidationConstantMessages:29 - Photos directory is created in target folder
+2021-04-19 00:12:59 INFO  ScreenshotUtil:31 - Exception while taking screenshot no such session
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-A5GJABUP', ip: '192.168.1.177', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_212'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\unkan\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 89.0.4389.128, webStorageEnabled: true}
+Session ID: 2ad5e8295d78178b30c6a3167649ede5
+2021-04-19 00:12:59 INFO  StartApplication:60 - # chrome driver is initiated
+2021-04-19 00:13:03 INFO  StartApplication:33 - # WebDriver Setup : Success
+2021-04-19 00:13:08 INFO  StartApplication:37 - # Navigated to the URL successfully
+2021-04-19 00:13:08 INFO  HCLWebTests:19 - *********************************************
+2021-04-19 00:13:08 INFO  HCLWebTests:20 - Test Case Started for: ValidateShivNadarTextInBODList
+2021-04-19 00:13:08 INFO  HCLMainPage:26 - # Click AllCookies Button if available
+2021-04-19 00:13:08 INFO  HCLMainPage:34 - # Click Leadership link
+2021-04-19 00:13:09 INFO  HCLMainPage:38 - # Click Leadership link: Success
+2021-04-19 00:13:09 INFO  LeadershipPage:33 - # Retreiving Shiv Nadar text
+2021-04-19 00:13:09 INFO  HCLWebTests:25 - # actualResult for Shiv Nadar Text is retrieved Successfully for validation
+2021-04-19 00:13:09 INFO  HCLWebTests:26 - # actualResult found : Shiv Nadar
+2021-04-19 00:13:11 INFO  PrintSmallestDifferenceGoal:18 - *********************************************
+2021-04-19 00:13:11 INFO  PrintSmallestDifferenceGoal:19 - Test Case Started for: TeamWithSmallestDifferenceGoal
+2021-04-19 00:13:11 INFO  PrintSmallestDifferenceGoal:64 - team with the smallest difference in ‘for’ and ‘against’ goals is
+2021-04-19 00:13:11 INFO  PrintSmallestDifferenceGoal:65 - Leicester  -34

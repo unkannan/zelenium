@@ -11,6 +11,39 @@ import io.restassured.response.Response;
 
 public class TestApiPostMethod {
 	
+	//Validating the whether the user is created
+			@Test
+			 public void ValidateResponseforPostUser()
+			 {
+				 String baseURI="https://api.jsonbin.io/v3/b"; //end point url or restapi
+				 
+				 //Sending Test Data to get created 
+				 JSONObject json=new JSONObject();
+				 json.put("name","Rajshekar");
+				 json.put("job","Software Engineer");
+				
+				 		RestAssured.baseURI=baseURI;
+				 		Response response=RestAssured.given()
+				 					.contentType("application/json")
+				 					.headers("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+				 					.body(json.toString())
+				 					.post();
+				 		
+				 		System.out.println(response.getStatusCode());
+				 		System.out.println(response.getBody().asString());
+				 		
+				 		assertEquals(response.getStatusCode(), 201);
+				 		
+				 		//Validate the response for the test data created
+				 		JsonPath js=response.jsonPath();
+				 		System.out.println(js.get("name"));
+				 		System.out.println(js.get("job"));
+				 		System.out.println(js.get("id"));
+				 		System.out.println(js.get("createdAt"));
+				 		 
+				 		 
+			 }
+			
 	
 	//Validating the whether the user is created
 		@Test

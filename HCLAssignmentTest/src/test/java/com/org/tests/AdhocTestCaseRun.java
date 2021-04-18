@@ -12,7 +12,9 @@ public class AdhocTestCaseRun {
 	public static Logger logger = Logger.getLogger(PrintRange.class.getName());
 
 	@Test
-	public void PrintGiveRange() {
+	public void PrintGivenRange() {
+		logger.info("*********************************************");
+		logger.info("Test Case Started for: PrintGiveRange");
 		PrintRange p = new PrintRange();
 		logger.info("Array Range of Numbes is declared");
 		int[] arr = { 1, 2, 3, 4, 5, 6, 8, 10, 11 };
@@ -20,11 +22,12 @@ public class AdhocTestCaseRun {
 		String expected = "1-6,8,10-11";
 		logger.info("outputActual:" + outputActual);
 		assertEquals(outputActual, expected);
-
 	}
 
 	@Test
 	public void TriangleArea() {
+		logger.info("*********************************************");
+		logger.info("Test Case Started for: TriangleArea");
 		logger.info("Test in progress to calculate the area of the triangle");
 		AreaCalculatehelper Areacalculator = new AreaCalculatehelper();
 

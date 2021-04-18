@@ -16,6 +16,8 @@ public class HCLWebTests extends StartApplication{
 	
 	@Test
 	public void ValidateShivNadarTextInBODList() {
+		logger.info("*********************************************");
+		logger.info("Test Case Started for: ValidateShivNadarTextInBODList");
 		 preSteps();
 		 String expectedResult="Shiv Nadar";
 		 hclmnpgObj.clickLeadershipLink();
@@ -27,6 +29,8 @@ public class HCLWebTests extends StartApplication{
 	
 	@Test
 	public void SavingShivNadarPhoto() {
+		logger.info("*********************************************");
+		logger.info("Test Case Started for: SavingShivNadarPhoto");
 		preSteps();
 		logger.info("# clicking leadership link");
 		hclmnpgObj.clickLeadershipLink();

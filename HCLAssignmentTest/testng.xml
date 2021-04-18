@@ -5,6 +5,7 @@
     <classes>
       <class name="com.org.tests.AdhocTestCaseRun"/>
       <class name="com.org.tests.HCLWebTests"/>
+      <class name="com.org.tests.PrintSmallestDifferenceGoal"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

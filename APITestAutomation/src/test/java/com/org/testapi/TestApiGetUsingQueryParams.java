@@ -12,7 +12,28 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class TestApiGetUsingQueryParams {
+	
 	@Test
+	public void GetJasonBin() {
+		  String baseURI="https://api.jsonbin.io/v3/b";
+		  
+		  JSONObject json=new JSONObject();
+			 json.put("sample","Rajshekar");
+		  
+	 		RestAssured.baseURI=baseURI;
+	 		Response response=RestAssured.given()
+	 						.header("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+	 						.header("X-Bin-Private","false")
+	 						.contentType("application/json")
+	 						.body(json.toString())
+	 						.post();
+	 		
+	 		System.out.println(response.getStatusCode());
+	 		System.out.println(response.getBody().asString());	
+
+
+}
+	//@Test
     public void queryParameter() {
 
 		RestAssured.baseURI ="https://samples.openweathermap.org/data/2.5/"; 
@@ -39,6 +60,7 @@ public class TestApiGetUsingQueryParams {
 			 JSONObject jsonResponseResult=new JSONObject(response.getBody().asString()); 
 				System.out.println(jsonResponseResult.get("name"));
 }
-
-}
+	
+    }
+	
 
