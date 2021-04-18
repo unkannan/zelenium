@@ -1,17 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="48" started-at="2021-04-18T22:12:21Z" finished-at="2021-04-18T22:12:22Z">
+  <suite name="Suite" duration-ms="29310" started-at="2021-04-18T22:48:42Z" finished-at="2021-04-18T22:49:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="48" started-at="2021-04-18T22:12:21Z" finished-at="2021-04-18T22:12:22Z">
+    <test name="Test" duration-ms="29310" started-at="2021-04-18T22:48:42Z" finished-at="2021-04-18T22:49:11Z">
       <class name="com.org.tests.PrintSmallestDifferenceGoal">
-        <test-method status="PASS" signature="TeamWithSmallestDifferenceGoal()[pri:0, instance:com.org.tests.PrintSmallestDifferenceGoal@dc24521]" name="TeamWithSmallestDifferenceGoal" duration-ms="15" started-at="2021-04-18T22:12:22Z" finished-at="2021-04-18T22:12:22Z">
+        <test-method status="PASS" signature="TeamWithSmallestDifferenceGoal()[pri:0, instance:com.org.tests.PrintSmallestDifferenceGoal@3632be31]" name="TeamWithSmallestDifferenceGoal" duration-ms="21" started-at="2021-04-18T22:49:11Z" finished-at="2021-04-18T22:49:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TeamWithSmallestDifferenceGoal -->
       </class> <!-- com.org.tests.PrintSmallestDifferenceGoal -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.org.tests.HCLWebTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.HCLWebTests@56235b8e]" name="setUp" is-config="true" duration-ms="9320" started-at="2021-04-18T22:48:42Z" finished-at="2021-04-18T22:48:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SavingShivNadarPhoto()[pri:0, instance:com.org.tests.HCLWebTests@56235b8e]" name="SavingShivNadarPhoto" duration-ms="4283" started-at="2021-04-18T22:48:51Z" finished-at="2021-04-18T22:48:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SavingShivNadarPhoto -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.HCLWebTests@56235b8e]" name="teardown" is-config="true" duration-ms="728" started-at="2021-04-18T22:48:55Z" finished-at="2021-04-18T22:48:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SavingShivNadarPhoto status=SUCCESS method=HCLWebTests.SavingShivNadarPhoto()[pri:0, instance:com.org.tests.HCLWebTests@56235b8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.org.tests.HCLWebTests@56235b8e]" name="setUp" is-config="true" duration-ms="11229" started-at="2021-04-18T22:48:56Z" finished-at="2021-04-18T22:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ValidateShivNadarTextInBODList()[pri:0, instance:com.org.tests.HCLWebTests@56235b8e]" name="ValidateShivNadarTextInBODList" duration-ms="1652" started-at="2021-04-18T22:49:07Z" finished-at="2021-04-18T22:49:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateShivNadarTextInBODList -->
+        <test-method status="PASS" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.org.tests.HCLWebTests@56235b8e]" name="teardown" is-config="true" duration-ms="2031" started-at="2021-04-18T22:49:09Z" finished-at="2021-04-18T22:49:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ValidateShivNadarTextInBODList status=SUCCESS method=HCLWebTests.ValidateShivNadarTextInBODList()[pri:0, instance:com.org.tests.HCLWebTests@56235b8e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.org.tests.HCLWebTests -->
+      <class name="com.org.tests.AdhocTestCaseRun">
+        <test-method status="PASS" signature="PrintGivenRange()[pri:0, instance:com.org.tests.AdhocTestCaseRun@6fc6f14e]" name="PrintGivenRange" duration-ms="21" started-at="2021-04-18T22:48:42Z" finished-at="2021-04-18T22:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrintGivenRange -->
+        <test-method status="PASS" signature="TriangleArea()[pri:0, instance:com.org.tests.AdhocTestCaseRun@6fc6f14e]" name="TriangleArea" duration-ms="0" started-at="2021-04-18T22:48:42Z" finished-at="2021-04-18T22:48:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TriangleArea -->
+      </class> <!-- com.org.tests.AdhocTestCaseRun -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
