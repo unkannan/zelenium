@@ -3,22 +3,23 @@ package com.org.testapi;
 import static org.testng.Assert.assertEquals;
 
 import org.json.JSONObject;
-import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
+import com.org.util.CreateBin;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class TestApiGetUsingQueryParams {
+     static String id=null;
 	
-	@Test
-	public void GetJasonBin() {
+	@BeforeTest
+	public void GenerateID() {
 		  String baseURI="https://api.jsonbin.io/v3/b";
-		  
 		  JSONObject json=new JSONObject();
-			 json.put("sample","Rajshekar");
+		  json.put("sample","Hello universe");
 		  
 	 		RestAssured.baseURI=baseURI;
 	 		Response response=RestAssured.given()
@@ -28,11 +29,105 @@ public class TestApiGetUsingQueryParams {
 	 						.body(json.toString())
 	 						.post();
 	 		
+	 		JsonPath js=response.jsonPath();
+	 		id=js.get("metadata.id");
+	 		System.out.println(id);
+   }
+	
+	@Test
+	public void readjasonBin()
+	{
+        String baseURI="https://api.jsonbin.io/v3/b";
+ 		
+ 		RestAssured.baseURI=baseURI;
+ 		RestAssured.basePath=id;
+ 		Response response=RestAssured
+ 				.given()
+ 				.header("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+ 				.get();
+ 		
+ 		System.out.println(response.getStatusCode());
+ 		System.out.println(response.getBody().asString());
+	}
+	
+	@Test
+	public void AupdatejasonBin()
+	{
+		String baseURI="https://api.jsonbin.io/v3/b";
+		  
+		  JSONObject json=new JSONObject();
+			 json.put("sample","Hello world");
+		  
+	 		RestAssured.baseURI=baseURI;
+	 		RestAssured.basePath=id;
+	 		Response response=RestAssured.given()
+	 						.header("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+	 						.header("X-Bin-Private","true")
+	 						.contentType("application/json")
+	 						.body(json.toString())
+	 						.put();
+	 		
 	 		System.out.println(response.getStatusCode());
 	 		System.out.println(response.getBody().asString());	
+	}
+    	@Test
+		public void deletejasonBin()
+		{
+			RestAssured.baseURI="https://api.jsonbin.io/v3/b";
+			RestAssured.basePath=id;
+				Response putObject1=RestAssured.given()
+						.header("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+						.delete();
+				System.out.println(putObject1.getStatusCode());
+		 		System.out.println(putObject1.getBody().asString());
+		}
+		
+		@Test
+		public void delversionsBin()
+		{
+			RestAssured.baseURI="https://api.jsonbin.io/v3/b/607c91f25b165e19f622f0e3/versions";
+		//	RestAssured.basePath=id+"/versions";
+			Response putObject1=RestAssured.given()
+					.header("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+					.delete();
+			System.out.println(putObject1.getStatusCode());
+	 		System.out.println(putObject1.getBody().asString());
+		}
 
-
-}
+    @Test
+		public void changeprivacyBin()
+		{
+			String baseURI="https://api.jsonbin.io/v3/b/607c9356ee971419c4dc7984/meta/privacy";
+			  
+			  JSONObject json=new JSONObject();
+				 json.put("sample","Hello worldies");
+			  
+		 		RestAssured.baseURI=baseURI;
+		 		Response response=RestAssured.given()
+		 						.header("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+		 						.header("X-Bin-Private","true")
+		 						.contentType("application/json")
+		 						.body(json.toString())
+		 						.put();
+		 		
+		 		System.out.println(response.getStatusCode());
+		 		System.out.println(response.getBody().asString());	
+		}
+		
+		//@Test
+		public void versionscountBin()
+		{
+	       String baseURI="https://api.jsonbin.io/v3/b/607c9356ee971419c4dc7984/versions/count";
+	 		
+	 		RestAssured.baseURI=baseURI;
+	 		Response response=RestAssured.given()
+	 				.header("X-Master-Key","$2b$10$dlREyBjuOSWligP1B6ZJ5OiRtk8MHcoBEdnWl2Skoc.CO7HQlw4xW")
+	 				.get();
+	 		
+	 		System.out.println(response.getStatusCode());
+	 		System.out.println(response.getBody().asString());
+		}
+		
 	//@Test
     public void queryParameter() {
 
